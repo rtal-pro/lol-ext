@@ -1,0 +1,589 @@
+/* Enhanced styling for item descriptions and tags */
+
+/* Item tag badges */
+.item-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.item-tag {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: rgba(15, 25, 45, 0.6);
+  border: 1px solid rgba(200, 170, 110, 0.4);
+  color: #c8aa6e;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.item-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: rgba(200, 170, 110, 0.7);
+  z-index: 1;
+}
+
+.item-tag::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(200, 170, 110, 0) 0%,
+    rgba(200, 170, 110, 0.15) 50%,
+    rgba(200, 170, 110, 0) 100%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+  pointer-events: none;
+}
+
+.item-tag:hover::after {
+  transform: translateX(100%);
+}
+
+/* Header tags styling */
+.item-header-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.item-header-tags .item-tag {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+/* Different tag types */
+.tag-SpellDamage {
+  background-color: rgba(160, 136, 255, 0.2);
+  border-color: rgba(160, 136, 255, 0.5);
+  color: #a088ff;
+}
+
+.tag-Damage {
+  background-color: rgba(255, 140, 140, 0.2);
+  border-color: rgba(255, 140, 140, 0.5);
+  color: #ff8c8c;
+}
+
+.tag-Armor {
+  background-color: rgba(255, 183, 77, 0.2);
+  border-color: rgba(255, 183, 77, 0.5);
+  color: #ffb74d;
+}
+
+.tag-MagicResist {
+  background-color: rgba(192, 156, 255, 0.2);
+  border-color: rgba(192, 156, 255, 0.5);
+  color: #c09cff;
+}
+
+.tag-Health {
+  background-color: rgba(124, 238, 112, 0.2);
+  border-color: rgba(124, 238, 112, 0.5);
+  color: #7cee70;
+}
+
+.tag-Mana {
+  background-color: rgba(112, 194, 238, 0.2);
+  border-color: rgba(112, 194, 238, 0.5);
+  color: #70c2ee;
+}
+
+.tag-AttackSpeed {
+  background-color: rgba(255, 234, 128, 0.2);
+  border-color: rgba(255, 234, 128, 0.5);
+  color: #ffea80;
+}
+
+.tag-Critical {
+  background-color: rgba(255, 215, 0, 0.2);
+  border-color: rgba(255, 215, 0, 0.5);
+  color: #ffd700;
+}
+
+.tag-LifeSteal {
+  background-color: rgba(220, 20, 60, 0.2);
+  border-color: rgba(220, 20, 60, 0.5);
+  color: #dc143c;
+}
+
+.tag-SpellVamp {
+  background-color: rgba(186, 85, 211, 0.2);
+  border-color: rgba(186, 85, 211, 0.5);
+  color: #ba55d3;
+}
+
+.tag-AbilityHaste {
+  background-color: rgba(65, 105, 225, 0.2);
+  border-color: rgba(65, 105, 225, 0.5);
+  color: #4169e1;
+}
+
+.tag-Jungle {
+  background-color: rgba(34, 139, 34, 0.2);
+  border-color: rgba(34, 139, 34, 0.5);
+  color: #228b22;
+}
+
+.tag-Lane {
+  background-color: rgba(210, 180, 140, 0.2);
+  border-color: rgba(210, 180, 140, 0.5);
+  color: #d2b48c;
+}
+
+.tag-Boots {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-color: rgba(128, 128, 128, 0.5);
+  color: #f0f0f0;
+}
+
+.tag-Active {
+  background-color: rgba(255, 234, 128, 0.2);
+  border-color: rgba(255, 234, 128, 0.5);
+  color: #ffea80;
+}
+
+.tag-Consumable {
+  background-color: rgba(245, 222, 179, 0.2);
+  border-color: rgba(245, 222, 179, 0.5);
+  color: #f5deb3;
+}
+
+.tag-Vision {
+  background-color: rgba(72, 209, 204, 0.2);
+  border-color: rgba(72, 209, 204, 0.5);
+  color: #48d1cc;
+}
+
+.tag-Utility {
+  background-color: rgba(147, 112, 219, 0.2);
+  border-color: rgba(147, 112, 219, 0.5);
+  color: #9370db;
+}
+
+.tag-NonbootsMovement {
+  background-color: rgba(200, 200, 200, 0.2);
+  border-color: rgba(200, 200, 200, 0.5);
+  color: #f0f0f0;
+}
+
+.tag-GoldPer {
+  background-color: rgba(255, 215, 0, 0.2);
+  border-color: rgba(255, 215, 0, 0.5);
+  color: #ffd700;
+}
+
+.tag-OnHit {
+  background-color: rgba(255, 165, 0, 0.2);
+  border-color: rgba(255, 165, 0, 0.5);
+  color: #ffa500;
+}
+
+/* Enhanced description text styling */
+.enhanced-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #eee;
+  padding: 15px;
+  background-color: rgba(15, 25, 45, 0.5);
+  border-radius: 8px;
+  border: 1px solid rgba(200, 170, 110, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.enhanced-description::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(200, 170, 110, 0.7), rgba(200, 170, 110, 0.1));
+}
+
+/* Format special tags */
+.enhanced-description .attention,
+.enhanced-description .ornnBonus {
+  color: #ffea80;
+  font-weight: 600;
+}
+
+.enhanced-description .physicalDamage {
+  color: #ff8c8c;
+  font-weight: 500;
+}
+
+.enhanced-description .magicDamage {
+  color: #a088ff;
+  font-weight: 500;
+}
+
+.enhanced-description .trueDamage {
+  color: #ffffff;
+  font-weight: 500;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.enhanced-description .healing {
+  color: #7cee70;
+  font-weight: 500;
+}
+
+.enhanced-description .shield {
+  color: #f0f0f0;
+  font-weight: 500;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.enhanced-description .status {
+  color: #70c2ee;
+  font-weight: 500;
+}
+
+.enhanced-description .scaleAD {
+  color: #ff8c8c;
+  font-weight: 500;
+}
+
+.enhanced-description .scaleAP {
+  color: #a088ff;
+  font-weight: 500;
+}
+
+.enhanced-description .scaleMana {
+  color: #70c2ee;
+  font-weight: 500;
+}
+
+.enhanced-description .scaleHealth {
+  color: #7cee70;
+  font-weight: 500;
+}
+
+.enhanced-description .onHit {
+  color: #ffa500;
+  font-weight: 600;
+}
+
+.enhanced-description .lifeSteal {
+  color: #dc143c;
+  font-weight: 500;
+}
+
+.enhanced-description .speed {
+  color: #f0f0f0;
+  font-weight: 500;
+}
+
+.enhanced-description .spellPassive {
+  color: #70c2ee;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.enhanced-description .spellActive {
+  color: #ffea80;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.enhanced-description .recast {
+  color: #ba55d3;
+  font-weight: 500;
+}
+
+.enhanced-description .keywordMajor,
+.enhanced-description .champion {
+  color: #c8aa6e;
+  font-weight: 600;
+}
+
+.enhanced-description .keyword {
+  color: #70c2ee;
+  font-weight: 500;
+}
+
+.enhanced-description .passive {
+  color: #70c2ee;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  text-shadow: 0 0 3px rgba(112, 194, 238, 0.3);
+}
+
+.enhanced-description .active {
+  color: #ffea80;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  text-shadow: 0 0 3px rgba(255, 234, 128, 0.3);
+}
+
+/* Remove stats div styling to make description cleaner */
+
+.enhanced-description br {
+  display: block;
+  content: "";
+  margin: 6px 0;
+}
+
+/* Compact 3-column item stats styling */
+.item-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.compact-stat {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: linear-gradient(135deg, rgba(15, 25, 45, 0.8), rgba(10, 20, 40, 0.6));
+  border-radius: 6px;
+  border: 1px solid rgba(200, 170, 110, 0.25);
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.compact-stat:hover {
+  transform: translateY(-2px);
+  border-color: rgba(200, 170, 110, 0.5);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.compact-stat-icon {
+  margin-right: 8px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.compact-stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.compact-stat-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.compact-stat-name {
+  font-size: 11px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Stat-specific styling with better colors */
+.stat-ad {
+  border-color: rgba(255, 140, 140, 0.3);
+}
+.stat-ad .compact-stat-icon {
+  color: #ff8c8c;
+}
+.stat-ad .compact-stat-value {
+  color: #ff8c8c;
+}
+.stat-ad:hover {
+  border-color: rgba(255, 140, 140, 0.6);
+  background: linear-gradient(135deg, rgba(255, 140, 140, 0.1), rgba(15, 25, 45, 0.7));
+}
+
+.stat-ap {
+  border-color: rgba(160, 136, 255, 0.3);
+}
+.stat-ap .compact-stat-icon {
+  color: #a088ff;
+}
+.stat-ap .compact-stat-value {
+  color: #a088ff;
+}
+.stat-ap:hover {
+  border-color: rgba(160, 136, 255, 0.6);
+  background: linear-gradient(135deg, rgba(160, 136, 255, 0.1), rgba(15, 25, 45, 0.7));
+}
+
+.stat-armor {
+  border-color: rgba(255, 183, 77, 0.3);
+}
+.stat-armor .compact-stat-icon {
+  color: #ffb74d;
+}
+.stat-armor .compact-stat-value {
+  color: #ffb74d;
+}
+.stat-armor:hover {
+  border-color: rgba(255, 183, 77, 0.6);
+  background: linear-gradient(135deg, rgba(255, 183, 77, 0.1), rgba(15, 25, 45, 0.7));
+}
+
+.stat-mr {
+  border-color: rgba(192, 156, 255, 0.3);
+}
+.stat-mr .compact-stat-icon {
+  color: #c09cff;
+}
+.stat-mr .compact-stat-value {
+  color: #c09cff;
+}
+.stat-mr:hover {
+  border-color: rgba(192, 156, 255, 0.6);
+  background: linear-gradient(135deg, rgba(192, 156, 255, 0.1), rgba(15, 25, 45, 0.7));
+}
+
+.stat-health {
+  border-color: rgba(124, 238, 112, 0.3);
+}
+.stat-health .compact-stat-icon {
+  color: #7cee70;
+}
+.stat-health .compact-stat-value {
+  color: #7cee70;
+}
+.stat-health:hover {
+  border-color: rgba(124, 238, 112, 0.6);
+  background: linear-gradient(135deg, rgba(124, 238, 112, 0.1), rgba(15, 25, 45, 0.7));
+}
+
+.stat-mana {
+  border-color: rgba(112, 194, 238, 0.3);
+}
+.stat-mana .compact-stat-icon {
+  color: #70c2ee;
+}
+.stat-mana .compact-stat-value {
+  color: #70c2ee;
+}
+.stat-mana:hover {
+  border-color: rgba(112, 194, 238, 0.6);
+  background: linear-gradient(135deg, rgba(112, 194, 238, 0.1), rgba(15, 25, 45, 0.7));
+}
+
+.stat-as {
+  border-color: rgba(255, 234, 128, 0.3);
+}
+.stat-as .compact-stat-icon {
+  color: #ffea80;
+}
+.stat-as .compact-stat-value {
+  color: #ffea80;
+}
+.stat-as:hover {
+  border-color: rgba(255, 234, 128, 0.6);
+  background: linear-gradient(135deg, rgba(255, 234, 128, 0.1), rgba(15, 25, 45, 0.7));
+}
+
+.stat-crit {
+  border-color: rgba(255, 215, 0, 0.3);
+}
+.stat-crit .compact-stat-icon {
+  color: #ffd700;
+}
+.stat-crit .compact-stat-value {
+  color: #ffd700;
+}
+.stat-crit:hover {
+  border-color: rgba(255, 215, 0, 0.6);
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(15, 25, 45, 0.7));
+}
+
+.stat-ms {
+  border-color: rgba(200, 200, 200, 0.3);
+}
+.stat-ms .compact-stat-icon {
+  color: #f0f0f0;
+}
+.stat-ms .compact-stat-value {
+  color: #f0f0f0;
+}
+.stat-ms:hover {
+  border-color: rgba(200, 200, 200, 0.6);
+  background: linear-gradient(135deg, rgba(200, 200, 200, 0.1), rgba(15, 25, 45, 0.7));
+}
+
+.stat-haste {
+  border-color: rgba(65, 105, 225, 0.3);
+}
+.stat-haste .compact-stat-icon {
+  color: #4169e1;
+}
+.stat-haste .compact-stat-value {
+  color: #4169e1;
+}
+.stat-haste:hover {
+  border-color: rgba(65, 105, 225, 0.6);
+  background: linear-gradient(135deg, rgba(65, 105, 225, 0.1), rgba(15, 25, 45, 0.7));
+}
+
+.stat-lifesteal {
+  border-color: rgba(220, 20, 60, 0.3);
+}
+.stat-lifesteal .compact-stat-icon {
+  color: #dc143c;
+}
+.stat-lifesteal .compact-stat-value {
+  color: #dc143c;
+}
+.stat-lifesteal:hover {
+  border-color: rgba(220, 20, 60, 0.6);
+  background: linear-gradient(135deg, rgba(220, 20, 60, 0.1), rgba(15, 25, 45, 0.7));
+}
+
+.stat-omnivamp {
+  border-color: rgba(186, 85, 211, 0.3);
+}
+.stat-omnivamp .compact-stat-icon {
+  color: #ba55d3;
+}
+.stat-omnivamp .compact-stat-value {
+  color: #ba55d3;
+}
+.stat-omnivamp:hover {
+  border-color: rgba(186, 85, 211, 0.6);
+  background: linear-gradient(135deg, rgba(186, 85, 211, 0.1), rgba(15, 25, 45, 0.7));
+}
+
+/* No stats message */
+.no-stats-message {
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(15, 25, 45, 0.5);
+  border-radius: 6px;
+  border: 1px dashed rgba(200, 170, 110, 0.3);
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .item-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .item-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

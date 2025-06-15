@@ -320,15 +320,65 @@ class ItemDetailManager {
   }
   
   /**
-   * Renders the item overview tab (combined stats and description)
+   * Renders the item overview tab (combined stats, tags, and description)
    * @param {Object} item - The item data
    */
   _renderItemOverview(item) {
+    // Reset description container visibility in case it was hidden before
+    const descriptionContainer = document.querySelector('.item-description-container');
+    if (descriptionContainer) {
+      descriptionContainer.style.display = 'block';
+    }
+    
     // Render stats
     this._renderItemStats(item);
     
+    // Render tags
+    this._renderItemTags(item);
+    
     // Render description
     this._renderItemDescription(item);
+  }
+  
+  /**
+   * Renders the item tags as styled badges (now moved to header)
+   * @param {Object} item - The item data
+   */
+  _renderItemTags(item) {
+    // Check if the tags container exists in overview
+    let tagsContainer = document.querySelector('.item-tags-container');
+    if (tagsContainer) {
+      // Remove the container since tags are now in the header
+      tagsContainer.remove();
+    }
+    
+    // Note: We've moved the tags to the header using _renderItemTagsInHeader
+    // This method is kept for backward compatibility but doesn't render tags in overview anymore
+  }
+  
+  /**
+   * Formats a tag name for display
+   * @param {string} tag - The raw tag name
+   * @returns {string} The formatted tag name
+   */
+  _formatTagName(tag) {
+    // Map of special tag names to display names
+    const tagDisplayNames = {
+      'SpellDamage': 'Ability Power',
+      'Damage': 'Attack Damage',
+      'MagicResist': 'Magic Resist',
+      'AttackSpeed': 'Attack Speed',
+      'CooldownReduction': 'CDR',
+      'AbilityHaste': 'Ability Haste',
+      'LifeSteal': 'Life Steal',
+      'SpellVamp': 'Spell Vamp',
+      'NonbootsMovement': 'Movement',
+      'GoldPer': 'Gold Income',
+      'OnHit': 'On-Hit'
+    };
+    
+    // Return mapped name or convert camelCase to words with spaces
+    return tagDisplayNames[tag] || tag.replace(/([A-Z])/g, ' $1').trim();
   }
   
   /**
@@ -416,6 +466,40 @@ class ItemDetailManager {
     } else {
       goldElement.textContent = 'No cost';
     }
+    
+    // Add item tags to the header
+    this._renderItemTagsInHeader(item);
+  }
+  
+  /**
+   * Renders the item tags as styled badges in the header
+   * @param {Object} item - The item data
+   */
+  _renderItemTagsInHeader(item) {
+    // Get the item info container
+    const itemInfo = document.querySelector('.item-detail-info');
+    
+    // Create or get tags container
+    let tagsContainer = document.querySelector('.item-header-tags');
+    if (!tagsContainer) {
+      tagsContainer = document.createElement('div');
+      tagsContainer.className = 'item-header-tags';
+      itemInfo.appendChild(tagsContainer);
+    } else {
+      // Clear existing tags
+      tagsContainer.innerHTML = '';
+    }
+    
+    // Check if item has tags
+    if (item.tags && item.tags.length > 0) {
+      // Create and append tag elements
+      item.tags.forEach(tag => {
+        const tagElement = document.createElement('div');
+        tagElement.className = `item-tag tag-${tag}`;
+        tagElement.textContent = this._formatTagName(tag);
+        tagsContainer.appendChild(tagElement);
+      });
+    }
   }
   
   /**
@@ -432,20 +516,25 @@ class ItemDetailManager {
       // Clear existing content
       statsElement.innerHTML = '';
       
-      // Render each stat
+      // Create a grid container for 3-column layout
+      const statsGrid = document.createElement('div');
+      statsGrid.className = 'item-stats-grid';
+      statsElement.appendChild(statsGrid);
+      
+      // Render each stat in compact format
       statsArray.forEach(stat => {
         const statElement = document.createElement('div');
-        statElement.className = `item-stat ${stat.cssClass || ''}`;
+        statElement.className = `compact-stat ${stat.cssClass || ''}`;
         
         statElement.innerHTML = `
-          <div class="item-stat-icon">${stat.icon || '📊'}</div>
-          <div class="item-stat-details">
-            <div class="item-stat-name">${stat.name}</div>
-            <div class="item-stat-value">${stat.value || ''}</div>
+          <div class="compact-stat-icon">${stat.icon || '📊'}</div>
+          <div class="compact-stat-content">
+            <div class="compact-stat-value">${stat.value || ''}</div>
+            <div class="compact-stat-name">${stat.name}</div>
           </div>
         `;
         
-        statsElement.appendChild(statElement);
+        statsGrid.appendChild(statElement);
       });
     } else {
       // Fallback for items with no stats
@@ -641,21 +730,34 @@ class ItemDetailManager {
     
     // Extract main description text
     let mainText = '';
+    let fullText = '';
     
     if (item.description) {
+      // Store the full description for complete formatting
+      fullText = item.description;
+      
       if (item.description.includes('<mainText>')) {
-        // Modern format
-        mainText = item.description
-          .replace(/<mainText><stats>.*?<\/stats>(<br><br>)?/s, '')
-          .replace(/<active>ACTIVE<\/active>.*?(?=<\/mainText>)/s, '')
-          .replace(/<passive>PASSIVE<\/passive>.*?(?=<\/mainText>)/s, '')
-          .replace(/<\/?mainText>/g, '')
-          .replace(/<br><br><br>/g, '<br><br>');
+        // Modern format - extract content between mainText tags
+        const mainTextMatch = item.description.match(/<mainText>(.*?)<\/mainText>/s);
+        if (mainTextMatch && mainTextMatch[1]) {
+          mainText = mainTextMatch[1];
+        } else {
+          mainText = item.description;
+        }
+        
+        // Remove active and passive sections that will be rendered separately
+        mainText = mainText
+          .replace(/<active>ACTIVE<\/active>.*?(?=(<br>|<passive>|$))/s, '')
+          .replace(/<passive>PASSIVE<\/passive>.*?(?=(<br>|<active>|$))/s, '')
+          .replace(/<br><br><br>/g, '<br><br>')
+          .replace(/<stats>.*?<\/stats>/g, '') // Remove stats section
+          .trim();
       } else {
         // Legacy format
         mainText = item.description
           .replace(/UNIQUE Passive(?: - [^:]+)?:.*?(?=(UNIQUE|$))/s, '')
-          .replace(/UNIQUE Active(?: - [^:]+)?:.*?(?=(UNIQUE|$))/s, '');
+          .replace(/UNIQUE Active(?: - [^:]+)?:.*?(?=(UNIQUE|$))/s, '')
+          .trim();
       }
       
       // If description is empty after extraction, use plaintext
@@ -666,14 +768,25 @@ class ItemDetailManager {
       mainText = item.plaintext || 'No description available.';
     }
     
-    // Format special tags
-    mainText = this._formatSpecialTags(mainText);
+    // Check if there's any meaningful content to display
+    const hasContent = mainText && mainText !== 'No description available.';
     
-    // Set description
-    descriptionElement.innerHTML = `<div class="main-description">${mainText}</div>`;
-    
-    // Extract and render abilities
-    this._renderItemAbilities(item, abilitiesContainer);
+    if (hasContent) {
+      // Format special tags
+      mainText = this._formatSpecialTags(mainText);
+      
+      // Set description with enhanced styling
+      descriptionElement.innerHTML = `<div class="enhanced-description">${mainText}</div>`;
+      
+      // Extract and render abilities
+      this._renderItemAbilities(item, abilitiesContainer);
+    } else {
+      // Hide the description container completely
+      const descriptionContainer = document.querySelector('.item-description-container');
+      if (descriptionContainer) {
+        descriptionContainer.style.display = 'none';
+      }
+    }
   }
   
   /**
@@ -684,16 +797,44 @@ class ItemDetailManager {
   _formatSpecialTags(text) {
     if (!text) return '';
     
+    // Create enhanced description with all tag types supported
     return text
-      .replace(/<physicalDamage>(.*?)<\/physicalDamage>/g, '<span class="physical-damage">$1</span>')
-      .replace(/<magicDamage>(.*?)<\/magicDamage>/g, '<span class="magic-damage">$1</span>')
-      .replace(/<trueDamage>(.*?)<\/trueDamage>/g, '<span class="true-damage">$1</span>')
-      .replace(/<status>(.*?)<\/status>/g, '<span class="status-effect">$1</span>')
-      .replace(/<attention>(.*?)<\/attention>/g, '<span class="spell-active">$1</span>')
+      // Stats tags (remove stats section completely)
+      .replace(/<stats>.*?<\/stats>/g, '')
+      .replace(/<attention>(.*?)<\/attention>/g, '<span class="attention">$1</span>')
+      .replace(/<ornnBonus>(.*?)<\/ornnBonus>/g, '<span class="ornnBonus">$1</span>')
+      
+      // Damage types
+      .replace(/<physicalDamage>(.*?)<\/physicalDamage>/g, '<span class="physicalDamage">$1</span>')
+      .replace(/<magicDamage>(.*?)<\/magicDamage>/g, '<span class="magicDamage">$1</span>')
+      .replace(/<trueDamage>(.*?)<\/trueDamage>/g, '<span class="trueDamage">$1</span>')
+      
+      // Effects
       .replace(/<healing>(.*?)<\/healing>/g, '<span class="healing">$1</span>')
-      .replace(/<champion>(.*?)<\/champion>/g, '<span class="demacian-gold">$1</span>')
-      .replace(/<keywordMajor>(.*?)<\/keywordMajor>/g, '<span class="demacian-gold">$1</span>')
-      .replace(/<keyword>(.*?)<\/keyword>/g, '<span class="status-effect">$1</span>');
+      .replace(/<shield>(.*?)<\/shield>/g, '<span class="shield">$1</span>')
+      .replace(/<status>(.*?)<\/status>/g, '<span class="status">$1</span>')
+      
+      // Scaling
+      .replace(/<scaleAD>(.*?)<\/scaleAD>/g, '<span class="scaleAD">$1</span>')
+      .replace(/<scaleAP>(.*?)<\/scaleAP>/g, '<span class="scaleAP">$1</span>')
+      .replace(/<scaleMana>(.*?)<\/scaleMana>/g, '<span class="scaleMana">$1</span>')
+      .replace(/<scaleHealth>(.*?)<\/scaleHealth>/g, '<span class="scaleHealth">$1</span>')
+      
+      // Mechanics
+      .replace(/<onHit>(.*?)<\/onHit>/g, '<span class="onHit">$1</span>')
+      .replace(/<OnHit>(.*?)<\/OnHit>/g, '<span class="onHit">$1</span>')
+      .replace(/<lifeSteal>(.*?)<\/lifeSteal>/g, '<span class="lifeSteal">$1</span>')
+      .replace(/<speed>(.*?)<\/speed>/g, '<span class="speed">$1</span>')
+      .replace(/<passive>(.*?)<\/passive>/g, '<span class="passive">$1</span>')
+      .replace(/<active>(.*?)<\/active>/g, '<span class="active">$1</span>')
+      .replace(/<spellPassive>(.*?)<\/spellPassive>/g, '<span class="spellPassive">$1</span>')
+      .replace(/<spellActive>(.*?)<\/spellActive>/g, '<span class="spellActive">$1</span>')
+      .replace(/<recast>(.*?)<\/recast>/g, '<span class="recast">$1</span>')
+      
+      // Keywords
+      .replace(/<keywordMajor>(.*?)<\/keywordMajor>/g, '<span class="keywordMajor">$1</span>')
+      .replace(/<champion>(.*?)<\/champion>/g, '<span class="champion">$1</span>')
+      .replace(/<keyword>(.*?)<\/keyword>/g, '<span class="keyword">$1</span>');
   }
   
   /**
@@ -710,43 +851,72 @@ class ItemDetailManager {
     
     // Modern format
     if (item.description.includes('<mainText>')) {
-      // Extract active ability
-      const activeMatch = item.description.match(/<active>ACTIVE<\/active><br><active>([^<]+)<\/active><br>([^<]+)/);
+      // Extract active ability - more comprehensive pattern for different formats
+      const activeRegex = /<active>ACTIVE<\/active>(?:<br>)?(?:<active>([^<]+)<\/active>)?(?:<br>)?([^<]+?)(?=<br><br>|<passive>|<\/mainText>)/s;
+      const activeMatch = item.description.match(activeRegex);
+      
       if (activeMatch) {
-        activeAbility = {
-          name: activeMatch[1].trim(),
-          description: activeMatch[2].trim()
-        };
+        const name = activeMatch[1] ? activeMatch[1].trim() : 'Active';
+        const description = activeMatch[2] ? activeMatch[2].trim() : '';
+        
+        if (description) {
+          activeAbility = { name, description };
+        }
       }
       
-      // Extract passive ability
-      const passiveMatch = item.description.match(/<passive>PASSIVE<\/passive><br>([^<]+)/);
+      // Enhanced passive ability extraction - handles various formats
+      const passiveRegex = /<passive>PASSIVE<\/passive>(?:<br>)?(?:<passive>([^<]+)<\/passive>)?(?:<br>)?([^<]+?)(?=<br><br>|<active>|<\/mainText>)/s;
+      const passiveMatch = item.description.match(passiveRegex);
+      
       if (passiveMatch) {
-        passiveAbility = {
-          name: 'Passive',
-          description: passiveMatch[1].trim()
-        };
+        const name = passiveMatch[1] ? passiveMatch[1].trim() : 'Passive';
+        const description = passiveMatch[2] ? passiveMatch[2].trim() : '';
+        
+        if (description) {
+          passiveAbility = { name, description };
+        }
+      }
+      
+      // Try alternative formats (Mythic passive and similar)
+      if (!passiveAbility) {
+        const mythicRegex = /<passive>Mythic Passive<\/passive>(?:<br>)?([^<]+?)(?=<br><br>|<active>|<\/mainText>)/s;
+        const mythicMatch = item.description.match(mythicRegex);
+        
+        if (mythicMatch && mythicMatch[1]) {
+          passiveAbility = {
+            name: 'Mythic Passive',
+            description: mythicMatch[1].trim()
+          };
+        }
       }
     } else {
-      // Legacy format
-      const passiveMatch = item.description.match(/UNIQUE Passive(?: - ([^:]+))?:(.*?)(?=(UNIQUE|$))/s);
+      // Legacy format with enhanced patterns
+      const passiveRegex = /UNIQUE Passive(?: - ([^:]+))?:(.*?)(?=(UNIQUE|$))/s;
+      const passiveMatch = item.description.match(passiveRegex);
+      
       if (passiveMatch) {
-        passiveAbility = {
-          name: passiveMatch[1] ? passiveMatch[1].trim() : 'Unique Passive',
-          description: passiveMatch[2].trim()
-        };
+        const name = passiveMatch[1] ? passiveMatch[1].trim() : 'Unique Passive';
+        const description = passiveMatch[2] ? passiveMatch[2].trim() : '';
+        
+        if (description) {
+          passiveAbility = { name, description };
+        }
       }
       
-      const activeMatch = item.description.match(/UNIQUE Active(?: - ([^:]+))?:(.*?)(?=(UNIQUE|$))/s);
+      const activeRegex = /UNIQUE Active(?: - ([^:]+))?:(.*?)(?=(UNIQUE|$))/s;
+      const activeMatch = item.description.match(activeRegex);
+      
       if (activeMatch) {
-        activeAbility = {
-          name: activeMatch[1] ? activeMatch[1].trim() : 'Unique Active',
-          description: activeMatch[2].trim()
-        };
+        const name = activeMatch[1] ? activeMatch[1].trim() : 'Unique Active';
+        const description = activeMatch[2] ? activeMatch[2].trim() : '';
+        
+        if (description) {
+          activeAbility = { name, description };
+        }
       }
     }
     
-    // Render passive ability
+    // Render passive ability with enhanced styling
     if (passiveAbility) {
       const passiveDiv = document.createElement('div');
       passiveDiv.className = 'item-passive';
@@ -755,7 +925,7 @@ class ItemDetailManager {
           <span class="ability-icon passive-icon">P</span>
           <span class="ability-name passive-name">${passiveAbility.name}</span>
         </div>
-        <div class="ability-description passive-description">
+        <div class="ability-description passive-description enhanced-description">
           ${this._formatSpecialTags(passiveAbility.description)}
         </div>
       `;
@@ -763,7 +933,7 @@ class ItemDetailManager {
       container.appendChild(passiveDiv);
     }
     
-    // Render active ability
+    // Render active ability with enhanced styling
     if (activeAbility) {
       const activeDiv = document.createElement('div');
       activeDiv.className = 'item-active';
@@ -772,7 +942,7 @@ class ItemDetailManager {
           <span class="ability-icon active-icon">A</span>
           <span class="ability-name active-name">${activeAbility.name}</span>
         </div>
-        <div class="ability-description active-description">
+        <div class="ability-description active-description enhanced-description">
           ${this._formatSpecialTags(activeAbility.description)}
         </div>
       `;
@@ -797,8 +967,7 @@ class ItemDetailManager {
     costFlowElement.innerHTML = '';
     componentsElement.innerHTML = '';
     
-    // Show loading indicator while we check build paths
-    treeElement.innerHTML = '<div class="loading-message">Checking build path information...</div>';
+    // Use the existing tab-loader instead of a manual loading message
     
     // Process build path asynchronously
     this._processBuildPath(item, treeElement, efficiencyElement, costFlowElement, componentsElement);
@@ -865,14 +1034,11 @@ class ItemDetailManager {
         // Create detailed cost calculation
         this._renderCostCalculation(item, components, componentsElement);
         
-        // Set up zoom controls
+        // Set up expand/collapse controls only
         this._setupRecipeControls(treeElement);
-        
-        // Add gold particle animations
-        this._addGoldParticleEffects(costFlowElement);
       } else {
-        // Still no components found, show message
-        treeElement.innerHTML = '<p class="no-data-message">This is a basic item with no recipe.</p>';
+        // Still no components found, show a more elegant message
+        treeElement.innerHTML = '<div class="no-data-message"><div class="basic-item-icon">⚡</div><p>Basic item</p><p class="basic-item-note">This item does not build from any components</p></div>';
       }
     } catch (error) {
       console.error('Error processing build path:', error);
@@ -948,13 +1114,16 @@ class ItemDetailManager {
   }
   
   /**
-   * Renders the enhanced recipe tree visualization
+   * Renders the enhanced recipe tree visualization in a pyramidal structure
    * @param {Object} item - The item data
    * @param {Array} components - Array of component items
    * @param {Object} recipeData - Full recipe data with nested components
    * @param {HTMLElement} container - The container element
    */
   _renderRecipeTree(item, components, recipeData, container) {
+    // Clear container and add tree container
+    container.innerHTML = '';
+    
     // Create SVG element for connections
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.classList.add('tree-connector');
@@ -967,44 +1136,84 @@ class ItemDetailManager {
     svg.style.pointerEvents = 'none';
     container.appendChild(svg);
     
-    // Create root node (final item)
+    // Create pyramidal structure container
+    const treeStructure = document.createElement('div');
+    treeStructure.className = 'recipe-tree-structure';
+    container.appendChild(treeStructure);
+    
+    // Create root node (final item) at the top
     const rootNode = this._createTreeNode(item, true);
-    container.appendChild(rootNode);
+    treeStructure.appendChild(rootNode);
     
-    // Create children container
-    const childrenContainer = document.createElement('div');
-    childrenContainer.className = 'tree-children';
-    rootNode.appendChild(childrenContainer);
+    // Create first level children container (for direct components)
+    const firstLevelContainer = document.createElement('div');
+    firstLevelContainer.className = 'tree-children level-1';
+    treeStructure.appendChild(firstLevelContainer);
     
-    // Render component nodes
-    components.forEach(comp => {
-      const childNode = this._createTreeNode(comp);
-      childrenContainer.appendChild(childNode);
-      
-      // Add sub-components recursively if available in recipeData
+    // First, determine which components have sub-components
+    const componentsWithChildren = components.filter(comp => {
       if (recipeData.buildsFrom) {
         const compData = recipeData.buildsFrom.find(c => c.id === comp.id);
-        if (compData && compData.buildsFrom && compData.buildsFrom.length > 0) {
-          const subChildrenContainer = document.createElement('div');
-          subChildrenContainer.className = 'tree-children';
-          childNode.appendChild(subChildrenContainer);
-          
-          compData.buildsFrom.forEach(subComp => {
-            const subChildNode = this._createTreeNode(subComp);
-            subChildrenContainer.appendChild(subChildNode);
-            
-            // Draw connector
-            setTimeout(() => {
-              this._drawConnector(svg, subChildNode, childNode);
-            }, 100);
-          });
-        }
+        return compData && compData.buildsFrom && compData.buildsFrom.length > 0;
       }
+      return false;
+    });
+    
+    // Render first level component nodes
+    components.forEach(comp => {
+      const childNode = this._createTreeNode(comp);
+      firstLevelContainer.appendChild(childNode);
       
-      // Draw connector after nodes are rendered
+      // Draw connector from component to final item
       setTimeout(() => {
         this._drawConnector(svg, childNode, rootNode);
       }, 100);
+      
+      // Check if this component has sub-components
+      if (recipeData.buildsFrom) {
+        const compData = recipeData.buildsFrom.find(c => c.id === comp.id);
+        if (compData && compData.buildsFrom && compData.buildsFrom.length > 0) {
+          // Create container for this component's children
+          const subContainer = document.createElement('div');
+          subContainer.className = 'component-children';
+          subContainer.dataset.parentId = comp.id;
+          
+          // Add this container directly to the tree structure to maintain proper layout
+          treeStructure.appendChild(subContainer);
+          
+          // Create children wrapper to organize sub-components
+          const subChildrenWrapper = document.createElement('div');
+          subChildrenWrapper.className = 'tree-children level-2';
+          subContainer.appendChild(subChildrenWrapper);
+          
+          // Position this container under its parent component
+          const parentRect = childNode.getBoundingClientRect();
+          const containerRect = container.getBoundingClientRect();
+          
+          // Apply initial position (will be refined in setTimeout)
+          subContainer.style.position = 'absolute';
+          
+          // Render sub-components
+          compData.buildsFrom.forEach(subComp => {
+            const subChildNode = this._createTreeNode(subComp);
+            subChildrenWrapper.appendChild(subChildNode);
+            
+            // Draw connector from sub-component to its parent component
+            setTimeout(() => {
+              this._drawConnector(svg, subChildNode, childNode);
+            }, 150);
+          });
+          
+          // Position container properly after rendering
+          setTimeout(() => {
+            const updatedParentRect = childNode.getBoundingClientRect();
+            const updatedContainerRect = container.getBoundingClientRect();
+            
+            subContainer.style.left = `${(updatedParentRect.left + updatedParentRect.width/2) - updatedContainerRect.left - (subContainer.offsetWidth/2)}px`;
+            subContainer.style.top = `${updatedParentRect.bottom - updatedContainerRect.top + 20}px`;
+          }, 10);
+        }
+      }
     });
     
     // Add entrance animation
@@ -1012,12 +1221,22 @@ class ItemDetailManager {
       rootNode.style.opacity = '1';
       rootNode.style.transform = 'translateY(0)';
       
-      const childNodes = container.querySelectorAll('.tree-node:not(.final-item)');
-      childNodes.forEach((node, index) => {
+      // Animate first level
+      const firstLevelNodes = firstLevelContainer.querySelectorAll('.tree-node');
+      firstLevelNodes.forEach((node, index) => {
         setTimeout(() => {
           node.style.opacity = '1';
           node.style.transform = 'translateY(0)';
         }, 100 + index * 50);
+      });
+      
+      // Animate second level
+      const secondLevelNodes = container.querySelectorAll('.level-2 .tree-node');
+      secondLevelNodes.forEach((node, index) => {
+        setTimeout(() => {
+          node.style.opacity = '1';
+          node.style.transform = 'translateY(0)';
+        }, 300 + index * 50);
       });
     }, 100);
   }
@@ -1093,10 +1312,10 @@ class ItemDetailManager {
   }
   
   /**
-   * Draws an SVG connector between two nodes
+   * Draws an SVG connector between two nodes for the pyramidal structure
    * @param {SVGElement} svg - The SVG element to draw on
-   * @param {HTMLElement} fromNode - The source node
-   * @param {HTMLElement} toNode - The target node
+   * @param {HTMLElement} fromNode - The source node (child/component)
+   * @param {HTMLElement} toNode - The target node (parent/resulting item)
    */
   _drawConnector(svg, fromNode, toNode) {
     // Get positions
@@ -1104,11 +1323,14 @@ class ItemDetailManager {
     const toRect = toNode.querySelector('.tree-node-content').getBoundingClientRect();
     const svgRect = svg.getBoundingClientRect();
     
+    // Determine if we're connecting up (component to final item) or down (subcomponent to component)
+    const isConnectingUp = fromRect.top > toRect.bottom;
+    
     // Calculate connector points
     const fromX = (fromRect.left + fromRect.right) / 2 - svgRect.left;
-    const fromY = fromRect.top - svgRect.top;
+    const fromY = isConnectingUp ? fromRect.top - svgRect.top : fromRect.bottom - svgRect.top;
     const toX = (toRect.left + toRect.right) / 2 - svgRect.left;
-    const toY = toRect.bottom - svgRect.top;
+    const toY = isConnectingUp ? toRect.bottom - svgRect.top : toRect.top - svgRect.top;
     
     // Create path element
     const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
@@ -1116,16 +1338,34 @@ class ItemDetailManager {
     
     // Set path data for curved line
     const midY = (fromY + toY) / 2;
-    path.setAttribute('d', `M ${fromX},${fromY} C ${fromX},${midY} ${toX},${midY} ${toX},${toY}`);
+    
+    // Direction of curve based on connection type
+    if (isConnectingUp) {
+      // Component to final item - upward flow
+      path.setAttribute('d', `M ${fromX},${fromY} C ${fromX},${midY} ${toX},${midY} ${toX},${toY}`);
+    } else {
+      // Subcomponent to component - downward flow
+      path.setAttribute('d', `M ${fromX},${fromY} C ${fromX},${fromY+20} ${toX},${toY-20} ${toX},${toY}`);
+    }
     
     // Add arrow marker
     const arrow = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
     arrow.classList.add('tree-connector-arrow');
     
-    // Position arrow at the middle of the path
-    const arrowX = (fromX + toX) / 2;
-    const arrowY = midY;
-    arrow.setAttribute('points', `${arrowX-5},${arrowY-3} ${arrowX+5},${arrowY} ${arrowX-5},${arrowY+3}`);
+    // Position arrow based on direction
+    let arrowX, arrowY;
+    
+    if (isConnectingUp) {
+      // For upward connections, arrow points up
+      arrowX = (fromX + toX) / 2;
+      arrowY = midY - 5;
+      arrow.setAttribute('points', `${arrowX-5},${arrowY+3} ${arrowX},${arrowY-3} ${arrowX+5},${arrowY+3}`);
+    } else {
+      // For downward connections, arrow points down
+      arrowX = (fromX + toX) / 2;
+      arrowY = (fromY + toY) / 2 + 5;
+      arrow.setAttribute('points', `${arrowX-5},${arrowY-3} ${arrowX},${arrowY+3} ${arrowX+5},${arrowY-3}`);
+    }
     
     // Add elements to SVG
     svg.appendChild(path);
@@ -1133,40 +1373,20 @@ class ItemDetailManager {
   }
   
   /**
-   * Sets up the recipe controls for zooming and expanding
+   * No recipe controls needed now
    * @param {HTMLElement} treeElement - The tree container element
    */
   _setupRecipeControls(treeElement) {
-    const zoomInBtn = document.querySelector('.zoom-in-btn');
-    const zoomOutBtn = document.querySelector('.zoom-out-btn');
-    const expandAllBtn = document.querySelector('.expand-all-btn');
+    // Hide all control buttons
+    const controlButtons = document.querySelectorAll('.recipe-control-btn');
+    controlButtons.forEach(button => {
+      button.style.display = 'none';
+    });
     
-    let currentScale = 1;
-    
-    // Zoom in button
-    if (zoomInBtn) {
-      zoomInBtn.addEventListener('click', () => {
-        currentScale = Math.min(currentScale + 0.1, 1.5);
-        treeElement.style.transform = `scale(${currentScale})`;
-      });
-    }
-    
-    // Zoom out button
-    if (zoomOutBtn) {
-      zoomOutBtn.addEventListener('click', () => {
-        currentScale = Math.max(currentScale - 0.1, 0.5);
-        treeElement.style.transform = `scale(${currentScale})`;
-      });
-    }
-    
-    // Expand all button
-    if (expandAllBtn) {
-      expandAllBtn.addEventListener('click', () => {
-        const childContainers = treeElement.querySelectorAll('.tree-children');
-        childContainers.forEach(container => {
-          container.style.display = container.style.display === 'none' ? 'flex' : 'none';
-        });
-      });
+    // Hide the controls container too
+    const controlsContainer = document.querySelector('.recipe-controls');
+    if (controlsContainer) {
+      controlsContainer.style.display = 'none';
     }
   }
   
@@ -1275,87 +1495,7 @@ class ItemDetailManager {
     `;
   }
   
-  /**
-   * Adds gold particle effects to the cost flow visualization
-   * @param {HTMLElement} container - The container element
-   */
-  _addGoldParticleEffects(container) {
-    // Skip if container not found
-    if (!container) return;
-    
-    // Create gold particles
-    const particleCount = 20;
-    const particles = [];
-    
-    // Create particle elements
-    for (let i = 0; i < particleCount; i++) {
-      const particle = document.createElement('div');
-      particle.className = 'gold-particle';
-      container.appendChild(particle);
-      
-      // Set random initial position
-      const x = Math.random() * container.offsetWidth;
-      const y = Math.random() * container.offsetHeight;
-      particle.style.left = `${x}px`;
-      particle.style.top = `${y}px`;
-      
-      // Add to array for animation
-      particles.push({
-        element: particle,
-        x,
-        y,
-        speedX: Math.random() * 2 - 1,
-        speedY: Math.random() * 2 - 1,
-        size: 3 + Math.random() * 3
-      });
-    }
-    
-    // Animate particles
-    let animationId;
-    
-    const animateParticles = () => {
-      particles.forEach(particle => {
-        // Update position
-        particle.x += particle.speedX;
-        particle.y += particle.speedY;
-        
-        // Bounce off edges
-        if (particle.x <= 0 || particle.x >= container.offsetWidth) {
-          particle.speedX *= -1;
-        }
-        
-        if (particle.y <= 0 || particle.y >= container.offsetHeight) {
-          particle.speedY *= -1;
-        }
-        
-        // Update element position
-        particle.element.style.left = `${particle.x}px`;
-        particle.element.style.top = `${particle.y}px`;
-        particle.element.style.width = `${particle.size}px`;
-        particle.element.style.height = `${particle.size}px`;
-      });
-      
-      animationId = requestAnimationFrame(animateParticles);
-    };
-    
-    // Start animation
-    animateParticles();
-    
-    // Clean up when tab changes or component unmounts
-    const tabButtons = document.querySelectorAll('.item-tab-button');
-    tabButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        if (button.getAttribute('data-tab') !== 'build-path') {
-          cancelAnimationFrame(animationId);
-          particles.forEach(particle => {
-            if (particle.element.parentNode) {
-              particle.element.parentNode.removeChild(particle.element);
-            }
-          });
-        }
-      });
-    });
-  }
+  // Removed gold particle effects
   
   /**
    * Renders the detailed cost calculation
