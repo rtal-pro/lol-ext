@@ -1,0 +1,54 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1057": {
+      "name": "Negatron Cloak",
+      "description": "<mainText><stats><attention>45</attention> Magic Resist</stats><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "Moderately increases Magic Resist",
+      "from": [
+        "1033"
+      ],
+      "into": [
+        "3091",
+        "2504",
+        "328020",
+        "6665",
+        "4401",
+        "8020"
+      ],
+      "image": {
+        "full": "1057.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 192,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 450,
+        "purchasable": true,
+        "total": 850,
+        "sell": 595
+      },
+      "tags": [
+        "SpellBlock"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatSpellBlockMod": 45
+      },
+      "depth": 2
+    }
+  }
+}

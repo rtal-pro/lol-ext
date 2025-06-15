@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1056": {
+      "name": "Doran's Ring",
+      "description": "<mainText><stats><attention>18</attention> Ability Power<br><attention>90</attention> Health</stats><br><br><passive>Restoration</passive><br>Restore <scaleMana>1.25 Mana</scaleMana> every second. If you can't gain Mana, restore <scaleHealth>0.55 Health</scaleHealth> instead.<br><br><passive>Helping Hand</passive><br>Attacks deal <physicalDamage>5 bonus physical damage</physicalDamage> to minions.</mainText>",
+      "colloq": ";dring",
+      "plaintext": "Good starting item for casters",
+      "image": {
+        "full": "1056.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 144,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": true,
+        "total": 400,
+        "sell": 160
+      },
+      "tags": [
+        "Health",
+        "Lane",
+        "ManaRegen",
+        "SpellDamage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 90,
+        "FlatMagicDamageMod": 18
+      }
+    }
+  }
+}

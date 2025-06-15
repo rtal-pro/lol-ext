@@ -1,0 +1,45 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "447123": {
+      "name": "Puppeteer",
+      "description": "<mainText><stats><attention>30%</attention> Attack Speed<br><attention>15%</attention> Heal and Shield Power<br><attention>40</attention> Ability Haste<br><attention>150%</attention> Base Mana Regen</stats><br><br><passive>Pull Their Strings</passive> <br>Attacking a champion adds a stack for 15 seconds. At 4 stacks, <status>Berserk</status> them for 2 seconds. You grant <status>Berserk</status> enemies an additional <attackSpeed> Attack Speed</attackSpeed> and <speed>40% Move Speed</speed>. (25 second Cooldown).<br><br><healing>Healing</healing>, <shield>Shielding</shield>, or buffing yourself or an ally with an Ability reduces the Cooldown by 5 seconds.<br><br><rules>If only one enemy is alive, instead <status>Fear</status> them for the same duration.</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "447123.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 432,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "SpellDamage",
+        "ManaRegen",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "PercentAttackSpeedMod": 0.3
+      }
+    }
+  }
+}

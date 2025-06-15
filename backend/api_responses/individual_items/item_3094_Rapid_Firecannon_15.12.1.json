@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3094": {
+      "name": "Rapid Firecannon",
+      "description": "<mainText><stats><attention>35%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance<br><attention>4%</attention> Move Speed</stats><br><br><passive>Sharpshooter</passive><br>Your <keyword>Energized Attack</keyword> deals <magicDamage>40 bonus magic damage</magicDamage> and gains 35% bonus Attack Range.</mainText>",
+      "colloq": ";canon;rapidfire;rfc",
+      "plaintext": "Movement builds charges that release a sieging fire attack on release",
+      "from": [
+        "3086",
+        "3144"
+      ],
+      "image": {
+        "full": "3094.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 432,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 850,
+        "purchasable": true,
+        "total": 2650,
+        "sell": 1855
+      },
+      "tags": [
+        "CriticalStrike",
+        "AttackSpeed",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatCritChanceMod": 0.25,
+        "PercentAttackSpeedMod": 0.35,
+        "PercentMovementSpeedMod": 0.04
+      },
+      "depth": 3
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3155": {
+      "name": "Hexdrinker",
+      "description": "<mainText><stats><attention>25</attention> Attack Damage<br><attention>25</attention> Magic Resist</stats><br><br><passive>Lifeline</passive><br>Taking magic damage that would reduce your Health below 30% grants a <shield>magic damage Shield</shield> for 2.5 seconds.</mainText>",
+      "colloq": ";",
+      "plaintext": "Increases Attack Damage and Magic Resist",
+      "stacks": 0,
+      "from": [
+        "1036",
+        "1033",
+        "1036"
+      ],
+      "into": [
+        "3156"
+      ],
+      "image": {
+        "full": "3155.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 288,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 200,
+        "purchasable": true,
+        "total": 1300,
+        "sell": 910
+      },
+      "tags": [
+        "Damage",
+        "SpellBlock"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatSpellBlockMod": 25,
+        "FlatPhysicalDamageMod": 25
+      },
+      "depth": 2
+    }
+  }
+}

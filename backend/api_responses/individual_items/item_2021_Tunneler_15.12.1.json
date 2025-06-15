@@ -1,0 +1,59 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2021": {
+      "name": "Tunneler",
+      "description": "<mainText><stats><attention>15</attention> Attack Damage<br><attention>250</attention> Health</stats><br><br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "1036",
+        "1028"
+      ],
+      "into": [
+        "2501",
+        "3053",
+        "3073",
+        "3814",
+        "3181",
+        "3161",
+        "3748",
+        "6610"
+      ],
+      "image": {
+        "full": "2021.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 96,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": true,
+        "total": 1150,
+        "sell": 805
+      },
+      "tags": [
+        "Health",
+        "Damage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 250,
+        "FlatPhysicalDamageMod": 15
+      },
+      "depth": 2
+    }
+  }
+}

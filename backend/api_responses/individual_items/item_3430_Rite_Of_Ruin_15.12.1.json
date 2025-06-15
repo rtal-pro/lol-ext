@@ -1,0 +1,45 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3430": {
+      "name": "Rite Of Ruin",
+      "description": "<mainText><stats><attention>50</attention> Ability Power<br><attention>15</attention> Ability Haste<br><attention>25%</attention> Critical Strike Chance</stats><br><br><passive>Wrath and Ruin</passive><br>On spell cast, gain 2.5% critical chance for 6 seconds, stacking up to 20%.<br><br><passive>Salvage the Wreckage</passive><br>Your spells have a chance equal to your crit chance to grant you or your targeted ally a <healing>shield</healing> for  for 3s.<br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "3430.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 48,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "CriticalStrike",
+        "SpellDamage",
+        "CooldownReduction"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMagicDamageMod": 50,
+        "FlatCritChanceMod": 0.25
+      }
+    }
+  }
+}

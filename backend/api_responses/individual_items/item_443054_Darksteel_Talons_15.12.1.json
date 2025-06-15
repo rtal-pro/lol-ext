@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "443054": {
+      "name": "Darksteel Talons",
+      "description": "<mainText><stats><attention>50%</attention> Attack Speed<br><attention>55</attention> Armor<br><attention>10%</attention> Move Speed</stats><br><br><passive>Gash</passive><br>Attacks apply  true damage on hit.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "443054.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 48,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "Armor",
+        "AttackSpeed",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatArmorMod": 55,
+        "PercentAttackSpeedMod": 0.5,
+        "PercentMovementSpeedMod": 0.1
+      }
+    }
+  }
+}

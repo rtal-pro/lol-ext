@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2015": {
+      "name": "Kircheis Shard",
+      "description": "<mainText><stats><attention>15</attention> Attack Damage</stats><br><br><passive>Jolt</passive><br><keyword>Energized Attacks</keyword> deal an additional <magicDamage>50 magic damage</magicDamage>.</mainText>",
+      "colloq": ";",
+      "plaintext": "Attack speed and a chargable magic hit",
+      "from": [
+        "1036"
+      ],
+      "inStore": false,
+      "into": [
+        "3095"
+      ],
+      "image": {
+        "full": "2015.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 432,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 350,
+        "purchasable": false,
+        "total": 700,
+        "sell": 490
+      },
+      "tags": [
+        "Damage",
+        "OnHit"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 15
+      },
+      "depth": 2
+    }
+  }
+}

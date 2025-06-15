@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3161": {
+      "name": "Spear of Shojin",
+      "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>450</attention> Health</stats><br><br><passive>Dragonforce</passive> <br>Gain 25 Basic Ability Haste.<br><br><passive>Focused Will</passive> <br>Dealing damage with Abilities increases your Champion's Ability and Passive damage by 3% for 6 seconds. (stacks 4 times).</mainText>",
+      "colloq": ";",
+      "plaintext": "Reduce damage taken from champions by a flat amount. Attack while near multiple enemy champions to increase this amount for a short time.",
+      "from": [
+        "1037",
+        "2021",
+        "1028"
+      ],
+      "image": {
+        "full": "3161.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 0,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 675,
+        "purchasable": true,
+        "total": 3100,
+        "sell": 2170
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 450,
+        "FlatPhysicalDamageMod": 45
+      },
+      "depth": 3
+    }
+  }
+}

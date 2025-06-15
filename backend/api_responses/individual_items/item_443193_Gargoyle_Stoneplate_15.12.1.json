@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "443193": {
+      "name": "Gargoyle Stoneplate",
+      "description": "<mainText><stats><attention>65</attention> Armor<br><attention>65</attention> Magic Resist<br><attention>15</attention> Ability Haste<br><attention>10%</attention> Move Speed</stats><br><br><active>Active -</active> <active>Unbreakable:</active> Gain a Shield that decays and grow in size.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "443193.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 336,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "SpellBlock",
+        "Armor",
+        "Active",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 65,
+        "FlatArmorMod": 65,
+        "PercentMovementSpeedMod": 0.1
+      }
+    }
+  }
+}

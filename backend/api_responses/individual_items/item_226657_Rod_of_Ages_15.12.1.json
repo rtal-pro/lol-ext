@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "226657": {
+      "name": "Rod of Ages",
+      "description": "<mainText><stats><attention>60</attention> Ability Power<br><attention>350</attention> Health<br><attention>300</attention> Mana</stats><br><br><passive>Timeless</passive><br><buffedStat>After 2 combat rounds</buffedStat>, this item gains an additional <magicDamage>50 Ability Power</magicDamage>, <scaleHealth>300 Health</scaleHealth>, and <scaleMana>400 Mana</scaleMana>, and you gain a level.<br><br><passive>Eternity</passive><br>Taking damage from champions restores 7% of premitigation damage as <scaleMana>Mana</scaleMana>. Casting an ability heals for 25% of <scaleMana>Mana</scaleMana> spent, up to <scaleHealth>20 Health</scaleHealth> per cast, per second.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "226657.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 0,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Health",
+        "HealthRegen",
+        "SpellDamage",
+        "Mana",
+        "ManaRegen"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMPPoolMod": 300,
+        "FlatHPPoolMod": 350,
+        "FlatMagicDamageMod": 60
+      }
+    }
+  }
+}

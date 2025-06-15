@@ -1,0 +1,78 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3067": {
+      "name": "Kindlegem",
+      "description": "<mainText><stats><attention>200</attention> Health<br><attention>10</attention> Ability Haste</stats><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "Increases Health and Cooldown Reduction",
+      "from": [
+        "1028",
+        "2022"
+      ],
+      "into": [
+        "3071",
+        "323190",
+        "323222",
+        "6620",
+        "3050",
+        "3109",
+        "6656",
+        "326617",
+        "4629",
+        "323107",
+        "6617",
+        "3065",
+        "3107",
+        "3119",
+        "3165",
+        "3190",
+        "3222",
+        "328020",
+        "323109",
+        "323119",
+        "326620",
+        "4403",
+        "4644",
+        "6630",
+        "6632",
+        "8001",
+        "8020"
+      ],
+      "image": {
+        "full": "3067.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 0,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 150,
+        "purchasable": true,
+        "total": 800,
+        "sell": 560
+      },
+      "tags": [
+        "Health",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 200
+      },
+      "depth": 2
+    }
+  }
+}

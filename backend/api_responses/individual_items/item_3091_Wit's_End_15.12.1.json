@@ -1,0 +1,52 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3091": {
+      "name": "Wit's End",
+      "description": "<mainText><stats><attention>50%</attention> Attack Speed<br><attention>45</attention> Magic Resist<br><attention>20%</attention> Tenacity</stats><br><br><passive>Fray</passive><br>Attacks deal <magicDamage>bonus magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
+      "colloq": ";",
+      "plaintext": "Resist magic damage and claw your way back to life.",
+      "from": [
+        "1043",
+        "1057",
+        "1043"
+      ],
+      "image": {
+        "full": "3091.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 384,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 550,
+        "purchasable": true,
+        "total": 2800,
+        "sell": 1960
+      },
+      "tags": [
+        "SpellBlock",
+        "AttackSpeed",
+        "OnHit",
+        "Tenacity"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatSpellBlockMod": 45,
+        "PercentAttackSpeedMod": 0.5
+      },
+      "depth": 3
+    }
+  }
+}

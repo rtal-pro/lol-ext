@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223091": {
+      "name": "Wit's End",
+      "description": "<mainText><stats><attention>50%</attention> Attack Speed<br><attention>40</attention> Magic Resist<br><attention>20%</attention> Tenacity</stats><br><br><br><li><passive>Fray:</passive> Attacks apply magic damage On-Hit and grant Move Speed.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223091.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 0,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "SpellBlock",
+        "AttackSpeed",
+        "OnHit",
+        "Tenacity"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 40,
+        "PercentAttackSpeedMod": 0.5
+      }
+    }
+  }
+}

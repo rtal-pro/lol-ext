@@ -1,0 +1,42 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223084": {
+      "name": "Heartsteel",
+      "description": "<mainText><stats><attention>700</attention> Health</stats><br><br><passive>Colossal Consumption</passive> (0s) per target<br>Charge up a powerful attack against a champion over time while near them. The charged attack deals bonus physical damage and grants permanent max Health.<br><br><passive>Goliath</passive><br>Gain increased size based on Total Health. </mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223084.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 288,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Health"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 700
+      }
+    }
+  }
+}

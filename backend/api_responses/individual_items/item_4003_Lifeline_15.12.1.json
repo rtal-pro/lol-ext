@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "4003": {
+      "name": "Lifeline",
+      "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>8</attention> Lethality</stats><br><br><br><br><active>Active -</active> <active>Soul Anchor:</active> Mark your current location. After 4 seconds, return to that location (60(0s)).</mainText>",
+      "colloq": ";lethality",
+      "plaintext": "Marks the ground, and returns you there after a few moments",
+      "from": [
+        "1036",
+        "2420"
+      ],
+      "into": [
+        "4004"
+      ],
+      "image": {
+        "full": "4003.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 336,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 550,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1750
+      },
+      "tags": [
+        "Damage",
+        "ArmorPenetration"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 20
+      },
+      "depth": 3
+    }
+  }
+}

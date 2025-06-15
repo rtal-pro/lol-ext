@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "6653": {
+      "name": "Liandry's Torment",
+      "description": "<mainText><stats><attention>60</attention> Ability Power<br><attention>300</attention> Health</stats><br><br><passive>Torment</passive><br>Damaging Abilities burn enemies for <magicDamage>2% max Health magic damage</magicDamage> per second for 3 seconds.<br><br><passive>Suffering</passive><br>For each second in combat with enemy champions, deal 2% bonus damage, up to 6%.</mainText>",
+      "colloq": "",
+      "plaintext": "Charge up in combat to deal high damage over time, especially against durable enemies",
+      "from": [
+        "3147",
+        "2508"
+      ],
+      "image": {
+        "full": "6653.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 336,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 800,
+        "purchasable": true,
+        "total": 3000,
+        "sell": 2100
+      },
+      "tags": [
+        "Health",
+        "SpellDamage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 300,
+        "FlatMagicDamageMod": 60
+      },
+      "depth": 3
+    }
+  }
+}

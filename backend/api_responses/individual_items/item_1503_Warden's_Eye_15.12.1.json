@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1503": {
+      "name": "Warden's Eye",
+      "description": "",
+      "colloq": "",
+      "plaintext": "",
+      "inStore": false,
+      "image": {
+        "full": "1503.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 432,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": false,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [
+        "HealthRegen",
+        "ManaRegen",
+        "OnHit"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": true
+      },
+      "stats": {},
+      "effect": {
+        "Effect1Amount": "1000"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1504": {
+      "name": "Vanguard",
+      "description": "",
+      "colloq": "",
+      "plaintext": "",
+      "inStore": false,
+      "image": {
+        "full": "1504.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 0,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": false,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [
+        "Armor",
+        "ManaRegen",
+        "OnHit"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {},
+      "effect": {
+        "Effect1Amount": "30",
+        "Effect2Amount": "30",
+        "Effect3Amount": "30",
+        "Effect4Amount": "300"
+      }
+    }
+  }
+}

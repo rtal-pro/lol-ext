@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "4635": {
+      "name": "Leeching Leer",
+      "description": "<mainText><stats><attention>20</attention> Ability Power<br><attention>250</attention> Health<br><attention>5%</attention> Omnivamp</stats><br><br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "1028",
+        "1052"
+      ],
+      "inStore": false,
+      "image": {
+        "full": "4635.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 240,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 465,
+        "purchasable": false,
+        "total": 1265,
+        "sell": 886
+      },
+      "tags": [
+        "Health",
+        "SpellDamage",
+        "SpellVamp"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 250,
+        "FlatMagicDamageMod": 20
+      },
+      "depth": 2
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2033": {
+      "name": "Corrupting Potion",
+      "description": "<mainText><stats></stats><br><br><active>Active - Consume:</active> Consumes a charge to restore <healing>100 Health</healing> and <scaleMana>75 Mana</scaleMana> over 12 seconds. During this time, damaging Abilities and Attacks burn enemy champions for <magicDamage>15 (20 if you cannot gain Mana) magic damage</magicDamage> over 3 seconds. Holds up to 3 charges and refills upon visiting the shop.<br><br><rules>Corrupting damage is reduced to 50% when triggered by area of effect or periodic damage.</rules></mainText>",
+      "colloq": ";",
+      "plaintext": "Restores Health and Mana over time and boosts combat power - Refills at Shop",
+      "from": [
+        "2031"
+      ],
+      "inStore": false,
+      "image": {
+        "full": "2033.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 240,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 350,
+        "purchasable": false,
+        "total": 500,
+        "sell": 200
+      },
+      "tags": [
+        "Active",
+        "Consumable",
+        "HealthRegen",
+        "Lane",
+        "ManaRegen"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {},
+      "depth": 2
+    }
+  }
+}

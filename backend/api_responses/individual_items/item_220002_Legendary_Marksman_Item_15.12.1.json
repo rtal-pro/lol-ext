@@ -1,0 +1,54 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "220002": {
+      "name": "Legendary Marksman Item",
+      "description": "<mainText><stats></stats><br><br><active>Active - Consume:</active> Automatically open a semi-random selection for a Legendary Marksman item.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "consumeOnFull": true,
+      "image": {
+        "full": "220002.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 0,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2000,
+        "purchasable": true,
+        "total": 2000,
+        "sell": 2000
+      },
+      "tags": [
+        "Health",
+        "Armor",
+        "Damage",
+        "CriticalStrike",
+        "AttackSpeed",
+        "LifeSteal",
+        "Mana",
+        "Consumable",
+        "CooldownReduction",
+        "OnHit",
+        "NonbootsMovement",
+        "ArmorPenetration",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

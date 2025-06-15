@@ -1,0 +1,72 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "4403": {
+      "name": "The Golden Spatula",
+      "description": "<mainText><stats><attention>70</attention> Attack Damage<br><attention>120</attention> Ability Power<br><attention>50%</attention> Attack Speed<br><attention>30%</attention> Critical Strike Chance<br><attention>250</attention> Health<br><attention>30</attention> Armor<br><attention>30</attention> Magic Resist<br><attention>250</attention> Mana<br><attention>20</attention> Ability Haste<br><attention>10%</attention> Move Speed<br><attention>10%</attention> Life Steal<br><attention>100%</attention> Base Health Regen<br><attention>100%</attention> Base Mana Regen</stats><br><br><br><li><passive>Doing Something:</passive> You are permanently On Fire!<br><br><flavorText>\"It must do something...<br>Declined, it does EVERYTHING\"</flavorText></mainText>",
+      "colloq": ";",
+      "plaintext": "It does EVERYTHING!",
+      "from": [
+        "3086",
+        "1038",
+        "1053",
+        "3067",
+        "1058",
+        "3105"
+      ],
+      "image": {
+        "full": "4403.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 0,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 687,
+        "purchasable": true,
+        "total": 7187,
+        "sell": 5031
+      },
+      "tags": [
+        "Health",
+        "SpellBlock",
+        "HealthRegen",
+        "Armor",
+        "Damage",
+        "CriticalStrike",
+        "AttackSpeed",
+        "LifeSteal",
+        "SpellDamage",
+        "Mana",
+        "ManaRegen",
+        "CooldownReduction",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 30,
+        "FlatMPPoolMod": 250,
+        "FlatHPPoolMod": 250,
+        "FlatMagicDamageMod": 120,
+        "FlatArmorMod": 30,
+        "FlatCritChanceMod": 0.3,
+        "FlatPhysicalDamageMod": 70,
+        "PercentAttackSpeedMod": 0.5,
+        "PercentLifeStealMod": 0.1,
+        "PercentMovementSpeedMod": 0.1
+      },
+      "depth": 3
+    }
+  }
+}

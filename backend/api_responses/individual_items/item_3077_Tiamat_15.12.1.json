@@ -1,0 +1,54 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3077": {
+      "name": "Tiamat",
+      "description": "<mainText><stats><attention>20</attention> Attack Damage</stats><br><br><passive>Cleave</passive><br>Attacks deal <physicalDamage>physical damage</physicalDamage> to nearby enemies.<br><active>Crescent</active><br>Deal <physicalDamage>physical damage</physicalDamage> to enemies around you.</mainText>",
+      "colloq": ";",
+      "plaintext": "Melee attacks hit nearby enemies",
+      "from": [
+        "1036",
+        "1036"
+      ],
+      "into": [
+        "3074",
+        "3748",
+        "6698",
+        "6631"
+      ],
+      "image": {
+        "full": "3077.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 432,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 1200,
+        "sell": 840
+      },
+      "tags": [
+        "Damage",
+        "OnHit"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 20
+      },
+      "depth": 2
+    }
+  }
+}

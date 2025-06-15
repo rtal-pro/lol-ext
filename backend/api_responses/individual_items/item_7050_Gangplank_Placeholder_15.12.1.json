@@ -1,0 +1,44 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "7050": {
+      "name": "Gangplank Placeholder",
+      "description": "",
+      "colloq": "",
+      "plaintext": "New Gangplank interface coming soon!",
+      "stacks": 0,
+      "consumed": true,
+      "consumeOnFull": true,
+      "inStore": false,
+      "requiredChampion": "Gangplank",
+      "hideFromAll": true,
+      "image": {
+        "full": "7050.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 288,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": false,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": true
+      },
+      "stats": {}
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3801": {
+      "name": "Crystalline Bracer",
+      "description": "<mainText><stats><attention>200</attention> Health<br><attention>100%</attention> Base Health Regen</stats><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "Grants Health and Health Regen",
+      "from": [
+        "1028",
+        "1006"
+      ],
+      "into": [
+        "3084",
+        "3083"
+      ],
+      "image": {
+        "full": "3801.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 432,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 100,
+        "purchasable": true,
+        "total": 800,
+        "sell": 560
+      },
+      "tags": [
+        "Health",
+        "HealthRegen"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 200
+      },
+      "depth": 2
+    }
+  }
+}

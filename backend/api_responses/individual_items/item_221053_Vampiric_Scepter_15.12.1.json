@@ -1,0 +1,45 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "221053": {
+      "name": "Vampiric Scepter",
+      "description": "<mainText><stats><attention>15</attention> Attack Damage<br><attention>7%</attention> Life Steal</stats><br><br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "inStore": false,
+      "image": {
+        "full": "221053.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 240,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": false,
+        "total": 500,
+        "sell": 350
+      },
+      "tags": [
+        "Damage",
+        "LifeSteal"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 15,
+        "PercentLifeStealMod": 0.07
+      }
+    }
+  }
+}

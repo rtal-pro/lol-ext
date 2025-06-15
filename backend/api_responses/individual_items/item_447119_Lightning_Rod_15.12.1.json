@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "447119": {
+      "name": "Lightning Rod",
+      "description": "<mainText><stats><attention>500</attention> Health<br><attention>30</attention> Armor<br><attention>30</attention> Magic Resist<br><attention>8%</attention> Move Speed</stats><br><br><passive>Call Lightning</passive><br>Every 16 seconds, <keywordMajor>Autocast</keywordMajor> summon a stormcloud above you, which after a brief delay fires a lightning bolt, dealing <magicDamage> plus 10% max Health magic damage</magicDamage> and <status>Slowing</status> by 30% for 2 seconds.<br><br>If you are struck by the lightning, gain a <shield> Shield</shield> for 2 seconds.<br><br><passive>Fully Automated</passive><br>Your <keywordMajor>Autocast</keywordMajor> Cooldowns are reduced by 1 seconds and benefit from your Ability Haste.<br><br><rules>Call Lighting has a minimum cooldown of 5 seconds.</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "447119.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 240,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "Damage",
+        "AttackSpeed"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 30,
+        "FlatHPPoolMod": 500,
+        "FlatArmorMod": 30,
+        "PercentAttackSpeedMod": 0.3,
+        "PercentMovementSpeedMod": 0.08
+      }
+    }
+  }
+}

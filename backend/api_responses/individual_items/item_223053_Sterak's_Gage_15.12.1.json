@@ -1,0 +1,44 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223053": {
+      "name": "Sterak's Gage",
+      "description": "<mainText><stats><attention>300</attention> Health<br><attention>20%</attention> Tenacity</stats><br><br><passive>The Claws that Catch</passive><br>Gain <scaleAD> bonus Attack Damage</scaleAD>.<br><br><passive>Lifeline</passive> (0s)<br>Upon taking damage that would reduce your Health below 30%, gain a <shield> Shield</shield> decaying over 4.5 seconds.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223053.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 240,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "Tenacity"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 300
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1058": {
+      "name": "Needlessly Large Rod",
+      "description": "<mainText><stats><attention>65</attention> Ability Power</stats><br><br></mainText>",
+      "colloq": ";nlr",
+      "plaintext": "Greatly increases Ability Power",
+      "into": [
+        "3157",
+        "3146",
+        "3102",
+        "3089",
+        "3128",
+        "4403",
+        "4645"
+      ],
+      "image": {
+        "full": "1058.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 240,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1200,
+        "purchasable": true,
+        "total": 1200,
+        "sell": 840
+      },
+      "tags": [
+        "SpellDamage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMagicDamageMod": 65
+      }
+    }
+  }
+}

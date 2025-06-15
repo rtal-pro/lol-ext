@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3135": {
+      "name": "Void Staff",
+      "description": "<mainText><stats><attention>95</attention> Ability Power<br><attention>40%</attention> Magic Penetration</stats><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "Increases magic damage",
+      "from": [
+        "4630",
+        "1026"
+      ],
+      "image": {
+        "full": "3135.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 192,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1050,
+        "purchasable": true,
+        "total": 3000,
+        "sell": 2100
+      },
+      "tags": [
+        "MagicPenetration",
+        "SpellDamage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMagicDamageMod": 95
+      },
+      "depth": 3
+    }
+  }
+}

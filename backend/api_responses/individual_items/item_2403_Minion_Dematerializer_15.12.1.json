@@ -1,0 +1,42 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2403": {
+      "name": "Minion Dematerializer",
+      "description": "<mainText><stats></stats><br><br><active>Active - Consume:</active> Kill target lane minion. (0s)</mainText>",
+      "colloq": ";",
+      "plaintext": "",
+      "stacks": 10,
+      "consumed": true,
+      "inStore": false,
+      "hideFromAll": true,
+      "image": {
+        "full": "2403.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 384,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": false,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {}
+    }
+  }
+}

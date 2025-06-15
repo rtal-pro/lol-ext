@@ -1,0 +1,53 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "326617": {
+      "name": "Moonstone Renewer",
+      "description": "<mainText><stats><attention>35</attention> Ability Power<br><attention>400</attention> Health<br><attention>20</attention> Ability Haste<br><attention>150%</attention> Base Mana Regen</stats><br><br><passive>Starlit Grace</passive><br>Healing or shielding an ally chains the effect to another ally (excluding yourself), <healing>healing 30%</healing> or <shield>shielding 35%</shield> of the original amount.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3067",
+        "1028",
+        "4642"
+      ],
+      "image": {
+        "full": "326617.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 288,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 800,
+        "purchasable": true,
+        "total": 2900,
+        "sell": 2030
+      },
+      "tags": [
+        "Health",
+        "SpellDamage",
+        "ManaRegen",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 400,
+        "FlatMagicDamageMod": 35
+      },
+      "depth": 3
+    }
+  }
+}

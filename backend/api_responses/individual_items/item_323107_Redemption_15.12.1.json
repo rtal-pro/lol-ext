@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "323107": {
+      "name": "Redemption",
+      "description": "<mainText><stats><attention>400</attention> Health<br><attention>15</attention> Ability Haste<br><attention>100%</attention> Base Mana Regen<br><attention>10%</attention> Heal and Shield Power</stats><br><br><active>Intervention</active><br>Restore <healing>200 - 400 Health</healing> to allied units and deal <trueDamage>10% max Health true damage</trueDamage> to enemy champions after 2.5 seconds.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3067",
+        "1028",
+        "3114"
+      ],
+      "image": {
+        "full": "323107.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 288,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 2800,
+        "sell": 1960
+      },
+      "tags": [
+        "Health",
+        "ManaRegen",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 400
+      },
+      "depth": 3
+    }
+  }
+}

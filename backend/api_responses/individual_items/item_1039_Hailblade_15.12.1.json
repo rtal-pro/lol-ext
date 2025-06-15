@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1039": {
+      "name": "Hailblade",
+      "description": "<mainText><stats></stats><br><br><passive>7%</passive> Omnivamp against jungle monsters<br><li><passive>Sear:</passive> Damaging jungle monsters burns them for <magicDamage> magic damage</magicDamage> over 5 seconds.<li><passive>Chilling Path:</passive> Smiting 5 times <status>consumes</status> this item and upgrades your Smite to <attention>Chilling Smite</attention>, increasing its damage to monsters to <trueDamage>900</trueDamage> and damage to minions to <trueDamage>500 +10% target max Health</trueDamage>. Chilling Smite deals <trueDamage> true damage</trueDamage> to champions and steals <speed>20% of their Move Speed</speed> for 2 seconds.<li><passive>Huntsman:</passive> Killing large jungle monsters grants bonus experience.<li><passive>Recoup:</passive> Regen up to <scaleMana> Mana</scaleMana> (based on missing mana) per second when in the jungle or river. <br><br><rules><status>Consuming</status> this item grants all item effects permanently and increases Smite damage to monsters. If you have gained more gold from minions than jungle monsters, gold and experience from minions is heavily reduced. Healing is not reduced on AoE attacks. If two levels behind the average champion level of the game, monster kills grant bonus experience. </rules></mainText>",
+      "colloq": ";jungle;Jungle",
+      "plaintext": "Provides damage against Monsters and Mana Regen in the Jungle",
+      "inStore": false,
+      "image": {
+        "full": "1039.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 240,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 350,
+        "purchasable": false,
+        "total": 350,
+        "sell": 140
+      },
+      "tags": [
+        "LifeSteal",
+        "SpellVamp",
+        "Jungle"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {},
+      "effect": {
+        "Effect1Amount": "60",
+        "Effect2Amount": "25",
+        "Effect3Amount": "5",
+        "Effect4Amount": "8"
+      }
+    }
+  }
+}

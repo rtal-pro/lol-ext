@@ -1,0 +1,42 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2145": {
+      "name": "Lucky Dice",
+      "description": "<mainText><stats></stats><br><br><active>Active - Consume:</active> Roll to gain 1 additional reroll.<br><br><flavorText>For when skill isn't enough.</flavorText></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "inStore": false,
+      "image": {
+        "full": "2145.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 0,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": false,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [
+        "Consumable"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

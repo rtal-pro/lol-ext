@@ -1,0 +1,42 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223005": {
+      "name": "Ghostcrawlers",
+      "description": "<mainText><stats><attention>70</attention> Move Speed</stats><br><br><active>Wall Walk</active> (0s)<br>Gain the ability to walk through walls for 6 seconds. While inside walls, gain 300 move speed. Casting a spell or attacking will end this effect.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223005.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 432,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 500,
+        "sell": 350
+      },
+      "tags": [
+        "Boots"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMovementSpeedMod": 70
+      }
+    }
+  }
+}

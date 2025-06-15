@@ -1,0 +1,53 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3036": {
+      "name": "Lord Dominik's Regards",
+      "description": "<mainText><stats><attention>35</attention> Attack Damage<br><attention>40%</attention> Armor Penetration<br><attention>25%</attention> Critical Strike Chance</stats><br><br></mainText>",
+      "colloq": ";lw",
+      "plaintext": "Overcomes enemies with high health and armor",
+      "from": [
+        "3035",
+        "6670"
+      ],
+      "image": {
+        "full": "3036.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 288,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 350,
+        "purchasable": true,
+        "total": 3100,
+        "sell": 2170
+      },
+      "tags": [
+        "Damage",
+        "CriticalStrike",
+        "ArmorPenetration"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatCritChanceMod": 0.25,
+        "FlatPhysicalDamageMod": 35
+      },
+      "effect": {
+        "Effect1Amount": "0.2"
+      },
+      "depth": 3
+    }
+  }
+}

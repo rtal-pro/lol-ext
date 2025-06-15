@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223184": {
+      "name": "Guardian's Hammer",
+      "description": "<mainText><stats><attention>25</attention> Attack Damage<br><attention>35%</attention> Attack Speed<br><attention>5%</attention> Life Steal</stats><br><br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223184.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 144,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 500,
+        "sell": 250
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "LifeSteal",
+        "Lane"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 25,
+        "PercentAttackSpeedMod": 0.35,
+        "PercentLifeStealMod": 0.05
+      }
+    }
+  }
+}

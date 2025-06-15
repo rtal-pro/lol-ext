@@ -1,0 +1,38 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "9185": {
+      "name": "Anti-Shark Sea Mine",
+      "description": "<mainText><stats></stats><br><br>Fires explosives that bounce between enemies. <br><br><status>Evolve:</status> Damage<br><br><rules>Damage, Ability Haste, Area Size</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "9185.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 192,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": true,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

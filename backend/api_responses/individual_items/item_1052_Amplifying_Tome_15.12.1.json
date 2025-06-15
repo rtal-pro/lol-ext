@@ -1,0 +1,65 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1052": {
+      "name": "Amplifying Tome",
+      "description": "<mainText><stats><attention>20</attention> Ability Power</stats><br><br></mainText>",
+      "colloq": ";amptome",
+      "plaintext": "Slightly increases Ability Power",
+      "into": [
+        "2421",
+        "2420",
+        "3145",
+        "4637",
+        "3916",
+        "6656",
+        "3113",
+        "324005",
+        "3147",
+        "3802",
+        "2508",
+        "326616",
+        "3108",
+        "3116",
+        "3124",
+        "323504",
+        "4630",
+        "4635",
+        "4632",
+        "4642",
+        "4644"
+      ],
+      "image": {
+        "full": "1052.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 432,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": true,
+        "total": 400,
+        "sell": 280
+      },
+      "tags": [
+        "SpellDamage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMagicDamageMod": 20
+      }
+    }
+  }
+}

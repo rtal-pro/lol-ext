@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "228006": {
+      "name": "Sanguine Blade",
+      "description": "<mainText><stats><ornnBonus>130</ornnBonus> Attack Damage<br><ornnBonus>40%</ornnBonus> Attack Speed<br><ornnBonus>15</ornnBonus> Ability Haste<br><ornnBonus>30%</ornnBonus> Life Steal</stats><br><br><passive>Cleave</passive><br>Attacks deal <physicalDamage>physical damage</physicalDamage> to nearby enemies.<active>Ravenous Crescent</active><br>Deal <physicalDamage>physical damage</physicalDamage> to enemies around you. <br>Your Life Steal applies to this damage.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "inStore": false,
+      "image": {
+        "full": "228006.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 240,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 3000,
+        "purchasable": false,
+        "total": 3000,
+        "sell": 2100
+      },
+      "tags": [
+        "Damage",
+        "LifeSteal",
+        "CooldownReduction",
+        "OnHit",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 130,
+        "PercentAttackSpeedMod": 0.4,
+        "PercentLifeStealMod": 0.3
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1055": {
+      "name": "Doran's Blade",
+      "description": "<mainText><stats><attention>10</attention> Attack Damage<br><attention>80</attention> Health<br><attention>3%</attention> Life Steal</stats><br><br></mainText>",
+      "colloq": ";dblade",
+      "plaintext": "Good starting item for attackers",
+      "image": {
+        "full": "1055.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 96,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 450,
+        "purchasable": true,
+        "total": 450,
+        "sell": 180
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "SpellVamp",
+        "Lane"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 80,
+        "FlatPhysicalDamageMod": 10,
+        "PercentLifeStealMod": 0.03
+      }
+    }
+  }
+}

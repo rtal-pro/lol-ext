@@ -1,0 +1,56 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3179": {
+      "name": "Umbral Glaive",
+      "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>15</attention> Lethality<br><attention>10</attention> Ability Haste</stats><br><br><passive>Blackout</passive><br>When you are near enemy Stealth Wards and traps, reveal them for 8 seconds.<br><br><passive>Extinguish</passive><br>Attacks do bonus damage to Wards.</mainText>",
+      "colloq": ";lethality",
+      "plaintext": "Provides trap and ward detection periodically",
+      "from": [
+        "3134",
+        "3133"
+      ],
+      "image": {
+        "full": "3179.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 0,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 450,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1750
+      },
+      "tags": [
+        "Damage",
+        "Vision",
+        "CooldownReduction",
+        "ArmorPenetration",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 55
+      },
+      "effect": {
+        "Effect1Amount": "10",
+        "Effect2Amount": "8",
+        "Effect3Amount": "90"
+      },
+      "depth": 3
+    }
+  }
+}

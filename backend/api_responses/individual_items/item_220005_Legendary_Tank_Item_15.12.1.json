@@ -1,0 +1,54 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "220005": {
+      "name": "Legendary Tank Item",
+      "description": "<mainText><stats></stats><br><br><active>Active - Consume:</active> Automatically open a semi-random selection for a Legendary Tank item.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "consumeOnFull": true,
+      "image": {
+        "full": "220005.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 144,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2000,
+        "purchasable": true,
+        "total": 2000,
+        "sell": 2000
+      },
+      "tags": [
+        "Health",
+        "SpellBlock",
+        "Armor",
+        "CriticalStrike",
+        "SpellDamage",
+        "Consumable",
+        "Active",
+        "CooldownReduction",
+        "Slow",
+        "NonbootsMovement",
+        "MagicPenetration",
+        "MagicResist",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

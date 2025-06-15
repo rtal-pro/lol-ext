@@ -1,0 +1,42 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223009": {
+      "name": "Boots of Swiftness",
+      "description": "<mainText><stats><attention>70</attention> Move Speed</stats><br><br>The strength of movement slowing effects is reduced by <buffedStat>40%</buffedStat>.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223009.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 48,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 500,
+        "sell": 350
+      },
+      "tags": [
+        "Boots"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMovementSpeedMod": 70
+      }
+    }
+  }
+}

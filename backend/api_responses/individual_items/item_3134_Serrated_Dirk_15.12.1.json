@@ -1,0 +1,63 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3134": {
+      "name": "Serrated Dirk",
+      "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>10</attention> Lethality</stats><br><br></mainText>",
+      "colloq": ";lethality",
+      "plaintext": "Increases Attack Damage and Lethality",
+      "stacks": 0,
+      "from": [
+        "1036",
+        "1036"
+      ],
+      "into": [
+        "3142",
+        "126697",
+        "6701",
+        "6693",
+        "6697",
+        "4004",
+        "3814",
+        "3131",
+        "3179",
+        "6691",
+        "6676",
+        "6695"
+      ],
+      "image": {
+        "full": "3134.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 144,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 300,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 700
+      },
+      "tags": [
+        "Damage",
+        "ArmorPenetration"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 20
+      },
+      "depth": 2
+    }
+  }
+}

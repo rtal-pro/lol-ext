@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "8010": {
+      "name": "Bloodletter's Curse",
+      "description": "<mainText><stats><attention>65</attention> Ability Power<br><attention>400</attention> Health<br><attention>15</attention> Ability Haste</stats><br><br><passive>Vile Decay</passive><br>Dealing <magicDamage>magic damage</magicDamage> with abilities or passives to champions reduces their <scaleMR>Magic Resist by 7.5%</scaleMR> for 6 seconds, up to 30%.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3147",
+        "3108"
+      ],
+      "image": {
+        "full": "8010.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 384,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 750,
+        "purchasable": true,
+        "total": 2900,
+        "sell": 2030
+      },
+      "tags": [
+        "Health",
+        "SpellDamage",
+        "CooldownReduction",
+        "MagicPenetration"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 400,
+        "FlatMagicDamageMod": 65
+      },
+      "depth": 3
+    }
+  }
+}

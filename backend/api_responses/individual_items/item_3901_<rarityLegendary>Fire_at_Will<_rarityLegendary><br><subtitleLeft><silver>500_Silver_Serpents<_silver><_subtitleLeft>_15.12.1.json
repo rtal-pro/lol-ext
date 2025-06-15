@@ -1,0 +1,42 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3901": {
+      "name": "<rarityLegendary>Fire at Will</rarityLegendary><br><subtitleLeft><silver>500 Silver Serpents</silver></subtitleLeft>",
+      "description": "",
+      "colloq": "",
+      "plaintext": "Cannon Barrage fires at an increasing rate over time (additional 6 waves over the duration).",
+      "consumed": true,
+      "consumeOnFull": true,
+      "inStore": false,
+      "requiredChampion": "Gangplank",
+      "image": {
+        "full": "3901.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 144,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": false,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": true
+      },
+      "stats": {}
+    }
+  }
+}

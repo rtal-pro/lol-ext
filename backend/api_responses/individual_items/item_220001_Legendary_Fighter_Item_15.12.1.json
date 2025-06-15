@@ -1,0 +1,57 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "220001": {
+      "name": "Legendary Fighter Item",
+      "description": "<mainText><stats></stats><br><br><active>Active - Consume:</active> Automatically open a semi-random selection for a Legendary Fighter item.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "consumeOnFull": true,
+      "image": {
+        "full": "220001.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 432,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2000,
+        "purchasable": true,
+        "total": 2000,
+        "sell": 2000
+      },
+      "tags": [
+        "Health",
+        "SpellBlock",
+        "Armor",
+        "Damage",
+        "AttackSpeed",
+        "LifeSteal",
+        "Mana",
+        "Consumable",
+        "CooldownReduction",
+        "SpellVamp",
+        "OnHit",
+        "NonbootsMovement",
+        "Tenacity",
+        "ArmorPenetration",
+        "MagicResist",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2152": {
+      "name": "Elixir of Force",
+      "description": "<mainText><stats></stats><br><br><active>Consume</active><br>Grants 20 Adaptive Force for 60 seconds. </mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "inStore": false,
+      "image": {
+        "full": "2152.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 192,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 50,
+        "purchasable": false,
+        "total": 50,
+        "sell": 20
+      },
+      "tags": [
+        "Consumable",
+        "Tenacity"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {}
+    }
+  }
+}

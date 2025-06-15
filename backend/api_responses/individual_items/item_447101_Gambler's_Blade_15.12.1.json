@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "447101": {
+      "name": "Gambler's Blade",
+      "description": "<mainText><stats><attention>70%</attention> Attack Speed<br><attention>40</attention> Ability Haste<br><attention>8%</attention> Move Speed</stats><br><br><passive>Money In The Bank</passive><br>Your Attacks and Abilities have a 12% chance to bank between 30 and 245 Gold when they hit an enemy. On Round Win, cash out. On Round Lose, lose 25% of your bank.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "447101.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 384,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "AttackSpeed",
+        "NonbootsMovement",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "PercentAttackSpeedMod": 0.7,
+        "PercentMovementSpeedMod": 0.08
+      }
+    }
+  }
+}

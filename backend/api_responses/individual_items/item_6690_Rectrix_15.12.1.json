@@ -1,0 +1,54 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "6690": {
+      "name": "Rectrix",
+      "description": "<mainText><stats><attention>15</attention> Attack Damage<br><attention>4%</attention> Move Speed</stats><br><br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "1036"
+      ],
+      "into": [
+        "6700",
+        "6672",
+        "3142",
+        "3087"
+      ],
+      "image": {
+        "full": "6690.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 144,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 425,
+        "purchasable": true,
+        "total": 775,
+        "sell": 543
+      },
+      "tags": [
+        "Damage",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 15,
+        "PercentMovementSpeedMod": 0.04
+      },
+      "depth": 2
+    }
+  }
+}

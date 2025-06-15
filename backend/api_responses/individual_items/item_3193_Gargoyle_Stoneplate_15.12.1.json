@@ -1,0 +1,54 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3193": {
+      "name": "Gargoyle Stoneplate",
+      "description": "<mainText><stats><attention>60</attention> Armor<br><attention>60</attention> Magic Resist<br><attention>15</attention> Ability Haste</stats><br><br><br><li><passive>Fortify:</passive> Taking damage from a champion grants a stack of <scaleArmor> Armor</scaleArmor> and <scaleMR> Magic Resist</scaleMR> for 6 seconds.<br><br><rules>Max 5 stacks; 1 per champion.</rules><br><br><active>Active -</active> <active>Unbreakable:</active> Gain a Shield that decays and grow in size.</mainText>",
+      "colloq": ";",
+      "plaintext": "Greatly increases defense near multiple enemies.",
+      "from": [
+        "1029",
+        "3105",
+        "1033"
+      ],
+      "inStore": false,
+      "image": {
+        "full": "3193.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 192,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1350,
+        "purchasable": false,
+        "total": 3150,
+        "sell": 2205
+      },
+      "tags": [
+        "SpellBlock",
+        "Armor",
+        "Active",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 60,
+        "FlatArmorMod": 60
+      },
+      "depth": 3
+    }
+  }
+}

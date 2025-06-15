@@ -1,0 +1,56 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3855": {
+      "name": "Runesteel Spaulders",
+      "description": "<mainText><stats><attention>6</attention> Attack Damage<br><attention>100</attention> Health<br><attention>75%</attention> Base Health Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><li><passive>Spoils of War:</passive> While nearby an allied champion, Attacks execute minions below 0% of their max Health. Killing a minion grants the same kill gold to the nearest allied champion. These effects recharge every 0 seconds (Max 0 charges).<li><passive>Quest:</passive> Earn 1000 gold from this item to transform it into <rarityLegendary>Pauldrons of Whiterock</rarityLegendary>. <br><br><rules>This item grants reduced gold from minions if anyone on your team with this item kill excessive numbers of them.</rules><br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 3854,
+      "inStore": false,
+      "image": {
+        "full": "3855.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 336,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": false,
+        "total": 400,
+        "sell": 160
+      },
+      "tags": [
+        "Health",
+        "HealthRegen",
+        "GoldPer",
+        "Lane"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 100,
+        "FlatPhysicalDamageMod": 6
+      },
+      "effect": {
+        "Effect1Amount": "3",
+        "Effect2Amount": "0.5",
+        "Effect3Amount": "0.5",
+        "Effect4Amount": "1000",
+        "Effect5Amount": "35",
+        "Effect6Amount": "3"
+      }
+    }
+  }
+}

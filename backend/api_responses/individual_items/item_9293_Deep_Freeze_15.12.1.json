@@ -1,0 +1,39 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "9293": {
+      "name": "Deep Freeze",
+      "description": "<mainText><stats></stats><br><br>Blocks damage freezing enemies and granting a shield. Damage scales with Armor and shield scales with Max health. When the shield expires it freezes all nearby enemies again.<br><br><rules>Damage, Ability Haste, Area Size, Duration, Max Health, Armor</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "image": {
+        "full": "9293.png",
+        "sprite": "item6.png",
+        "group": "item",
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": true,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

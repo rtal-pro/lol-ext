@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "443063": {
+      "name": "Eleisa's Miracle",
+      "description": "<mainText><stats><attention>50</attention> Armor<br><attention>50</attention> Magic Resist<br><attention>25</attention> Ability Haste</stats><br><br><passive>Enduring Vitality</passive><br>Gain +2.5% Heal and Shield Power per 100 Missing Health, up to 60%.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "443063.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 432,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "SpellBlock",
+        "Armor",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 50,
+        "FlatArmorMod": 50
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3035": {
+      "name": "Last Whisper",
+      "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>18%</attention> Armor Penetration</stats><br><br></mainText>",
+      "colloq": ";lw",
+      "plaintext": "Overcomes enemies with high Armor",
+      "from": [
+        "1036",
+        "1036"
+      ],
+      "into": [
+        "3033",
+        "3036",
+        "6694"
+      ],
+      "image": {
+        "full": "3035.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 240,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 750,
+        "purchasable": true,
+        "total": 1450,
+        "sell": 1015
+      },
+      "tags": [
+        "ArmorPenetration",
+        "Damage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 20
+      },
+      "depth": 2
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3023": {
+      "name": "Lifewell Pendant",
+      "description": "<mainText><stats><attention>150</attention> Health<br><attention>25</attention> Armor<br><attention>5</attention> Ability Haste</stats><br><br><br><br><flavorText>'Fashionable and functional.'</flavorText></mainText>",
+      "colloq": ";spooky ghosts",
+      "plaintext": "Summon wraiths to slow and reveal enemy champions",
+      "from": [
+        "1028",
+        "1029"
+      ],
+      "inStore": false,
+      "into": [
+        "3001"
+      ],
+      "image": {
+        "full": "3023.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 432,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 350,
+        "purchasable": false,
+        "total": 1050,
+        "sell": 735
+      },
+      "tags": [
+        "Health",
+        "Armor",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 150,
+        "FlatArmorMod": 25
+      },
+      "depth": 2
+    }
+  }
+}

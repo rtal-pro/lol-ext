@@ -1,0 +1,50 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "447121": {
+      "name": "Twilight's Edge",
+      "description": "<mainText><stats><attention>70</attention> Attack Damage<br><attention>100</attention> Ability Power</stats><br><br><passive>The Path Between</passive><br>Threshold 130 bonus AD and 180 AP: Chakram orbit you, dealing continuous damage to enemies they strike.<br><br><keywordMajor>Spirit World</keywordMajor>: Gain <scaleAP>Ability Power</scaleAP> and Ability Haste.<br><keywordMajor>Material World</keywordMajor>: Gain <physicalDamage>Attack Damage</physicalDamage> and <attackSpeed>Attack Speed</attackSpeed>.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "447121.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 336,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "Health",
+        "Armor",
+        "Damage",
+        "AttackSpeed",
+        "SpellDamage",
+        "MagicResist",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMagicDamageMod": 100,
+        "FlatPhysicalDamageMod": 70
+      }
+    }
+  }
+}

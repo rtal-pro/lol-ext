@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "4012": {
+      "name": "Sin Eater",
+      "description": "<mainText><stats><attention>300</attention> Health<br><attention>45</attention> Armor<br><attention>45</attention> Magic Resist<br><attention>30%</attention> Tenacity</stats><br><br><br><li><passive>The Feast:</passive> Whenever a nearby ally champion becomes affected by an immobilizing crowd control effect, instead you are stunned for that duration. (20(0s)).</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "4012.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 96,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 3000,
+        "purchasable": true,
+        "total": 3000,
+        "sell": 2100
+      },
+      "tags": [
+        "Health",
+        "SpellBlock",
+        "Armor",
+        "Tenacity"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 45,
+        "FlatHPPoolMod": 300,
+        "FlatArmorMod": 45
+      }
+    }
+  }
+}

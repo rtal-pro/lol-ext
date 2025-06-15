@@ -1,0 +1,53 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3364": {
+      "name": "Oracle Lens",
+      "description": "<mainText><stats></stats><br><br><active>Active</active> (<scaleLevel>160 - 100</scaleLevel>s, max 2 charges)<br>Reveals enemy Stealth Wards and traps around you for 6 seconds.</mainText>",
+      "colloq": "red; lens; trinket",
+      "plaintext": "Disables nearby invisible wards and traps for a duration",
+      "image": {
+        "full": "3364.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 336,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [
+        "Active",
+        "Trinket",
+        "Vision"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {},
+      "effect": {
+        "Effect1Amount": "6",
+        "Effect2Amount": "10",
+        "Effect3Amount": "120",
+        "Effect4Amount": "60",
+        "Effect5Amount": "0",
+        "Effect6Amount": "1",
+        "Effect7Amount": "30",
+        "Effect8Amount": "120",
+        "Effect9Amount": "60"
+      }
+    }
+  }
+}

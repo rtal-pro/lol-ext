@@ -1,0 +1,39 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "9276": {
+      "name": "Double Bun-Bun Barrage",
+      "description": "<mainText><stats></stats><br><br>Deals area damage over time in a cone. Enemies damaged are slowed and eventually stunned. Stunned enemies take extra damage.<br><br><rules>Damage, Ability Haste, Duration, Area Size</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "image": {
+        "full": "9276.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 288,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": true,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

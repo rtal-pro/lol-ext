@@ -1,0 +1,50 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2508": {
+      "name": "Fated Ashes",
+      "description": "<mainText><stats><attention>30</attention> Ability Power</stats><br><br><passive>Inflame</passive><br>Damaging Abilities deal <magicDamage>15 bonus magic damage</magicDamage> over 3 seconds.<br>Deals an additional <magicDamage>45 magic damage</magicDamage> to monsters.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "1052"
+      ],
+      "into": [
+        "2503",
+        "6653"
+      ],
+      "image": {
+        "full": "2508.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 288,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 900,
+        "sell": 630
+      },
+      "tags": [
+        "SpellDamage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMagicDamageMod": 30
+      },
+      "depth": 2
+    }
+  }
+}

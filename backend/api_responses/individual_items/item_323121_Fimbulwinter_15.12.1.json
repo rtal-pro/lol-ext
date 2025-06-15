@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "323121": {
+      "name": "Fimbulwinter",
+      "description": "<mainText><stats><attention>550</attention> Health<br><attention>860</attention> Mana<br><attention>15</attention> Ability Haste</stats><br><br><passive>Awe</passive><br>Gain <scaleHealth> Health</scaleHealth>.<br><br><passive>Everlasting</passive> (0s)<br><keyword>Immobilizing</keyword> or <keyword>Slowing</keyword> (Melee only) an enemy champion grants a <shield>Shield</shield> for 3 seconds. <br>The Shield is increased by 80% if more than one enemy is nearby.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 3119,
+      "inStore": false,
+      "image": {
+        "full": "323121.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 0,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2400,
+        "purchasable": false,
+        "total": 2400,
+        "sell": 1680
+      },
+      "tags": [
+        "Health",
+        "Mana",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMPPoolMod": 860,
+        "FlatHPPoolMod": 550
+      }
+    }
+  }
+}

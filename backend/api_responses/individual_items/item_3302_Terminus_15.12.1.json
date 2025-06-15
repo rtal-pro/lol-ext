@@ -1,0 +1,52 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3302": {
+      "name": "Terminus",
+      "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>35%</attention> Attack Speed</stats><br><br><passive>Shadow</passive><br>Attacks deal <magicDamage>30 bonus magic damage</magicDamage> <OnHit>On-Hit</OnHit>.<br><br><passive>Juxtaposition</passive><br>Alternate between <keywordMajor>Light</keywordMajor> and <keywordMajor>Dark</keywordMajor> Attacks against champions: <li><keywordMajor>Light</keywordMajor> Attacks grant <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> for 5s. <li><keywordMajor>Dark</keywordMajor> Attacks grant 10% <scaleArmor>Armor Penetration</scaleArmor> and <scaleMR>Magic Penetration</scaleMR> for 5s. </mainText>",
+      "colloq": ";",
+      "plaintext": "Kill minions periodically to heal and grant gold to a nearby ally",
+      "from": [
+        "3051",
+        "1043"
+      ],
+      "image": {
+        "full": "3302.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 48,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1100,
+        "purchasable": true,
+        "total": 3000,
+        "sell": 2100
+      },
+      "tags": [
+        "Damage",
+        "AttackSpeed",
+        "OnHit",
+        "MagicPenetration",
+        "ArmorPenetration"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 30,
+        "PercentAttackSpeedMod": 0.35
+      },
+      "depth": 3
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "226673": {
+      "name": "Immortal Shieldbow",
+      "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>25%</attention> Critical Strike Chance</stats><br><br><passive>Lifeline</passive><br>Taking damage that would reduce your Health below 30% grants a <shield>Shield</shield> for 3 seconds.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "226673.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 336,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Damage",
+        "CriticalStrike"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatCritChanceMod": 0.25,
+        "FlatPhysicalDamageMod": 55
+      }
+    }
+  }
+}

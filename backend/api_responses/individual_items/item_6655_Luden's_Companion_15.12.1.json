@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "6655": {
+      "name": "Luden's Companion",
+      "description": "<mainText><stats><attention>100</attention> Ability Power<br><attention>600</attention> Mana<br><attention>10</attention> Ability Haste</stats><br><br><passive>Fire</passive><br>Damaging Abilities fire 6 Shots that deal <magicDamage>bonus magic damage</magicDamage> to the target and nearby enemies. Remaining Shots fire on the primary target, dealing 20% damage.<br></mainText>",
+      "colloq": "",
+      "plaintext": "High burst damage, good against fragile foes",
+      "from": [
+        "3802",
+        "3145"
+      ],
+      "image": {
+        "full": "6655.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 384,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 450,
+        "purchasable": true,
+        "total": 2750,
+        "sell": 1925
+      },
+      "tags": [
+        "SpellDamage",
+        "Mana",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMPPoolMod": 600,
+        "FlatMagicDamageMod": 100
+      },
+      "depth": 3
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "8020": {
+      "name": "Abyssal Mask",
+      "description": "<mainText><stats><attention>350</attention> Health<br><attention>45</attention> Magic Resist<br><attention>15</attention> Ability Haste</stats><br><br><passive>Unmake</passive><br>Nearby enemy champions take 12% more <magicDamage>magic damage</magicDamage>.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3067",
+        "1057"
+      ],
+      "image": {
+        "full": "8020.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 432,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 2650,
+        "sell": 1855
+      },
+      "tags": [
+        "Health",
+        "SpellBlock",
+        "CooldownReduction",
+        "MagicResist",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatSpellBlockMod": 45,
+        "FlatHPPoolMod": 350
+      },
+      "depth": 3
+    }
+  }
+}

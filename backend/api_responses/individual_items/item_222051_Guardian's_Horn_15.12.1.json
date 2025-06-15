@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "222051": {
+      "name": "Guardian's Horn",
+      "description": "<mainText><stats><attention>300</attention> Health</stats><br><br><passive>Recovery</passive><br>Restores <healing>20 Health</healing> every 5 seconds.<br><br><passive>Undaunted</passive><br>Blocks 12 damage from attacks and spells from champions (25% effectiveness vs. damage over time abilities).</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "222051.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 432,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 500,
+        "sell": 250
+      },
+      "tags": [
+        "Health",
+        "HealthRegen",
+        "Lane"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 300,
+        "FlatHPRegenMod": 4
+      },
+      "effect": {
+        "Effect1Amount": "12",
+        "Effect2Amount": "0.25"
+      }
+    }
+  }
+}

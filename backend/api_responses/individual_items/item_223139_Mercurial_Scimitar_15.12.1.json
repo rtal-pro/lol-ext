@@ -1,0 +1,54 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223139": {
+      "name": "Mercurial Scimitar",
+      "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>40</attention> Magic Resist<br><attention>10%</attention> Life Steal</stats><br><br><br><br><active>Active -</active> <active>Quicksilver:</active> Remove all crowd control debuffs and gain Move Speed.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223139.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 432,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "SpellBlock",
+        "Damage",
+        "LifeSteal",
+        "Active",
+        "NonbootsMovement",
+        "Tenacity"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 40,
+        "FlatPhysicalDamageMod": 45,
+        "PercentLifeStealMod": 0.1
+      },
+      "effect": {
+        "Effect1Amount": "0.5",
+        "Effect2Amount": "1.5",
+        "Effect3Amount": "45"
+      }
+    }
+  }
+}

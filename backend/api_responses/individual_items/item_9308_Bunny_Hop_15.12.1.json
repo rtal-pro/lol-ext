@@ -1,0 +1,38 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "9308": {
+      "name": "Bunny Hop",
+      "description": "<mainText><stats></stats><br><br>Riven passively gains Move Speed and gains charge as she moves. At max charge she jumps forward, dealing damage in an area. Every second cast knocks up.<br><br><status>Evolve: </status> Movement Speed<br><br><rules>Damage, Area Size, Crit Chance, Movement Speed </rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "9308.png",
+        "sprite": "item6.png",
+        "group": "item",
+        "x": 432,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": true,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "9275": {
+      "name": "Enveloping Light",
+      "description": "<mainText><stats></stats><br><br>Fires a beams of light across the screen.<br><br><rules>Damage, Ability Haste, Crit Chance, Projectile Count</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "image": {
+        "full": "9275.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 240,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": true,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

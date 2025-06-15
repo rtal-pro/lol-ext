@@ -1,0 +1,55 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3026": {
+      "name": "Guardian Angel",
+      "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>45</attention> Armor</stats><br><br><passive>Rebirth</passive><br>Upon taking lethal damage, restores <healing>50% base Health</healing> and <scaleMana>100% max Mana</scaleMana> after 4 seconds of <keyword>Stasis</keyword>.</mainText>",
+      "colloq": ";ga",
+      "plaintext": "Periodically revives champion upon death",
+      "from": [
+        "2019",
+        "1038"
+      ],
+      "image": {
+        "full": "3026.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 48,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 800,
+        "purchasable": true,
+        "total": 3200,
+        "sell": 1280
+      },
+      "tags": [
+        "Armor",
+        "Damage"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatArmorMod": 45,
+        "FlatPhysicalDamageMod": 55
+      },
+      "effect": {
+        "Effect1Amount": "0.5",
+        "Effect2Amount": "4",
+        "Effect3Amount": "300",
+        "Effect4Amount": "1"
+      },
+      "depth": 3
+    }
+  }
+}

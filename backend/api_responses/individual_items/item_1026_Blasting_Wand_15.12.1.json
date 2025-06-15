@@ -1,0 +1,56 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1026": {
+      "name": "Blasting Wand",
+      "description": "<mainText><stats><attention>45</attention> Ability Power</stats><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "Moderately increases Ability Power",
+      "into": [
+        "326621",
+        "4637",
+        "4628",
+        "3135",
+        "3115",
+        "3100",
+        "3116",
+        "3118",
+        "3165",
+        "326657",
+        "6621",
+        "6657"
+      ],
+      "image": {
+        "full": "1026.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 240,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 850,
+        "purchasable": true,
+        "total": 850,
+        "sell": 595
+      },
+      "tags": [
+        "SpellDamage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMagicDamageMod": 45
+      }
+    }
+  }
+}

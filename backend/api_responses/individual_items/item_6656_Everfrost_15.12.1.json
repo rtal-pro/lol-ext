@@ -1,0 +1,57 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "6656": {
+      "name": "Everfrost",
+      "description": "<mainText><stats><attention>70</attention> Ability Power<br><attention>250</attention> Health<br><attention>600</attention> Mana<br><attention>20</attention> Ability Haste</stats><br><br><br><br><rarityMythic>Mythic Passive:</rarityMythic> Grants all other <rarityLegendary>Legendary</rarityLegendary> items <attention>10</attention> Ability Power. <br><br><br><active>Active -</active> <active>Glaciate:</active> Deal damage in a cone, <status>Slowing</status> enemies hit. Enemies at the center of the cone are <status>Rooted</status> instead.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3067",
+        "3802",
+        "1052"
+      ],
+      "inStore": false,
+      "image": {
+        "full": "6656.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 432,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 465,
+        "purchasable": false,
+        "total": 2865,
+        "sell": 2006
+      },
+      "tags": [
+        "Health",
+        "SpellDamage",
+        "Mana",
+        "Active",
+        "CooldownReduction",
+        "Slow",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMPPoolMod": 600,
+        "FlatHPPoolMod": 250,
+        "FlatMagicDamageMod": 70
+      },
+      "depth": 3
+    }
+  }
+}

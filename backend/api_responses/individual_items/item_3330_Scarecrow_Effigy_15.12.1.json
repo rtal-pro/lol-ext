@@ -1,0 +1,55 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3330": {
+      "name": "Scarecrow Effigy",
+      "description": "<mainText><stats></stats><br><br>Cannot be sold<br><br><active>Active - Trinket:</active> Places an effigy that lasts for  seconds and appears exactly as Fiddlesticks does to enemies. Stores one charge every  seconds, up to maximum 2 charges.<br><br>Enemy champions approaching an effigy will activate it, causing the effigy to fake a random action, after which the effigy will fall apart.</mainText>",
+      "colloq": "yellow; totem; trinket",
+      "plaintext": "Periodically place a Stealth Ward",
+      "requiredChampion": "FiddleSticks",
+      "image": {
+        "full": "3330.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 96,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [
+        "Active",
+        "Jungle",
+        "Lane",
+        "Trinket",
+        "Vision"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": true
+      },
+      "stats": {},
+      "effect": {
+        "Effect1Amount": "90",
+        "Effect2Amount": "240",
+        "Effect3Amount": "120",
+        "Effect4Amount": "120",
+        "Effect5Amount": "2",
+        "Effect6Amount": "9",
+        "Effect7Amount": "30",
+        "Effect8Amount": "120"
+      }
+    }
+  }
+}

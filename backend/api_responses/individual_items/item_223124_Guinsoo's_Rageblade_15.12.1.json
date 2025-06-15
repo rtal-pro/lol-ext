@@ -1,0 +1,62 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223124": {
+      "name": "Guinsoo's Rageblade",
+      "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>25</attention> Ability Power<br><attention>25%</attention> Attack Speed</stats><br><br>Attacks apply <magicDamage>30 magic damage <OnHit>On-Hit</OnHit></magicDamage>.<br><br><passive>Seething Strike</passive><br>Basic attacks grant <attackSpeed>8% Attack Speed</attackSpeed>, stacking up to 4 times for a maximum of <attackSpeed> Attack Speed</attackSpeed>. While fully stacked, every third Attack applies your <OnHit>On-Hit</OnHit> effects twice.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223124.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 288,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Damage",
+        "AttackSpeed",
+        "SpellDamage",
+        "OnHit"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMagicDamageMod": 25,
+        "FlatPhysicalDamageMod": 20,
+        "PercentAttackSpeedMod": 0.25
+      },
+      "effect": {
+        "Effect1Amount": "0.08",
+        "Effect2Amount": "2.5",
+        "Effect3Amount": "2.5",
+        "Effect4Amount": "3",
+        "Effect5Amount": "4",
+        "Effect6Amount": "0.1",
+        "Effect7Amount": "0.1",
+        "Effect8Amount": "15",
+        "Effect9Amount": "1",
+        "Effect10Amount": "3",
+        "Effect11Amount": "0",
+        "Effect12Amount": "0",
+        "Effect13Amount": "3"
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3174": {
+      "name": "Armored Advance",
+      "description": "<mainText><stats><attention>40</attention> Armor<br><attention>50</attention> Move Speed</stats><br><br><passive>Plating</passive><br>Reduces incoming damage from Attacks by 10%.<br><br><passive>Noxian Endurance</passive> (0s)<br>After taking physical damage from a Champion, gain a <shield></shield> <physicalDamage>physical</physicalDamage> <shield>shield</shield> for 4 seconds.</mainText>",
+      "colloq": ";",
+      "plaintext": "Deal damage to empower your heals and shields",
+      "from": [
+        "3047"
+      ],
+      "image": {
+        "full": "3174.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 288,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 1700,
+        "sell": 1190
+      },
+      "tags": [
+        "Armor",
+        "Boots"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMovementSpeedMod": 50,
+        "FlatArmorMod": 40
+      },
+      "depth": 3
+    }
+  }
+}

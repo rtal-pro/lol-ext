@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223073": {
+      "name": "Experimental Hexplate",
+      "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>20%</attention> Attack Speed<br><attention>450</attention> Health</stats><br><br><passive>Hexcharged</passive><br>Gain 30 Ultimate Ability Haste.<br><br><passive>Overdrive</passive><br>After casting your Ultimate, gain <attackSpeed>30% Attack Speed</attackSpeed> and <speed>15% Move Speed</speed> for 8 seconds. </mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223073.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 96,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1750
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "AttackSpeed",
+        "CooldownReduction",
+        "NonbootsMovement",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 450,
+        "FlatPhysicalDamageMod": 40,
+        "PercentAttackSpeedMod": 0.2
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "226631": {
+      "name": "Stridebreaker",
+      "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>15%</attention> Attack Speed<br><attention>375</attention> Health</stats><br><br><passive>Cleave</passive><br>Attacks deal <physicalDamage>physical damage</physicalDamage> to nearby enemies.<br><active>Breaking Shockwave</active><br>Deal <physicalDamage>physical damage</physicalDamage> and <status>Slow</status> nearby enemies by 40%.<br>Gain <speed>40% decaying Move Speed</speed> per champion hit for 3 seconds.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "226631.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 240,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "AttackSpeed",
+        "Slow",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 375,
+        "FlatPhysicalDamageMod": 40,
+        "PercentAttackSpeedMod": 0.15
+      }
+    }
+  }
+}

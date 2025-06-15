@@ -1,0 +1,52 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "6660": {
+      "name": "Bami's Cinder",
+      "description": "<mainText><stats><attention>150</attention> Health<br><attention>5</attention> Ability Haste</stats><br><br><passive>Immolate</passive><br>After taking or dealing damage, deal <magicDamage>magic damage</magicDamage> to nearby enemies for 3 seconds.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "1028",
+        "2022"
+      ],
+      "into": [
+        "3068",
+        "6664"
+      ],
+      "image": {
+        "full": "6660.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 48,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 250,
+        "purchasable": true,
+        "total": 900,
+        "sell": 630
+      },
+      "tags": [
+        "Health",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 150
+      },
+      "depth": 2
+    }
+  }
+}

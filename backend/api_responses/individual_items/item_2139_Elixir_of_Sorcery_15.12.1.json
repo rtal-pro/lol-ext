@@ -1,0 +1,54 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2139": {
+      "name": "Elixir of Sorcery",
+      "description": "<mainText><stats></stats><br><br><active>Consume</active><br>Grants <scaleAP>50 Ability Power</scaleAP> and <scaleMana>15% Mana Regen</scaleMana> for 3 minutes. While active, damaging a champion or turret deals <trueDamage>25 bonus true damage</trueDamage> (5s against champions).</mainText>",
+      "colloq": ";blue",
+      "plaintext": "Temporarily grants Ability Power and Bonus Damage to champions and turrets.",
+      "consumed": true,
+      "consumeOnFull": true,
+      "image": {
+        "full": "2139.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 192,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 500,
+        "sell": 200
+      },
+      "tags": [
+        "Consumable",
+        "ManaRegen",
+        "SpellDamage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {},
+      "effect": {
+        "Effect1Amount": "50",
+        "Effect2Amount": "50",
+        "Effect3Amount": "25",
+        "Effect4Amount": "3",
+        "Effect5Amount": "5",
+        "Effect6Amount": "3",
+        "Effect7Amount": "0",
+        "Effect8Amount": "9"
+      }
+    }
+  }
+}

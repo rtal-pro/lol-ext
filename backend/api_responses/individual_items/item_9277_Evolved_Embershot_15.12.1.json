@@ -1,0 +1,39 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "9277": {
+      "name": "Evolved Embershot",
+      "description": "<mainText><stats></stats><br><br>Fires projectiles that create lingering fire areas. Areas of fire grow in size and deal increased damage over time.<br><br><rules>Damage, Ability Haste, Area Size, , Projectiles, Duration</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "image": {
+        "full": "9277.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 336,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": true,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

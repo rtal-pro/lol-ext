@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1515": {
+      "name": "Turret Plating",
+      "description": "",
+      "colloq": "",
+      "plaintext": "",
+      "inStore": false,
+      "image": {
+        "full": "1515.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 384,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": false,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [
+        "Armor"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": true
+      },
+      "stats": {},
+      "effect": {
+        "Effect1Amount": "50",
+        "Effect2Amount": "125",
+        "Effect3Amount": "20",
+        "Effect4Amount": "20",
+        "Effect5Amount": "0.17"
+      }
+    }
+  }
+}

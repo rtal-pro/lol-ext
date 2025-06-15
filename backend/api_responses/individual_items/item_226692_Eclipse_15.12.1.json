@@ -1,0 +1,44 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "226692": {
+      "name": "Eclipse",
+      "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>10</attention> Ability Haste</stats><br><br><passive>Ever Rising Moon</passive><br>Hitting a champion with 2 separate Attacks or Abilities within 2 seconds grants you a <shield>Shield</shield> for 2 seconds.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "226692.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 48,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Damage",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 50
+      }
+    }
+  }
+}

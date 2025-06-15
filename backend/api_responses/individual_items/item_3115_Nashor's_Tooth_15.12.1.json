@@ -1,0 +1,52 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3115": {
+      "name": "Nashor's Tooth",
+      "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>50%</attention> Attack Speed<br><attention>15</attention> Ability Haste</stats><br><br><passive>Icathian Bite</passive><br>Attacks deal <magicDamage>bonus magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
+      "colloq": ";",
+      "plaintext": "Increases Attack Speed, Ability Power, and Cooldown Reduction",
+      "from": [
+        "1043",
+        "1026",
+        "3108"
+      ],
+      "image": {
+        "full": "3115.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 96,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 2900,
+        "sell": 2030
+      },
+      "tags": [
+        "AttackSpeed",
+        "SpellDamage",
+        "OnHit",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMagicDamageMod": 80,
+        "PercentAttackSpeedMod": 0.5
+      },
+      "depth": 3
+    }
+  }
+}

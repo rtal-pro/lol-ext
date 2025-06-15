@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1082": {
+      "name": "Dark Seal",
+      "description": "<mainText><stats><attention>15</attention> Ability Power<br><attention>50</attention> Health</stats><br><br><passive>Glory</passive><br><keyword>Takedowns</keyword> grant <passive>Glory</passive>, up to 10. 5 <passive>Glory</passive> is lost on death.<br>Gain <scaleAP>4 Ability Power</scaleAP> per <passive>Glory</passive>.</mainText>",
+      "colloq": ";Noxian",
+      "plaintext": "Provides Ability Power and Mana.  Increases in power as you kill enemies.",
+      "into": [
+        "3041"
+      ],
+      "image": {
+        "full": "1082.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 288,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 350,
+        "purchasable": true,
+        "total": 350,
+        "sell": 140
+      },
+      "tags": [
+        "Health",
+        "SpellDamage",
+        "Lane"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 50,
+        "FlatMagicDamageMod": 15
+      }
+    }
+  }
+}

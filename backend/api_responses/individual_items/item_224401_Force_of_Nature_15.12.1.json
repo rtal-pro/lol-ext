@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "224401": {
+      "name": "Force of Nature",
+      "description": "<mainText><stats><attention>400</attention> Health<br><attention>50</attention> Magic Resist<br><attention>4%</attention> Move Speed</stats><br><br><passive>Absorb</passive><br>Taking <magicDamage>magic damage</magicDamage> from enemy Champions grants a stack of <attention>Steadfast</attention> (max 10) for 7 seconds. Enemy <status>Immobilizing</status> effects grant an additional 2 stacks.<br><br><passive>Dissipate</passive><br>While at 10 stacks of <attention>Steadfast</attention>, gain <scaleMR>50 Magic Resist</scaleMR> and 14% increased Move Speed.<br><br><rules>One spell can add a new stack of <attention>Steadfast</attention> every 1 second.</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "224401.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 288,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Health",
+        "SpellBlock",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 50,
+        "FlatHPPoolMod": 400,
+        "PercentMovementSpeedMod": 0.04
+      }
+    }
+  }
+}

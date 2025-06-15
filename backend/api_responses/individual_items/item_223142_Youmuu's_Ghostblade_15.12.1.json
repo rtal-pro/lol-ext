@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223142": {
+      "name": "Youmuu's Ghostblade",
+      "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>22</attention> Lethality<br><attention>4%</attention> Move Speed</stats><br><br><passive>Haunt</passive> <br>Gain <speed> Move Speed</speed> while out of combat.<br><br><br><active>ACTIVE</active> (0s)<br><active>Wraith Step</active><br>Gain Move Speed and Ghosting.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223142.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 0,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Damage",
+        "Active",
+        "NonbootsMovement",
+        "ArmorPenetration"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 55,
+        "PercentMovementSpeedMod": 0.04
+      }
+    }
+  }
+}

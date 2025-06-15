@@ -1,0 +1,43 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2162": {
+      "name": "Bandle Juice of Vitality",
+      "description": "<mainText><stats></stats><br><br>Drink to permanently gain <healing>200+ 3% Health</healing>. And a hat!<br><br><flavorText>Our specially formulated veggie blend is proven to harden your skin to resist even the strongest attacks!</flavorText></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "consumeOnFull": true,
+      "image": {
+        "full": "2162.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 288,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 1000
+      },
+      "tags": [
+        "Health",
+        "Consumable"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {}
+    }
+  }
+}

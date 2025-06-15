@@ -1,0 +1,54 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "6662": {
+      "name": "Iceborn Gauntlet",
+      "description": "<mainText><stats><attention>300</attention> Health<br><attention>50</attention> Armor<br><attention>15</attention> Ability Haste</stats><br><br><passive>Spellblade</passive><br>After using an Ability, your next Attack deals <physicalDamage>bonus physical damage</physicalDamage> <OnHit>On-Hit</OnHit> and creates a frost field for 2s that <status>Slows</status>.</mainText>",
+      "colloq": "",
+      "plaintext": "High Magic Resist.Passively slow nearby enemies. When spells are cast near you, release a wave of energy that damages and slows.",
+      "from": [
+        "3057",
+        "1028",
+        "1031"
+      ],
+      "image": {
+        "full": "6662.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 96,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 800,
+        "purchasable": true,
+        "total": 2900,
+        "sell": 2030
+      },
+      "tags": [
+        "Health",
+        "Armor",
+        "CooldownReduction",
+        "Slow",
+        "OnHit",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 300,
+        "FlatArmorMod": 50
+      },
+      "depth": 3
+    }
+  }
+}

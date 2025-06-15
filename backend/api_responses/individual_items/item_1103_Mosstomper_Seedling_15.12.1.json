@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1103": {
+      "name": "Mosstomper Seedling",
+      "description": "<mainText><stats></stats><br><br><passive>Jungle Companions</passive><br>Summon a <font color='#1CA935'>Mosstomper</font> that assists you against monsters.<br><br><passive>Mosstomper's Courage</passive><br>The companion grows as you hunt monsters, empowering your <spellName>Smite</spellName>. When fully grown, it grants a <shield>shield</shield> that regenerates after killing large monsters or out of combat.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "1103.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 0,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 450,
+        "purchasable": true,
+        "total": 450,
+        "sell": 0
+      },
+      "tags": [
+        "Jungle"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {},
+      "effect": {
+        "Effect1Amount": "60",
+        "Effect2Amount": "25",
+        "Effect3Amount": "5",
+        "Effect4Amount": "8"
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "222141": {
+      "name": "Cappa Juice",
+      "description": "<mainText><stats></stats><br><br><rules>Helps you get on a head.</rules><active>Active - Consume:</active> This juice does nothing.<br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "stacks": 100,
+      "consumed": true,
+      "consumeOnFull": true,
+      "image": {
+        "full": "222141.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 48,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 500,
+        "sell": 500
+      },
+      "tags": [
+        "Damage",
+        "Consumable"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

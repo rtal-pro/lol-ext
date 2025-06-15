@@ -1,0 +1,50 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223011": {
+      "name": "Chemtech Putrifier",
+      "description": "<mainText><stats><attention>35</attention> Ability Power<br><attention>10%</attention> Heal and Shield Power<br><attention>75%</attention> Base Mana Regen<br><attention>15</attention> Ability Haste</stats><br><br><passive>Puffcap Toxin</passive><br>Dealing damage applies <status>40% Grievous Wounds</status> to champions for 3 seconds.<br><br><buffedStat>If an enemy heals for more than 80% of their maximum health while continously affected by <status>Grievous Wounds</status>, it is increased to <status>60% Grievous Wounds</status>.</buffedStat><br><br><rules><status>Grievous Wounds</status> reduces the effectiveness of Healing and Regeneration effects.</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3916",
+        "3114"
+      ],
+      "inStore": false,
+      "image": {
+        "full": "223011.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 96,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": false,
+        "total": 1900,
+        "sell": 1330
+      },
+      "tags": [
+        "SpellDamage",
+        "ManaRegen",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMagicDamageMod": 35
+      },
+      "depth": 3
+    }
+  }
+}

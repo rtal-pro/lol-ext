@@ -1,0 +1,57 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3863": {
+      "name": "Harrowing Crescent",
+      "description": "<mainText><stats><attention>10</attention> Attack Damage<br><attention>60</attention> Health<br><attention>50%</attention> Base Mana Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><li><passive>Tribute:</passive> While nearby an ally champion, damaging Abilities and Attacks against champions or buildings grant 20 gold. This can occur up to 3 times every 36 seconds.<li><passive>Quest:</passive> Earn 1000 gold from this item to transform it into <rarityLegendary>Black Mist Scythe</rarityLegendary>.<br><br><rules>This item grants reduced gold from minions if anyone on your team with this item kill excessive numbers of them.</rules><br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 3862,
+      "inStore": false,
+      "image": {
+        "full": "3863.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 144,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": false,
+        "total": 400,
+        "sell": 160
+      },
+      "tags": [
+        "Health",
+        "ManaRegen",
+        "GoldPer",
+        "Lane"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 60,
+        "FlatPhysicalDamageMod": 10
+      },
+      "effect": {
+        "Effect1Amount": "3",
+        "Effect2Amount": "20",
+        "Effect3Amount": "20",
+        "Effect4Amount": "1000",
+        "Effect5Amount": "12",
+        "Effect6Amount": "3",
+        "Effect7Amount": "2000"
+      }
+    }
+  }
+}

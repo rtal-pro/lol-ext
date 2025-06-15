@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223508": {
+      "name": "Essence Reaver",
+      "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>20</attention> Ability Haste<br><attention>25%</attention> Critical Strike Chance</stats><br><br><passive>Essence Drain</passive><br>Basic attacks refund mana on-hit.<br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223508.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 0,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Damage",
+        "CriticalStrike",
+        "ManaRegen",
+        "CooldownReduction",
+        "OnHit",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatCritChanceMod": 0.25,
+        "FlatPhysicalDamageMod": 50
+      }
+    }
+  }
+}

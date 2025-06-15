@@ -1,0 +1,38 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "9305": {
+      "name": "Tentacle Slam",
+      "description": "<mainText><stats></stats><br><br>Illaoi slams the ground with her idol, dealing damage in an area around the impact and spawning a tentacle that will attack nearby enemies.<br><br><status>Evolve: </status> Duration<br><br><rules>Damage, Ability Haste, Area Size, Duration</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "9305.png",
+        "sprite": "item6.png",
+        "group": "item",
+        "x": 288,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": true,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

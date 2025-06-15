@@ -1,0 +1,54 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3145": {
+      "name": "Hextech Alternator",
+      "description": "<mainText><stats><attention>45</attention> Ability Power</stats><br><br><passive>Revved</passive><br>Damaging a champion deals <magicDamage>bonus magic damage</magicDamage>.</mainText>",
+      "colloq": ";",
+      "plaintext": "Increases Ability Power. Deal bonus magic damage on attack periodically.",
+      "from": [
+        "1052",
+        "1052"
+      ],
+      "into": [
+        "4636",
+        "6655",
+        "3152",
+        "4645",
+        "4646"
+      ],
+      "image": {
+        "full": "3145.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 48,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 300,
+        "purchasable": true,
+        "total": 1100,
+        "sell": 770
+      },
+      "tags": [
+        "SpellDamage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMagicDamageMod": 45
+      },
+      "depth": 2
+    }
+  }
+}

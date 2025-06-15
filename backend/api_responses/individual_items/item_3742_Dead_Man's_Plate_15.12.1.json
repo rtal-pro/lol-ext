@@ -1,0 +1,53 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3742": {
+      "name": "Dead Man's Plate",
+      "description": "<mainText><stats><attention>350</attention> Health<br><attention>55</attention> Armor<br><attention>4%</attention> Move Speed</stats><br><br><passive>Shipwrecker</passive><br>While moving, build up to <speed>20 bonus Move Speed</speed>. Your next Attack discharges built up Move Speed to deal <physicalDamage>bonus physical damage</physicalDamage>.<br><br><passive>Unsinkable</passive><br>Reduce the effectiveness of <keyword>Slows</keyword> by 15%.</mainText>",
+      "colloq": ";juggernaut;dreadnought",
+      "plaintext": "Build momentum as you move around then smash into enemies.",
+      "from": [
+        "3066",
+        "1028",
+        "1031"
+      ],
+      "image": {
+        "full": "3742.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 336,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 900,
+        "purchasable": true,
+        "total": 2900,
+        "sell": 2030
+      },
+      "tags": [
+        "Health",
+        "Armor",
+        "Slow",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 350,
+        "FlatArmorMod": 55,
+        "PercentMovementSpeedMod": 0.04
+      },
+      "depth": 3
+    }
+  }
+}

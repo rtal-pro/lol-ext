@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223001": {
+      "name": "Evenshroud",
+      "description": "<mainText><stats><attention>200</attention> Health<br><attention>30</attention> Armor<br><attention>30</attention> Magic Resist<br><attention>20</attention> Ability Haste</stats><br><br><br><li><passive>Coruscation:</passive> After <status>Immobilizing</status> champions or being <status>Immobilized</status>, cause that target and all nearby enemy champions to take <buffedStat>7% increased damage</buffedStat> for 5 seconds. <br><br><rarityMythic>Mythic Passive:</rarityMythic> Grants all other <rarityLegendary>Legendary</rarityLegendary> items <attention>5 Armor and Magic Resist</attention></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "inStore": false,
+      "image": {
+        "full": "223001.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 240,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": false,
+        "total": 2500,
+        "sell": 1750
+      },
+      "tags": [
+        "Health",
+        "SpellBlock",
+        "Armor",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 30,
+        "FlatHPPoolMod": 200,
+        "FlatArmorMod": 30
+      }
+    }
+  }
+}

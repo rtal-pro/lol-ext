@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3033": {
+      "name": "Mortal Reminder",
+      "description": "<mainText><stats><attention>35</attention> Attack Damage<br><attention>35%</attention> Armor Penetration<br><attention>25%</attention> Critical Strike Chance</stats><br><br><passive>Grievous Wounds</passive><br>Dealing physical damage applies <keyword>40% Wounds</keyword> to enemy champions for 3 seconds.</mainText>",
+      "colloq": ";grievous",
+      "plaintext": "Overcomes enemies with high Health recovery and Armor",
+      "from": [
+        "3123",
+        "3035",
+        "1018"
+      ],
+      "image": {
+        "full": "3033.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 192,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 450,
+        "purchasable": true,
+        "total": 3300,
+        "sell": 2310
+      },
+      "tags": [
+        "Damage",
+        "CriticalStrike",
+        "ArmorPenetration"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatCritChanceMod": 0.25,
+        "FlatPhysicalDamageMod": 35
+      },
+      "depth": 3
+    }
+  }
+}

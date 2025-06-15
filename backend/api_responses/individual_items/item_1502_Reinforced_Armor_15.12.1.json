@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1502": {
+      "name": "Reinforced Armor",
+      "description": "<mainText><stats></stats><br><br><mainText><unique>Reinforced:</unique> Reduces incoming damage by 80%, including True Damage, when no enemy Lane Minions or Rift Herald are nearby.</mainText></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "inStore": false,
+      "image": {
+        "full": "1502.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 384,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": false,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [
+        "Armor",
+        "ManaRegen",
+        "OnHit"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": true
+      },
+      "stats": {},
+      "effect": {
+        "Effect1Amount": "80"
+      }
+    }
+  }
+}

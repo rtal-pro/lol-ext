@@ -1,0 +1,55 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "4644": {
+      "name": "Crown of the Shattered Queen",
+      "description": "<mainText><stats><attention>85</attention> Ability Power<br><attention>250</attention> Health<br><attention>600</attention> Mana<br><attention>20</attention> Ability Haste</stats><br><br><br><li><passive>Safeguard:</passive> You are <keywordMajor>Safeguarded</keywordMajor>, reducing incoming champion damage by 40%. <keywordMajor>Safeguard</keywordMajor> persists for 2.5 seconds after taking champion damage. (40(0s)). <br><br><rarityMythic>Mythic Passive:</rarityMythic> Grants all other <rarityLegendary>Legendary</rarityLegendary> items <attention>1%</attention> Move Speed and 8 Ability Power.<br><br><rules>Item cooldown is restarted when damage is taken from champions.</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3067",
+        "3802",
+        "1052"
+      ],
+      "inStore": false,
+      "image": {
+        "full": "4644.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 96,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 465,
+        "purchasable": false,
+        "total": 2865,
+        "sell": 2006
+      },
+      "tags": [
+        "Health",
+        "SpellDamage",
+        "Mana",
+        "NonbootsMovement",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMPPoolMod": 600,
+        "FlatHPPoolMod": 250,
+        "FlatMagicDamageMod": 85
+      },
+      "depth": 3
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3010": {
+      "name": "Symbiotic Soles",
+      "description": "<mainText><stats><attention>40</attention> Move Speed</stats><br><br><passive>Synchrony</passive><br>Gain <speed>10 Move Speed</speed> when out of combat.<br><br><passive>Symbiosis</passive><br>After traveling 150000 units of distance, transform into <rarityLegendary>Synchronized Souls</rarityLegendary>.</mainText>",
+      "colloq": ";",
+      "plaintext": "Spend Mana to recover Health",
+      "from": [
+        "1001"
+      ],
+      "into": [
+        "3013"
+      ],
+      "image": {
+        "full": "3010.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 192,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 600,
+        "purchasable": true,
+        "total": 900,
+        "sell": 630
+      },
+      "tags": [
+        "Boots"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMovementSpeedMod": 40
+      },
+      "depth": 2
+    }
+  }
+}

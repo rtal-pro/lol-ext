@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "443090": {
+      "name": "Reaper's Toll",
+      "description": "<mainText><stats><attention>40</attention> Adaptive Force<br><attention>50%</attention> Attack Speed<br><attention>10%</attention> Move Speed</stats><br><br><passive>Sow</passive><br>Increase your Attack Speed from all sources by 25%.<br><br><passive>Reap</passive><br><OnHit>On-Hit</OnHit>, deal <trueDamage>max Health true damage</trueDamage>, and reduce their Max Health by the damage dealt for the rest of the round. Consecutive hits against the same enemy increase this amount by 0.1%.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "443090.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 288,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "Damage",
+        "AttackSpeed",
+        "SpellDamage",
+        "OnHit",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "PercentAttackSpeedMod": 0.5,
+        "PercentMovementSpeedMod": 0.1
+      }
+    }
+  }
+}

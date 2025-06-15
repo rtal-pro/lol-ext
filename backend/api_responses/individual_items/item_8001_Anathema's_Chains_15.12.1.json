@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "8001": {
+      "name": "Anathema's Chains",
+      "description": "<mainText><stats><attention>650</attention> Health<br><attention>20</attention> Ability Haste</stats><br><br><passive>Vendetta</passive><br>You gain Vendetta stacks over time Each stack of Vendetta grants you 1% reduced damage from your Nemesis.<br><br><passive>Vengeance</passive><br>At maximum stacks, your Nemesis has reduced Tenacity while near you.<br><br><br><br><active>ACTIVE</active> (0s)<br><active>Vow</active><br>Choose a <attention>Nemesis</attention>.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3067",
+        "1011"
+      ],
+      "inStore": false,
+      "image": {
+        "full": "8001.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 336,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 800,
+        "purchasable": false,
+        "total": 2500,
+        "sell": 1750
+      },
+      "tags": [
+        "Health",
+        "Active",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 650
+      },
+      "depth": 3
+    }
+  }
+}

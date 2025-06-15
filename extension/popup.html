@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>League of Legends Helper</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="item-styles.css">
+</head>
+<body>
+  <div class="hextech-container">
+    <header class="hextech-header">
+      <h1>League of Legends Helper</h1>
+      <nav class="hextech-nav">
+        <button id="champions-nav" class="nav-button active" data-view="champions">Champions</button>
+        <button id="items-nav" class="nav-button" data-view="items">Items</button>
+      </nav>
+    </header>
+    
+    <!-- Champions search container - only shown in champions view -->
+    <div id="champions-search-container" class="search-container">
+      <div class="search-input-wrapper">
+        <input type="text" id="search-input" class="search-input" placeholder="Search champions...">
+        <button id="search-clear" class="search-clear" aria-label="Clear search">×</button>
+      </div>
+      <div class="filter-heading">
+        <span>Filter by role:</span>
+        <button id="clear-filters" class="clear-filters-button">Clear filters</button>
+      </div>
+      <div class="search-tags">
+        <button class="tag-filter tag-fighter" data-tag="Fighter">Fighter</button>
+        <button class="tag-filter tag-tank" data-tag="Tank">Tank</button>
+        <button class="tag-filter tag-mage" data-tag="Mage">Mage</button>
+        <button class="tag-filter tag-assassin" data-tag="Assassin">Assassin</button>
+        <button class="tag-filter tag-marksman" data-tag="Marksman">Marksman</button>
+        <button class="tag-filter tag-support" data-tag="Support">Support</button>
+      </div>
+    </div>
+    
+    <!-- Items search container - only shown in items view -->
+    <div id="item-filters-container" class="search-container" style="display: none;">
+      <div class="search-input-wrapper">
+        <input type="text" id="item-search-input" class="search-input" placeholder="Search items...">
+        <button id="item-search-clear" class="search-clear" aria-label="Clear search">×</button>
+      </div>
+      
+      <!-- Compact Filter Heading -->
+      <div class="filter-heading">
+        <span>Filter by tier:</span>
+        <button id="clear-item-filters" class="clear-filters-button">Clear filters</button>
+      </div>
+      
+      <!-- Tier filters in compact layout -->
+      <div class="item-filters-row tier-filters">
+        <button class="tier-filter tier-all active" data-tier="all">All</button>
+        <button class="tier-filter tier-mythic" data-tier="mythic">Mythic</button>
+        <button class="tier-filter tier-legendary" data-tier="legendary">Legendary</button>
+        <button class="tier-filter tier-epic" data-tier="epic">Epic</button>
+        <button class="tier-filter tier-basic" data-tier="basic">Basic</button>
+        <button class="tier-filter tier-starter" data-tier="starter">Starter</button>
+      </div>
+      
+      <!-- Filter Heading for Stats -->
+      <div class="filter-heading">
+        <span>Filter by stats:</span>
+      </div>
+      
+      <!-- Stats filters in compact layout -->
+      <div class="item-filters-row stat-filters">
+        <button id="stat-filter-ad" class="stat-filter" data-stat="ad">⚔️ AD</button>
+        <button id="stat-filter-ap" class="stat-filter" data-stat="ap">✨ AP</button>
+        <button id="stat-filter-armor" class="stat-filter" data-stat="armor">🛡️ Armor</button>
+        <button id="stat-filter-mr" class="stat-filter" data-stat="mr">🔮 MR</button>
+        <button id="stat-filter-hp" class="stat-filter" data-stat="hp">❤️ HP</button>
+        <button id="stat-filter-mana" class="stat-filter" data-stat="mana">🔹 Mana</button>
+        <button id="stat-filter-as" class="stat-filter" data-stat="as">⚡ AS</button>
+        <button id="stat-filter-crit" class="stat-filter" data-stat="crit">🎯 Crit</button>
+        <button id="stat-filter-ms" class="stat-filter" data-stat="ms">👟 MS</button>
+        <button id="stat-filter-utility" class="stat-filter" data-stat="utility">⚙️ Utility</button>
+      </div>
+      
+      <!-- Active filters - compact version -->
+      <div id="active-filters-list" class="active-filters-list">
+        <!-- Active filters will be displayed here -->
+      </div>
+    </div>
+    
+    <main class="hextech-content">
+      <!-- Champions View -->
+      <div id="champions-view" class="view-section active">
+        <div id="loading-champions" class="loading">
+          <div class="loading-spinner"></div>
+          <p>Loading champions...</p>
+        </div>
+        
+        <div id="error-champions" class="error" style="display: none;">
+          Error loading champions. Please try again.
+        </div>
+        
+        <div id="no-results-champions" class="no-results" style="display: none;">
+          <p>No champions found matching your search.</p>
+          <button id="reset-search-champions" class="reset-button">Reset Search</button>
+        </div>
+        
+        <div id="champions-list" class="champions-list">
+          <!-- Champions will be populated here via JavaScript -->
+        </div>
+
+        <!-- Champion Detail View -->
+        <div id="champion-detail" class="champion-detail" style="display: none;">
+          <div class="detail-header">
+            <button id="back-button" class="back-button">
+              <span>&larr;</span> Back to Champions
+            </button>
+          </div>
+          
+          <div class="detail-content">
+            <div class="champion-splash">
+              <!-- Champion splash art will be displayed here -->
+            </div>
+            
+            <div class="champion-header">
+              <h2 class="champion-detail-name"></h2>
+              <p class="champion-detail-title"></p>
+              <div class="champion-detail-tags"></div>
+            </div>
+            
+            <!-- Tabs Navigation -->
+            <div class="tabs-container">
+              <div class="tabs-nav">
+                <button class="tab-button active" data-tab="stats">Stats</button>
+                <button class="tab-button" data-tab="lore">Lore</button>
+                <button class="tab-button" data-tab="abilities">Abilities</button>
+                <button class="tab-button" data-tab="tips">Tips</button>
+                <button class="tab-button" data-tab="skins">Skins</button>
+              </div>
+              
+              <!-- Tab Content -->
+              <div class="tabs-content">
+                <!-- Stats Tab -->
+                <div class="tab-pane active" id="stats-tab">
+                  <div class="champion-stats">
+                    <h3>Champion Stats</h3>
+                    <div class="stats-grid">
+                      <!-- Stats will be populated here -->
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Lore Tab -->
+                <div class="tab-pane" id="lore-tab">
+                  <div class="champion-lore">
+                    <h3>Lore</h3>
+                    <p class="lore-text"></p>
+                  </div>
+                </div>
+                
+                <!-- Abilities Tab -->
+                <div class="tab-pane" id="abilities-tab">
+                  <div class="champion-abilities">
+                    <h3>Abilities</h3>
+                    <div class="abilities-container">
+                      <!-- Abilities will be populated here -->
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Tips Tab -->
+                <div class="tab-pane" id="tips-tab">
+                  <div class="champion-tips">
+                    <div class="tips-container">
+                      <div class="ally-tips">
+                        <h3>Ally Tips</h3>
+                        <ul class="tips-list ally-tips-list"></ul>
+                      </div>
+                      <div class="enemy-tips">
+                        <h3>Enemy Tips</h3>
+                        <ul class="tips-list enemy-tips-list"></ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Skins Tab -->
+                <div class="tab-pane" id="skins-tab">
+                  <div class="champion-skins">
+                    <h3>Available Skins</h3>
+                    <div class="skins-carousel">
+                      <!-- Skins will be populated here -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Items View -->
+      <div id="items-view" class="view-section" style="display: none;">
+        <div id="loading-items" class="loading">
+          <div class="loading-spinner"></div>
+          <p>Loading items...</p>
+        </div>
+        
+        <div id="error-items" class="error" style="display: none;">
+          Error loading items. Please try again.
+        </div>
+        
+        <div id="no-results-items" class="no-results" style="display: none;">
+          <p>No items found matching your search.</p>
+          <button id="reset-search-items" class="reset-button">Reset Search</button>
+        </div>
+        
+        
+        <div id="items-list" class="items-list">
+          <!-- Items will be populated here via JavaScript as categorized sections -->
+          <div class="items-container">
+            <!-- Categories will be added here dynamically -->
+          </div>
+        </div>
+        
+        <!-- Item Detail View - Enhanced Version -->
+        <div id="item-detail" class="item-detail" style="display: none;">
+          <div class="detail-header">
+            <button id="back-to-items-button" class="back-button">
+              <span class="back-icon">&larr;</span> 
+              <span class="back-text">Back to Items</span>
+            </button>
+          </div>
+          
+          <div class="item-detail-content">
+            <!-- Enhanced Header with Visual Appeal -->
+            <div class="item-header">
+              <div class="item-detail-image-container">
+                <div class="item-detail-image">
+                  <!-- Item image will be displayed here -->
+                  <div class="item-image-loader"></div>
+                </div>
+                <div class="item-tier-indicator"></div>
+              </div>
+              <div class="item-detail-info">
+                <h2 class="item-detail-name"></h2>
+                <div class="item-detail-tier">
+                  <!-- Tier badge will be added here -->
+                </div>
+                <div class="item-detail-gold">
+                  <span class="gold-icon">G</span>
+                  <span class="gold-value"></span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Modern Tab Navigation -->
+            <div class="item-tabs-container">
+              <div class="item-tabs-nav">
+                <button class="item-tab-button active" data-tab="overview">
+                  <span class="tab-icon">📊</span>
+                  <span class="tab-text">Overview</span>
+                </button>
+                <button class="item-tab-button" data-tab="build-path">
+                  <span class="tab-icon">⚒️</span>
+                  <span class="tab-text">Build Path</span>
+                </button>
+                <button class="item-tab-button" data-tab="related-items">
+                  <span class="tab-icon">🔄</span>
+                  <span class="tab-text">Related Items</span>
+                </button>
+              </div>
+              
+              <!-- Tab Content with Loading States -->
+              <div class="item-tabs-content">
+                <!-- Overview Tab (Combined Stats & Description) -->
+                <div class="item-tab-pane active" id="overview-tab">
+                  <div class="tab-loader overview-loader">
+                    <div class="skeleton-loader"></div>
+                    <div class="skeleton-loader"></div>
+                    <div class="skeleton-loader"></div>
+                  </div>
+                  <div class="item-overview-container">
+                    <div class="item-stats">
+                      <!-- Item stats will be populated here -->
+                    </div>
+                    <div class="item-description-container">
+                      <div class="item-description"></div>
+                      <div class="item-abilities-container">
+                        <!-- Passive and Active abilities will be added here when applicable -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Build Path Tab -->
+                <div class="item-tab-pane" id="build-path-tab">
+                  <div class="tab-loader buildpath-loader">
+                    <div class="skeleton-loader"></div>
+                    <div class="skeleton-loader"></div>
+                  </div>
+                  <div class="build-path-container">
+                    <div class="recipe-visualization">
+                      <div class="recipe-tree">
+                        <!-- Enhanced tree visualization will be rendered here -->
+                      </div>
+                      <div class="recipe-controls">
+                        <button class="recipe-control-btn zoom-in-btn" title="Zoom In">+</button>
+                        <button class="recipe-control-btn zoom-out-btn" title="Zoom Out">−</button>
+                        <button class="recipe-control-btn expand-all-btn" title="Expand All">↕</button>
+                      </div>
+                    </div>
+                    <div class="recipe-details">
+                      <div class="recipe-efficiency">
+                        <!-- Gold efficiency will be shown here -->
+                      </div>
+                      <div class="recipe-cost-flow">
+                        <!-- Visual cost flow will be shown here -->
+                      </div>
+                      <div class="recipe-components">
+                        <!-- Recipe cost calculation will be added here -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Related Items Tab -->
+                <div class="item-tab-pane" id="related-items-tab">
+                  <div class="tab-loader related-loader">
+                    <div class="skeleton-loader"></div>
+                    <div class="skeleton-loader"></div>
+                  </div>
+                  <div class="related-items-container">
+                    <h3>Builds Into</h3>
+                    <div class="item-builds-into">
+                      <!-- Items this builds into will be populated here -->
+                    </div>
+                    
+                    <h3>Related Items</h3>
+                    <div class="related-items-scroll">
+                      <!-- Related items will be populated here -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="hextech-footer">
+      <p>Made with Hextech</p>
+    </footer>
+  </div>
+  <!-- Load scripts in order -->
+  <script src="utils.js"></script>
+  <script src="tab-navigation.js"></script>
+  <script src="search-handler.js"></script>
+  <script src="champions.js"></script>
+  <script src="items.js"></script>
+  <script src="item-detail.js"></script>
+  <script src="compact-item-filters.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

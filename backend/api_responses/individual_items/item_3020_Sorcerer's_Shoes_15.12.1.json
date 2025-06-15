@@ -1,0 +1,50 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3020": {
+      "name": "Sorcerer's Shoes",
+      "description": "<mainText><stats><attention>12</attention> Magic Penetration<br><attention>45</attention> Move Speed</stats><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "Enhances Move Speed and magic damage",
+      "from": [
+        "1001"
+      ],
+      "into": [
+        "3175"
+      ],
+      "image": {
+        "full": "3020.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 384,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 800,
+        "purchasable": true,
+        "total": 1100,
+        "sell": 770
+      },
+      "tags": [
+        "Boots",
+        "MagicPenetration"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMovementSpeedMod": 45
+      },
+      "depth": 2
+    }
+  }
+}

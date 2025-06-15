@@ -1,0 +1,38 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "9183": {
+      "name": "Blade-o-rang",
+      "description": "<mainText><stats></stats><br><br>Fires returning projectiles at the closest enemy.<br><br><status>Evolve:</status> Movement Speed<br><br><rules>Damage, Ability Haste, Crit Chance, Projectile Count</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "9183.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 96,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": true,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

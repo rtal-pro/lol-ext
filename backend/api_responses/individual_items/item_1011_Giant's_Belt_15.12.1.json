@@ -1,0 +1,61 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1011": {
+      "name": "Giant's Belt",
+      "description": "<mainText><stats><attention>350</attention> Health</stats><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "Greatly increases Health",
+      "from": [
+        "1028"
+      ],
+      "into": [
+        "4637",
+        "3084",
+        "2502",
+        "3083",
+        "3116",
+        "3119",
+        "3143",
+        "323119",
+        "3748",
+        "6665",
+        "6609",
+        "6667",
+        "8001"
+      ],
+      "image": {
+        "full": "1011.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 144,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 900,
+        "sell": 630
+      },
+      "tags": [
+        "Health"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 350
+      },
+      "depth": 2
+    }
+  }
+}

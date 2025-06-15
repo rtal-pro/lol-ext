@@ -1,0 +1,39 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "9289": {
+      "name": "FC Limited Express",
+      "description": "<mainText><stats></stats><br><br>A train randomly drives through enemies. Trains generate explosions in their wake and knock up enemies. Enemies killed have a chance to drop gold.<br><br><rules>Damage, Ability Haste, Crit Chance, Armor</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "image": {
+        "full": "9289.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 336,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": true,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

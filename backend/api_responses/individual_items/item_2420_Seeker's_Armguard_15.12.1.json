@@ -1,0 +1,59 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2420": {
+      "name": "Seeker's Armguard",
+      "description": "<mainText><stats><attention>40</attention> Ability Power<br><attention>25</attention> Armor</stats><br><br><active>Time Stop</active> (Single use)<br>Enter <keyword>Stasis</keyword> for 2.5 seconds.</mainText>",
+      "colloq": ";zhg;zonyas",
+      "plaintext": "Activate to become invincible but unable to take actions",
+      "from": [
+        "1052",
+        "1029",
+        "1052"
+      ],
+      "into": [
+        "3157",
+        "4003"
+      ],
+      "image": {
+        "full": "2420.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 432,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 1600,
+        "sell": 640
+      },
+      "tags": [
+        "Armor",
+        "SpellDamage",
+        "Active"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMagicDamageMod": 40,
+        "FlatArmorMod": 25
+      },
+      "effect": {
+        "Effect1Amount": "0",
+        "Effect2Amount": "2.5"
+      },
+      "depth": 2
+    }
+  }
+}

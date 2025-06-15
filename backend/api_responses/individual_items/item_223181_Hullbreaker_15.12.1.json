@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223181": {
+      "name": "Hullbreaker",
+      "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>500</attention> Health<br><attention>4%</attention> Move Speed</stats><br><br><passive>Skipper</passive><br>Every fifth Attack against champions and epic monsters deals <physicalDamage> bonus physical damage</physicalDamage>, increased to <physicalDamage></physicalDamage> against structures.<br><br><passive>Solo Party</passive><br>While no allied champions are within 1000 range, you gain  <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR>.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223181.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 96,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 500,
+        "FlatPhysicalDamageMod": 40,
+        "PercentMovementSpeedMod": 0.04
+      }
+    }
+  }
+}

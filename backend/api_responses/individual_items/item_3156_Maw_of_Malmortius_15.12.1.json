@@ -1,0 +1,53 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3156": {
+      "name": "Maw of Malmortius",
+      "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>15</attention> Ability Haste<br><attention>40</attention> Magic Resist</stats><br><br><passive>Lifeline</passive><br>Taking magic damage that would reduce your Health below 30% grants a <shield>magic damage Shield</shield> for 3 seconds and <lifeSteal>10% Omnivamp</lifeSteal> until end of combat.</mainText>",
+      "colloq": ";",
+      "plaintext": "Grants bonus Attack Damage when Health is low",
+      "stacks": 0,
+      "from": [
+        "3155",
+        "3133"
+      ],
+      "image": {
+        "full": "3156.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 336,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 750,
+        "purchasable": true,
+        "total": 3100,
+        "sell": 2170
+      },
+      "tags": [
+        "SpellBlock",
+        "Damage",
+        "LifeSteal",
+        "SpellVamp",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatSpellBlockMod": 40,
+        "FlatPhysicalDamageMod": 60
+      },
+      "depth": 3
+    }
+  }
+}

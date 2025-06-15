@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223004": {
+      "name": "Manamune",
+      "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>600</attention> Mana<br><attention>15</attention> Ability Haste</stats><br><br><passive>Awe</passive><br>Gain bonus <scaleAD>Attack Damage equal to </scaleAD>. <br><br><passive>Mana Charge</passive><br><buffedStat>After 2 combat rounds</buffedStat>, this item transforms into <rarityLegendary>Muramana</rarityLegendary>.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223004.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 384,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Damage",
+        "Mana",
+        "CooldownReduction",
+        "OnHit",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMPPoolMod": 600,
+        "FlatPhysicalDamageMod": 40
+      }
+    }
+  }
+}

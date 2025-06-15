@@ -1,0 +1,54 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "6691": {
+      "name": "Duskblade of Draktharr",
+      "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><br><br><li><passive>Nightstalker:</passive> Your Abilities deal up to an additional 16% damage based on the target's missing health. When a champion that you have damaged within the last 3 seconds dies, you become <keywordStealth>Untargetable</keywordStealth> from non-structures for 1.5 seconds (30(0s)) until your next action.<br><br><rarityMythic>Mythic Passive:</rarityMythic> Grants all other <rarityLegendary>Legendary</rarityLegendary> items <attention>5</attention> Ability Haste and <attention>5</attention> Move Speed.<br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3134",
+        "3133"
+      ],
+      "inStore": false,
+      "image": {
+        "full": "6691.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 192,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 900,
+        "purchasable": false,
+        "total": 2950,
+        "sell": 2065
+      },
+      "tags": [
+        "Damage",
+        "Stealth",
+        "CooldownReduction",
+        "Slow",
+        "NonbootsMovement",
+        "ArmorPenetration",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 60
+      },
+      "depth": 3
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "226698": {
+      "name": "Profane Hydra",
+      "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><br><passive>Cleave</passive><br>Attacks deal <physicalDamage>physical damage</physicalDamage> to nearby enemies.<br><active>Heretical Cleave</active> (0s)<br>Deal <physicalDamage> physical damage</physicalDamage> around you.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "226698.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 336,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Damage",
+        "Active",
+        "CooldownReduction",
+        "ArmorPenetration",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 50
+      }
+    }
+  }
+}

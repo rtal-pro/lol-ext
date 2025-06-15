@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "447106": {
+      "name": "Dragonheart",
+      "description": "<mainText><stats></stats><br><br><passive>Inner Flame</passive><br>Increases your <scaleHealth>Health</scaleHealth>, <scaleArmor>Armor</scaleArmor>, <scaleMR>Magic Resist</scaleMR>, <physicalDamage>Attack Damage</physicalDamage>, <magicDamage>Ability Power</magicDamage>, <attackSpeed>Attack Speed</attackSpeed>, and Ability Haste by 4% per Dragon Soul you possess.<br><br>Every 2 rounds, gain a Dragon Soul.<br><br>If you already have every elemental soul and would gain another, an ancient power awakens within...<br><br><rules>When purchased, if it is past round 5, immediately gain 1 soul, plus 1 for every 2 rounds beyond round 5.</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "447106.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 144,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "Health",
+        "HealthRegen",
+        "Armor",
+        "Damage",
+        "AttackSpeed",
+        "MagicResist",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

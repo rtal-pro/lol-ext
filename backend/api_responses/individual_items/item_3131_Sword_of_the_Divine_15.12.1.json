@@ -1,0 +1,58 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3131": {
+      "name": "Sword of the Divine",
+      "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>25%</attention> Attack Speed<br><attention>18</attention> Lethality</stats><br><br><br><br><active>Active -</active> <active>Divine Blessing:</active> Grants <attackSpeed>100% Attack Speed</attackSpeed> and 100% Critical Strike Chance for 3 seconds or 3 basic attacks (90(0s)).</mainText>",
+      "colloq": ";sotd;lethality",
+      "plaintext": "Activate to gain 100% Critical Strike Chance for a short duration",
+      "from": [
+        "3134",
+        "1042",
+        "1042"
+      ],
+      "image": {
+        "full": "3131.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 48,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 800,
+        "purchasable": true,
+        "total": 2300,
+        "sell": 1610
+      },
+      "tags": [
+        "Damage",
+        "CriticalStrike",
+        "AttackSpeed"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 30,
+        "PercentAttackSpeedMod": 0.25
+      },
+      "effect": {
+        "Effect1Amount": "1",
+        "Effect2Amount": "3",
+        "Effect3Amount": "3",
+        "Effect4Amount": "1",
+        "Effect5Amount": "90"
+      },
+      "depth": 3
+    }
+  }
+}

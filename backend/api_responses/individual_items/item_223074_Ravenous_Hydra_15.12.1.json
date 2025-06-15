@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223074": {
+      "name": "Ravenous Hydra",
+      "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>15</attention> Ability Haste<br><attention>15%</attention> Life Steal</stats><br><br><passive>Cleave:</passive> Attacks and Abilities deal physical damage to other nearby enemies. Activate to hit nearby enemies.<br><active>Ravenous Crescent</active><br>Deal <physicalDamage>physical damage</physicalDamage> to enemies around you. <br>Your Life Steal applies to this damage.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223074.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 144,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Damage",
+        "LifeSteal",
+        "CooldownReduction",
+        "OnHit",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 55,
+        "PercentLifeStealMod": 0.15
+      }
+    }
+  }
+}

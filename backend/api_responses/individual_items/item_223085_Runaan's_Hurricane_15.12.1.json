@@ -1,0 +1,55 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223085": {
+      "name": "Runaan's Hurricane",
+      "description": "<mainText><stats><attention>45%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance<br><attention>4%</attention> Move Speed</stats><br><br><passive>Wind's Fury</passive><br>When Attacking, bolts are fired at up to 2 enemies near the target. Bolts apply On-Hit effects and can Critically Strike.<br><br><rules>Item is for Ranged champions only.</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223085.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 336,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "CriticalStrike",
+        "AttackSpeed",
+        "OnHit",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatCritChanceMod": 0.25,
+        "PercentAttackSpeedMod": 0.45,
+        "PercentMovementSpeedMod": 0.04
+      },
+      "effect": {
+        "Effect1Amount": "0",
+        "Effect2Amount": "40",
+        "Effect3Amount": "2",
+        "Effect4Amount": "0",
+        "Effect5Amount": "40",
+        "Effect6Amount": "1"
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2056": {
+      "name": "Stealth Ward",
+      "description": "<mainText><stats></stats><br><br><active>Active - Consume:</active> Places a Stealth Ward on the ground that lasts 60 seconds, is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. </mainText>",
+      "colloq": "green;",
+      "plaintext": "Use to temporarily provide vision in an area",
+      "stacks": 2,
+      "consumed": true,
+      "consumeOnFull": true,
+      "inStore": false,
+      "image": {
+        "full": "2056.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 48,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 40,
+        "purchasable": false,
+        "total": 40,
+        "sell": 16
+      },
+      "tags": [
+        "Consumable",
+        "Lane",
+        "Stealth",
+        "Vision"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3086": {
+      "name": "Zeal",
+      "description": "<mainText><stats><attention>15%</attention> Attack Speed<br><attention>15%</attention> Critical Strike Chance<br><attention>4%</attention> Move Speed</stats><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "Slight bonuses to Critical Strike Chance, Move Speed and Attack Speed",
+      "from": [
+        "1018",
+        "1042"
+      ],
+      "into": [
+        "3094",
+        "3046",
+        "3085",
+        "4403",
+        "6671",
+        "6675"
+      ],
+      "image": {
+        "full": "3086.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 240,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 350,
+        "purchasable": true,
+        "total": 1200,
+        "sell": 840
+      },
+      "tags": [
+        "CriticalStrike",
+        "AttackSpeed",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatCritChanceMod": 0.15,
+        "PercentAttackSpeedMod": 0.15,
+        "PercentMovementSpeedMod": 0.04
+      },
+      "depth": 2
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "228002": {
+      "name": "Wooglet's Witchcap",
+      "description": "<mainText><stats><ornnBonus>300</ornnBonus> Ability Power<br><ornnBonus>50</ornnBonus> Armor<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><passive>Magical Opus</passive><br>Increases your total <scaleAP>Ability Power by 50%</scaleAP>.<br><br><b>Requires Augment: <prismatic>Quest: Wooglet's Witchcap</prismatic></b><br><br><active>Time Stop</active><br>Enter <keyword>Stasis</keyword> for 2.5 seconds.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "228002.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 48,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 6000,
+        "purchasable": true,
+        "total": 6000,
+        "sell": 4200
+      },
+      "tags": [
+        "Armor",
+        "SpellDamage",
+        "Active"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMagicDamageMod": 300,
+        "FlatArmorMod": 50
+      },
+      "effect": {
+        "Effect1Amount": "0",
+        "Effect2Amount": "2.5",
+        "Effect3Amount": "20"
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1038": {
+      "name": "B. F. Sword",
+      "description": "<mainText><stats><attention>40</attention> Attack Damage</stats><br><br></mainText>",
+      "colloq": ";bf",
+      "plaintext": "Greatly increases Attack Damage",
+      "into": [
+        "3031",
+        "3146",
+        "3026",
+        "3032",
+        "3072",
+        "4403",
+        "6671"
+      ],
+      "image": {
+        "full": "1038.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 192,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1300,
+        "purchasable": true,
+        "total": 1300,
+        "sell": 910
+      },
+      "tags": [
+        "Damage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 40
+      }
+    }
+  }
+}

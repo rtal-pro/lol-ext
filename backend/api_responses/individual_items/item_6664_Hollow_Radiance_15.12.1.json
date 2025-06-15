@@ -1,0 +1,53 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "6664": {
+      "name": "Hollow Radiance",
+      "description": "<mainText><stats><attention>400</attention> Health<br><attention>40</attention> Magic Resist<br><attention>10</attention> Ability Haste<br><attention>100%</attention> Base Health Regen</stats><br><br><passive>Immolate</passive><br>After taking or dealing damage, deal <magicDamage>magic damage</magicDamage> per second to nearby enemies for 3 seconds. <br><br><passive>Desolate</passive><br>Killing an enemy deals <magicDamage>magic damage</magicDamage> around them.</mainText>",
+      "colloq": "",
+      "plaintext": "Immobilize enemies to gain a shield. Activate to run faster at opponents.",
+      "from": [
+        "6660",
+        "3211"
+      ],
+      "image": {
+        "full": "6664.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 144,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 650,
+        "purchasable": true,
+        "total": 2800,
+        "sell": 1960
+      },
+      "tags": [
+        "Health",
+        "SpellBlock",
+        "HealthRegen",
+        "Aura",
+        "MagicResist",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatSpellBlockMod": 40,
+        "FlatHPPoolMod": 400
+      },
+      "depth": 3
+    }
+  }
+}

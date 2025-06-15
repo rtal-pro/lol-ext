@@ -1,0 +1,58 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3862": {
+      "name": "Spectral Sickle",
+      "description": "<mainText><stats><attention>6</attention> Attack Damage<br><attention>25</attention> Health<br><attention>25%</attention> Base Mana Regen<br><attention>2</attention> Gold Per 10 Seconds</stats><br><br><br><li><passive>Tribute:</passive> While nearby an ally champion, damaging Abilities and Attacks against champions or buildings grant 20 gold. This can occur up to 3 times every 36 seconds.<li><passive>Quest:</passive> Earn 500 gold from this item to transform it into <rarityGeneric>Harrowing Crescent</rarityGeneric>, gaining <active>Active -</active> <active>Warding</active>.<br><br><rules>This item grants reduced gold from minions if anyone on your team with this item kill excessive numbers of them.</rules></mainText>",
+      "colloq": "",
+      "plaintext": "Gain gold and upgrade by damaging enemy champions",
+      "inStore": false,
+      "image": {
+        "full": "3862.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 96,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": false,
+        "total": 400,
+        "sell": 160
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "ManaRegen",
+        "Vision",
+        "GoldPer",
+        "Lane"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 25,
+        "FlatPhysicalDamageMod": 6
+      },
+      "effect": {
+        "Effect1Amount": "2",
+        "Effect2Amount": "20",
+        "Effect3Amount": "20",
+        "Effect4Amount": "500",
+        "Effect5Amount": "12",
+        "Effect6Amount": "3",
+        "Effect7Amount": "2000"
+      }
+    }
+  }
+}

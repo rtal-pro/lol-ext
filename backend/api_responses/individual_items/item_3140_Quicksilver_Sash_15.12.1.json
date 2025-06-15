@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3140": {
+      "name": "Quicksilver Sash",
+      "description": "<mainText><stats><attention>30</attention> Magic Resist</stats><br><br><active>Quicksilver</active><br>Remove all crowd control debuffs (excluding <keyword>Airborne</keyword>).</mainText>",
+      "colloq": ";qss",
+      "plaintext": "Activate to remove all crowd control debuffs",
+      "from": [
+        "1033"
+      ],
+      "into": [
+        "3139",
+        "6035"
+      ],
+      "image": {
+        "full": "3140.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 336,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 900,
+        "purchasable": true,
+        "total": 1300,
+        "sell": 910
+      },
+      "tags": [
+        "Active",
+        "SpellBlock"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatSpellBlockMod": 30
+      },
+      "depth": 2
+    }
+  }
+}

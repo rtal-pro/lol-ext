@@ -1,0 +1,53 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "4632": {
+      "name": "Verdant Barrier",
+      "description": "<mainText><stats><attention>40</attention> Ability Power<br><attention>25</attention> Magic Resist</stats><br><br><passive>Annul</passive><br>Grants a Spell Shield that blocks the next enemy Ability.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "1052",
+        "1033",
+        "1052"
+      ],
+      "into": [
+        "3102"
+      ],
+      "image": {
+        "full": "4632.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 144,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": true,
+        "total": 1600,
+        "sell": 1120
+      },
+      "tags": [
+        "SpellBlock",
+        "SpellDamage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatSpellBlockMod": 25,
+        "FlatMagicDamageMod": 40
+      },
+      "depth": 2
+    }
+  }
+}

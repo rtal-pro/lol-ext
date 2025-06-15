@@ -1,0 +1,71 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3133": {
+      "name": "Caulfield's Warhammer",
+      "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>10</attention> Ability Haste</stats><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "Attack Damage and Cooldown Reduction",
+      "stacks": 0,
+      "from": [
+        "1036",
+        "2022",
+        "1036"
+      ],
+      "into": [
+        "6333",
+        "126697",
+        "323004",
+        "3156",
+        "6693",
+        "6697",
+        "4402",
+        "3004",
+        "3508",
+        "3074",
+        "3179",
+        "6691",
+        "6609",
+        "6610",
+        "6632",
+        "6692",
+        "6694",
+        "6696"
+      ],
+      "image": {
+        "full": "3133.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 96,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 100,
+        "purchasable": true,
+        "total": 1050,
+        "sell": 735
+      },
+      "tags": [
+        "Damage",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 20
+      },
+      "depth": 2
+    }
+  }
+}

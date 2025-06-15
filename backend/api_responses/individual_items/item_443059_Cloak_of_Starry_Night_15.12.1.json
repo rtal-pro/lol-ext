@@ -1,0 +1,45 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "443059": {
+      "name": "Cloak of Starry Night",
+      "description": "<mainText><stats><attention>300</attention> Health<br><attention>100</attention> Magic Resist</stats><br><br><passive>Limitless as the Stars</passive><br>Increase your <scaleMR>Magic Resist</scaleMR> by 20%. Reduce all damage you take from non-Basic Attack sources by a percentage, scaling with your <scaleMR>Magic Resist</scaleMR> up to a cap of 50%.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "443059.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 240,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "Health",
+        "SpellBlock"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 100,
+        "FlatHPPoolMod": 300
+      }
+    }
+  }
+}

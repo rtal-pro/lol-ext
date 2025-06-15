@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223146": {
+      "name": "Hextech Gunblade",
+      "description": "<mainText><stats><attention>90</attention> Ability Power<br><attention>45</attention> Attack Damage<br><attention>15%</attention> Omnivamp</stats><br><br><br><br><active>ACTIVE</active> (0s)<br><active>Lightning Bolt</active><br>Shocks the target enemy champion, dealing  magic damage and slowing them by 40% for 2 seconds.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223146.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 96,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Damage",
+        "LifeSteal",
+        "SpellDamage",
+        "Active",
+        "SpellVamp"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMagicDamageMod": 90,
+        "FlatPhysicalDamageMod": 45
+      }
+    }
+  }
+}

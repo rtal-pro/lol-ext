@@ -1,0 +1,42 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "220008": {
+      "name": "Anvil Voucher",
+      "description": "<mainText><stats></stats><br><br>Redeem during a Shopping Phase to gain a Stat Anvil!</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "stacks": 10,
+      "consumed": true,
+      "consumeOnFull": true,
+      "inStore": false,
+      "image": {
+        "full": "220008.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 288,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 750,
+        "purchasable": false,
+        "total": 750,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

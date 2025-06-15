@@ -1,0 +1,45 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "447103": {
+      "name": "Hemomancer's Helm",
+      "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>30</attention> Ability Haste<br><attention>15%</attention> Omnivamp</stats><br><br><passive>Scarlet Allegiance</passive><br>Threshold 30% Lifesteal/Omnivamp: Gain <healing>500 Max Health</healing>. Drain 10% of all damage nearby enemies take.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "447103.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 0,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "Damage",
+        "SpellVamp",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 60
+      }
+    }
+  }
+}

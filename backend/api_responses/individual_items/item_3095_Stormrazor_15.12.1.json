@@ -1,0 +1,50 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3095": {
+      "name": "Stormrazor",
+      "description": "<mainText><stats><attention>65</attention> Attack Damage<br><attention>0%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance</stats><br><br><passive>Crit Harder</passive><br>Critical attacks deal additional damage.</mainText>",
+      "colloq": ";Windblade",
+      "plaintext": "Tremendously empower other Energized effects.",
+      "from": [
+        "6670",
+        "1018",
+        "2015"
+      ],
+      "image": {
+        "full": "3095.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 0,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 3100,
+        "sell": 2170
+      },
+      "tags": [
+        "Damage",
+        "CriticalStrike"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatCritChanceMod": 0.25,
+        "FlatPhysicalDamageMod": 65
+      },
+      "depth": 3
+    }
+  }
+}

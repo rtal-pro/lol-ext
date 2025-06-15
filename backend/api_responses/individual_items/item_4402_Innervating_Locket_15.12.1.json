@@ -1,0 +1,58 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "4402": {
+      "name": "Innervating Locket",
+      "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>400</attention> Health<br><attention>300</attention> Mana<br><attention>10</attention> Ability Haste</stats><br><br><br><li><passive>Eternity:</passive> Restore Mana equal to 15% of premitigation damage taken from champions, and Health equal to 25% of Mana spent, up to 20 Health per cast, per second.<li><passive>Innervate:</passive> After using an ability, restore <healing>3% missing Health</healing> and <scaleMana>3% missing Mana</scaleMana> over 3 seconds.<br><br><flavorText>\"Cast down the Noxians\" <br>– Bobdyr, Temple Guardsman</flavorText></mainText>",
+      "colloq": ";",
+      "plaintext": "Cast spells to heal",
+      "from": [
+        "3803",
+        "3133"
+      ],
+      "image": {
+        "full": "4402.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 432,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 600,
+        "purchasable": true,
+        "total": 2950,
+        "sell": 2065
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "Mana",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMPPoolMod": 300,
+        "FlatHPPoolMod": 400,
+        "FlatPhysicalDamageMod": 30
+      },
+      "effect": {
+        "Effect1Amount": "3",
+        "Effect2Amount": "0.03",
+        "Effect3Amount": "0.03"
+      },
+      "depth": 3
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3070": {
+      "name": "Tear of the Goddess",
+      "description": "<mainText><stats><attention>240</attention> Mana</stats><br><br><passive>Manaflow</passive> (8s, max 4 charges)<br>Landing Abilities grants <scaleMana>3 max Mana</scaleMana> (doubled vs. champions), up to <scaleMana>360</scaleMana>.<br><br><passive>Helping Hand</passive><br>Attacks deal an additional <physicalDamage>5 physical damage</physicalDamage> to minions.</mainText>",
+      "colloq": "",
+      "plaintext": "Increases maximum Mana as Mana is spent",
+      "into": [
+        "3003",
+        "3004",
+        "3119"
+      ],
+      "image": {
+        "full": "3070.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 96,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": true,
+        "total": 400,
+        "sell": 280
+      },
+      "tags": [
+        "Mana",
+        "ManaRegen"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMPPoolMod": 240
+      }
+    }
+  }
+}

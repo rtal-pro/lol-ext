@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2050": {
+      "name": "Guardian's Shroud",
+      "description": "<mainText><stats><attention>300</attention> Health<br><attention>35</attention> Ability Power<br><attention>15</attention> Ability Haste</stats><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "",
+      "image": {
+        "full": "2050.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 336,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 500,
+        "sell": 250
+      },
+      "tags": [
+        "Health",
+        "SpellDamage",
+        "CooldownReduction",
+        "Lane",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 300,
+        "FlatMagicDamageMod": 35
+      }
+    }
+  }
+}

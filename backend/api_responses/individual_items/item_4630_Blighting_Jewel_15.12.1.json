@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "4630": {
+      "name": "Blighting Jewel",
+      "description": "<mainText><stats><attention>25</attention> Ability Power<br><attention>13%</attention> Magic Penetration</stats><br><br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "1052"
+      ],
+      "into": [
+        "3135",
+        "3137"
+      ],
+      "image": {
+        "full": "4630.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 96,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 700,
+        "purchasable": true,
+        "total": 1100,
+        "sell": 770
+      },
+      "tags": [
+        "MagicPenetration",
+        "SpellDamage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMagicDamageMod": 25
+      },
+      "depth": 2
+    }
+  }
+}

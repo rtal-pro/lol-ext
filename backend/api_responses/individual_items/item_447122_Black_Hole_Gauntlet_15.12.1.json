@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "447122": {
+      "name": "Black Hole Gauntlet",
+      "description": "<mainText><stats><attention>900</attention> Health<br><attention>25</attention> Ability Haste</stats><br><br><passive>Accretion</passive><br><OnHit>On-Hit</OnHit>, gain 1 stack of <keywordMajor>Accretion</keywordMajor>, and 5 stacks for <status>immobilizing</status> an enemy champion. These stacks last for the rest of the round, up to 50. Each stack increases your size by 2%.<br><br><active>ACTIVE</active> (0s)<br><active>Dark Star</active><br>Summon a Black Hole that scales with your size. <slow>Slowing</slow> nearby enemies by 35% while those in the center are pulled closer and take <magic> magic damage each second</magic>, granting you 1 stack of <keywordMajor>Accretion</keywordMajor>. The Black Hole lasts for  seconds.<br><br><rules>Increases in size every 10 stacks. </rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "447122.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 384,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "SpellBlock",
+        "AttackSpeed",
+        "OnHit",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 900
+      }
+    }
+  }
+}

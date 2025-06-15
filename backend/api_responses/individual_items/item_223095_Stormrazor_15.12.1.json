@@ -1,0 +1,45 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223095": {
+      "name": "Stormrazor",
+      "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>25%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance</stats><br><br><passive>Energized</passive><br>Moving and Attacking generates an <keyword>Energized Attack</keyword>.<br><br><passive>Bolt</passive><br>Your <keyword>Energized Attack</keyword> applies <magicDamage> bonus magic damage</magicDamage> and grants <speed>45% Move Speed</speed> for 1.5s.<br><br><buffedStat>Energized stacks twice as fast in Arena.</buffedStat><br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223095.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 96,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Damage",
+        "CriticalStrike"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatCritChanceMod": 0.25,
+        "FlatPhysicalDamageMod": 45,
+        "PercentAttackSpeedMod": 0.25
+      }
+    }
+  }
+}

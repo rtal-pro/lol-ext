@@ -1,0 +1,55 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2019": {
+      "name": "Steel Sigil",
+      "description": "<mainText><stats><attention>15</attention> Attack Damage<br><attention>30</attention> Armor</stats><br><br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "1029",
+        "1036",
+        "1029"
+      ],
+      "into": [
+        "6333",
+        "6700",
+        "3026"
+      ],
+      "image": {
+        "full": "2019.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 0,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 150,
+        "purchasable": true,
+        "total": 1100,
+        "sell": 770
+      },
+      "tags": [
+        "Armor",
+        "Damage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatArmorMod": 30,
+        "FlatPhysicalDamageMod": 15
+      },
+      "depth": 2
+    }
+  }
+}

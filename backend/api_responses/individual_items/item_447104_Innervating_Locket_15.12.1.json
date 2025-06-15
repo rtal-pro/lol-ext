@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "447104": {
+      "name": "Innervating Locket",
+      "description": "<mainText><stats><attention>70</attention> Ability Power<br><attention>20</attention> Ability Haste<br><attention>200</attention> Health</stats><br><br><passive>Fill the Soul</passive><br>Any Ability cast within 800 range grants you a charge.<br><br>At 30 charges, gain <shield> Shield</shield>, <scaleAP> Ability Power</scaleAP>, and <speed> Move Speed</speed> for the rest of the round.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "447104.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 48,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "Health",
+        "SpellDamage",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 200,
+        "FlatMagicDamageMod": 70
+      }
+    }
+  }
+}

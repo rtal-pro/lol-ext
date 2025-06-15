@@ -1,0 +1,58 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2421": {
+      "name": "Shattered Armguard",
+      "description": "<mainText><stats><attention>40</attention> Ability Power<br><attention>25</attention> Armor</stats><br><br><passive>Shattered Time</passive><br>Armguard is broken, but can still be upgraded.<br><br><rules>After breaking one Armguard, the shopkeeper will only sell you <rarityGeneric>Shattered Armguard.</rarityGeneric></rules><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "Upgrades to stopwatch",
+      "from": [
+        "1052",
+        "1029",
+        "1052"
+      ],
+      "hideFromAll": true,
+      "into": [
+        "3157"
+      ],
+      "image": {
+        "full": "2421.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 0,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 1600,
+        "sell": 640
+      },
+      "tags": [],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMagicDamageMod": 40,
+        "FlatArmorMod": 25
+      },
+      "effect": {
+        "Effect1Amount": "0",
+        "Effect2Amount": "0",
+        "Effect3Amount": "0",
+        "Effect4Amount": "0",
+        "Effect5Amount": "300"
+      },
+      "depth": 2
+    }
+  }
+}

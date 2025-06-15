@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "4628": {
+      "name": "Horizon Focus",
+      "description": "<mainText><stats><attention>115</attention> Ability Power<br><attention>25</attention> Ability Haste</stats><br><br><passive>Hypershot</passive><br>Dealing Ability damage to champions at 600 range or greater <keywordStealth>Reveals</keywordStealth> them for 6 seconds. <br><br><passive>Focus</passive><br>When <passive>Hypershot</passive> is triggered, <keywordStealth>Reveal</keywordStealth> all other enemy champions within 1400 range of them for 3 seconds.</mainText>",
+      "colloq": "",
+      "plaintext": "Immobilizing a champion causes lightning to strike them",
+      "from": [
+        "3108",
+        "3108",
+        "1026"
+      ],
+      "image": {
+        "full": "4628.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 250,
+        "purchasable": true,
+        "total": 2800,
+        "sell": 1960
+      },
+      "tags": [
+        "SpellDamage",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMagicDamageMod": 115
+      },
+      "depth": 3
+    }
+  }
+}

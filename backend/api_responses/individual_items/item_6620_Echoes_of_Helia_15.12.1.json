@@ -1,0 +1,52 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "6620": {
+      "name": "Echoes of Helia",
+      "description": "<mainText><stats><attention>35</attention> Ability Power<br><attention>200</attention> Health<br><attention>20</attention> Ability Haste<br><attention>125%</attention> Base Mana Regen</stats><br><br><passive>Soul Siphon</passive><br>Damaging a champion grants a <passive>Soul Shard</passive>, up to 2. <br>Healing or Shielding an ally consumes all <passive>Soul Shards</passive> to restore <healing>Health</healing> and deal <magicDamage>magic damage</magicDamage> to the nearest enemy champion per Shard.</mainText>",
+      "colloq": "",
+      "plaintext": "Damage low-health enemies to trigger a cursed explosion, dealing damage and slowing nearby foes",
+      "from": [
+        "3067",
+        "4642"
+      ],
+      "image": {
+        "full": "6620.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 96,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 2200,
+        "sell": 1540
+      },
+      "tags": [
+        "Health",
+        "SpellDamage",
+        "ManaRegen",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 200,
+        "FlatMagicDamageMod": 35
+      },
+      "depth": 3
+    }
+  }
+}

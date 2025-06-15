@@ -1,0 +1,50 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3013": {
+      "name": "Synchronized Souls",
+      "description": "<mainText><stats><attention>45</attention> Move Speed</stats><br><br><passive>Voidborn</passive><br>Gain Empowered Recall.<br><br><passive>Synchrony</passive><br>Gain <speed>45 Move Speed</speed> when out of combat.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3010"
+      ],
+      "inStore": false,
+      "into": [
+        "3176"
+      ],
+      "image": {
+        "full": "3013.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 336,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": false,
+        "total": 900,
+        "sell": 630
+      },
+      "tags": [
+        "Boots"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMovementSpeedMod": 45
+      },
+      "depth": 3
+    }
+  }
+}

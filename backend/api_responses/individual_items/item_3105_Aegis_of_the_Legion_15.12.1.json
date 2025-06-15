@@ -1,0 +1,59 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3105": {
+      "name": "Aegis of the Legion",
+      "description": "<mainText><stats><attention>25</attention> Armor<br><attention>25</attention> Magic Resist<br><attention>10</attention> Ability Haste</stats><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "Grants Armor and Magic Resistance",
+      "from": [
+        "1033",
+        "1029"
+      ],
+      "into": [
+        "3193",
+        "2502",
+        "3039",
+        "323050",
+        "4403",
+        "6667"
+      ],
+      "image": {
+        "full": "3105.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 144,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": true,
+        "total": 1100,
+        "sell": 770
+      },
+      "tags": [
+        "SpellBlock",
+        "Armor",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatSpellBlockMod": 25,
+        "FlatArmorMod": 25
+      },
+      "depth": 2
+    }
+  }
+}

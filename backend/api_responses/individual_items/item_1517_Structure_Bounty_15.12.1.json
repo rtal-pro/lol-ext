@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1517": {
+      "name": "Structure Bounty",
+      "description": "",
+      "colloq": "",
+      "plaintext": "",
+      "inStore": false,
+      "image": {
+        "full": "1517.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 0,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": false,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [
+        "HealthRegen",
+        "ManaRegen",
+        "OnHit"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {},
+      "effect": {
+        "Effect1Amount": "0.3",
+        "Effect2Amount": "0.4",
+        "Effect3Amount": "1.2",
+        "Effect4Amount": "3"
+      }
+    }
+  }
+}

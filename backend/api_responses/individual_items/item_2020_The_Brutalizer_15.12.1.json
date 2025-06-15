@@ -1,0 +1,54 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2020": {
+      "name": "The Brutalizer",
+      "description": "<mainText><stats><attention>25</attention> Attack Damage<br><attention>10</attention> Ability Haste<br><attention>5</attention> Lethality</stats><br><br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "2022",
+        "1037"
+      ],
+      "into": [
+        "6698",
+        "6699",
+        "6696"
+      ],
+      "image": {
+        "full": "2020.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 48,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 212,
+        "purchasable": true,
+        "total": 1337,
+        "sell": 936
+      },
+      "tags": [
+        "Damage",
+        "CooldownReduction",
+        "ArmorPenetration"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 25
+      },
+      "depth": 2
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223222": {
+      "name": "Mikael's Blessing",
+      "description": "<mainText><stats><attention>400</attention> Health<br><attention>100%</attention> Base Mana Regen<br><attention>16%</attention> Heal and Shield Power</stats><br><br><active>ACTIVE</active> (0s)<br><active>Purify</active><br>Restore Health and Remove all crowd control debuffs (except <status>Knockups</status> and <status>Suppression</status>) from an ally champion.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223222.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 336,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Health",
+        "ManaRegen",
+        "Active",
+        "CooldownReduction",
+        "Tenacity",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 400
+      },
+      "effect": {
+        "Effect1Amount": "0",
+        "Effect2Amount": "0",
+        "Effect3Amount": "0",
+        "Effect4Amount": "0",
+        "Effect5Amount": "0",
+        "Effect6Amount": "0",
+        "Effect7Amount": "0",
+        "Effect8Amount": "0",
+        "Effect9Amount": "0",
+        "Effect10Amount": "0",
+        "Effect11Amount": "0",
+        "Effect12Amount": "0",
+        "Effect13Amount": "30"
+      }
+    }
+  }
+}

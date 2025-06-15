@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3012": {
+      "name": "Chalice of Blessing",
+      "description": "<mainText><stats><attention>200</attention> Health<br><attention>50%</attention> Base Mana Regen</stats><br><br><br><li><passive>Harmony:</passive> Gain 25% Base Health Regen per <scalemana>25% Base Mana Regen</scalemana>.<br><br><flavorText>'These blessed waters still carry their power to the worthy.'</flavorText></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "1028",
+        "1004"
+      ],
+      "inStore": false,
+      "image": {
+        "full": "3012.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 288,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 300,
+        "purchasable": false,
+        "total": 900,
+        "sell": 630
+      },
+      "tags": [
+        "Health",
+        "ManaRegen"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 200
+      },
+      "depth": 2
+    }
+  }
+}

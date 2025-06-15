@@ -1,0 +1,55 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "4643": {
+      "name": "Vigilant Wardstone",
+      "description": "<mainText><stats><attention>250</attention> Health<br><attention>20</attention> Ability Haste<br><attention>25</attention> Armor<br><attention>30</attention> Magic Resist</stats><br><br><passive>Arcane Cache</passive><br>This item can store up to 3 purchased Control Wards.<br><br><passive>Behold</passive><br>Increase your Stealth Ward and Control Ward placement caps by 1.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumeOnFull": true,
+      "from": [
+        "4638"
+      ],
+      "image": {
+        "full": "4643.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 48,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1200,
+        "purchasable": true,
+        "total": 2300,
+        "sell": 1610
+      },
+      "tags": [
+        "Health",
+        "SpellBlock",
+        "Armor",
+        "Vision",
+        "Active",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 30,
+        "FlatHPPoolMod": 250,
+        "FlatArmorMod": 25
+      },
+      "depth": 2
+    }
+  }
+}

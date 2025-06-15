@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "447110": {
+      "name": "Moonflair Spellblade",
+      "description": "<mainText><stats><attention>85</attention> Ability Power<br><attention>400</attention> Health<br><attention>30%</attention> Tenacity</stats><br><br><passive>Relentless</passive><br>When you use an Ability, reset your auto attack timer and gain <attackSpeed>90% Attack Speed</attackSpeed> for your next 2 Attacks.<br><br>When you Attack, reduce your Ability Cooldowns by 0.5 seconds.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "447110.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 336,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "Health",
+        "SpellDamage",
+        "Tenacity"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 400,
+        "FlatMagicDamageMod": 85
+      }
+    }
+  }
+}

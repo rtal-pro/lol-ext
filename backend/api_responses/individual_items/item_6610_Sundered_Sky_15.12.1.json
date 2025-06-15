@@ -1,0 +1,52 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "6610": {
+      "name": "Sundered Sky",
+      "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>400</attention> Health<br><attention>10</attention> Ability Haste</stats><br><br><passive>Lightshield Strike</passive><br>Your first Attack against a champion <attention>Critically Strikes</attention> and <healing>restores Health</healing>.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "2021",
+        "3133",
+        "1028"
+      ],
+      "image": {
+        "full": "6610.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 432,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 3100,
+        "sell": 2170
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 400,
+        "FlatPhysicalDamageMod": 40
+      },
+      "depth": 3
+    }
+  }
+}

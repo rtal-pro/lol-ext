@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "228003": {
+      "name": "Deathblade",
+      "description": "<mainText><stats><ornnBonus>150</ornnBonus> Attack Damage<br><attention>20%</attention> Critical Strike Chance<br><attention>45%</attention> Critical Strike Damage<br><ornnBonus>20</ornnBonus> Lethality</stats><br><br><br><li><passive>Death and Taxes:</passive> Dealing damage that would leave an enemy champion below 7% Health executes them. Champion kills grant an additional 250 gold and heal you for 30% of the targets max health.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "inStore": false,
+      "image": {
+        "full": "228003.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 96,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 9000,
+        "purchasable": false,
+        "total": 9000,
+        "sell": 6300
+      },
+      "tags": [
+        "Damage",
+        "CriticalStrike",
+        "ArmorPenetration"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatCritChanceMod": 0.2,
+        "FlatPhysicalDamageMod": 150
+      }
+    }
+  }
+}

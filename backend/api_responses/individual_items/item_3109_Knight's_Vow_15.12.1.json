@@ -1,0 +1,55 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3109": {
+      "name": "Knight's Vow",
+      "description": "<mainText><stats><attention>200</attention> Health<br><attention>40</attention> Armor<br><attention>10</attention> Ability Haste<br><attention>100%</attention> Base Health Regen</stats><br><br><passive>Sacrifice</passive><br>While near your <attention>Worthy</attention> ally, take 12% of the damage they receive and <healing>heal for 10%</healing> of the damage they deal to champions.<active>Pledge</active> (0s)<br>Designate an ally as <attention>Worthy</attention>.</mainText>",
+      "colloq": ";",
+      "plaintext": "Partner with an ally to protect each other",
+      "from": [
+        "3067",
+        "1031",
+        "1006"
+      ],
+      "image": {
+        "full": "3109.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 288,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": true,
+        "total": 2300,
+        "sell": 1610
+      },
+      "tags": [
+        "Health",
+        "HealthRegen",
+        "Armor",
+        "Aura",
+        "Active",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 200,
+        "FlatArmorMod": 40
+      },
+      "depth": 3
+    }
+  }
+}

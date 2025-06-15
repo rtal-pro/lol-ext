@@ -1,0 +1,40 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1101": {
+      "name": "Scorchclaw Pup",
+      "description": "<mainText><stats></stats><br><br><passive>Jungle Companions</passive><br>Summon a <font color='#DD2E2E'>Scorchclaw</font> that assists you against monsters.<br><br><passive>Scorchclaw's Slash</passive><br>The companion grows as you hunt monsters, empowering your <spellName>Smite</spellName>. When fully grown, it periodically imbues your next Attack or Ability to burn enemies and <status>Slow</status> them. Killing large monsters readies this immediately.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "1101.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 384,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 450,
+        "purchasable": true,
+        "total": 450,
+        "sell": 0
+      },
+      "tags": [
+        "Jungle"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

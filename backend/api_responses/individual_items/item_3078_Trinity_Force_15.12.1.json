@@ -1,0 +1,63 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3078": {
+      "name": "Trinity Force",
+      "description": "<mainText><stats><attention>36</attention> Attack Damage<br><attention>30%</attention> Attack Speed<br><attention>333</attention> Health<br><attention>15</attention> Ability Haste</stats><br><br><passive>Spellblade</passive><br>After using an Ability, your next Attack deals <physicalDamage>bonus physical damage</physicalDamage> <OnHit>On-Hit</OnHit>.<br> <br><passive>Quicken</passive><br>Attacking grants <speed>20 Move Speed</speed> for 2 seconds.</mainText>",
+      "colloq": ";triforce;tons of damage",
+      "plaintext": "Tons of Damage",
+      "from": [
+        "3057",
+        "3044",
+        "3051"
+      ],
+      "image": {
+        "full": "3078.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 133,
+        "purchasable": true,
+        "total": 3333,
+        "sell": 2333
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "AttackSpeed",
+        "CooldownReduction",
+        "OnHit",
+        "NonbootsMovement",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 333,
+        "FlatPhysicalDamageMod": 36,
+        "PercentAttackSpeedMod": 0.3
+      },
+      "effect": {
+        "Effect1Amount": "25",
+        "Effect2Amount": "60",
+        "Effect3Amount": "2",
+        "Effect4Amount": "1.5",
+        "Effect5Amount": "1.5"
+      },
+      "depth": 3
+    }
+  }
+}

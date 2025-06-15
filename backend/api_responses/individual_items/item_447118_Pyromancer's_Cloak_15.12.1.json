@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "447118": {
+      "name": "Pyromancer's Cloak",
+      "description": "<mainText><stats><attention>85</attention> Adaptive Force<br><attention>400</attention> Health<br><attention>15</attention> Ability Haste</stats><br><br><passive>Spark</passive> (5s) Cooldown<br>Attack or Ability hits against an enemy champion <keywordMajor>Burn</keywordMajor> them for <magicDamage> magic damage</magicDamage> over 3 seconds.<br><br><passive>Cleansing Flame</passive> (0s) per champion<br>Applying a <keywordMajor>Burn</keywordMajor> to an enemy champion creates a nearby <keywordMajor>Blaze</keywordMajor> for 5 seconds. While in a <keywordMajor>Blaze</keywordMajor>, you gain <speed> Move Speed</speed> and restore <healing> Health</healing> per second, while enemies take <magicDamage> magic damage</magicDamage> per second.<br><br>The size and strength of each <keywordMajor>Blaze</keywordMajor> scale the number unique <keywordMajor>Burn</keywordMajor> sources you have.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "447118.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 192,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "SpellDamage",
+        "SpellVamp"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 400
+      }
+    }
+  }
+}

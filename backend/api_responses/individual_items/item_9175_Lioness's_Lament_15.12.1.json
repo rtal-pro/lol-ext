@@ -1,0 +1,38 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "9175": {
+      "name": "Lioness's Lament",
+      "description": "<mainText><stats></stats><br><br>Fires a crescent shaped projectiles to the left and right of your character.<br><br><status>Evolve:</status> Ability Haste<br><br><rules>Damage, Ability Haste, Crit Chance, Projectile Count</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "9175.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 240,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": true,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223006": {
+      "name": "Berserker's Greaves",
+      "description": "<mainText><stats><attention>35%</attention> Attack Speed<br><attention>55</attention> Move Speed</stats><br><br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223006.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 0,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 500,
+        "sell": 350
+      },
+      "tags": [
+        "AttackSpeed",
+        "Boots"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMovementSpeedMod": 55,
+        "PercentAttackSpeedMod": 0.35
+      }
+    }
+  }
+}

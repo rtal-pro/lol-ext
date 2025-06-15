@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3864": {
+      "name": "Black Mist Scythe",
+      "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>75</attention> Health<br><attention>100%</attention> Base Mana Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><rules>This item grants reduced gold from minions if anyone on your team with this item kill excessive numbers of them.</rules><br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 3863,
+      "inStore": false,
+      "image": {
+        "full": "3864.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 192,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": false,
+        "total": 400,
+        "sell": 160
+      },
+      "tags": [
+        "Health",
+        "ManaRegen",
+        "GoldPer",
+        "Lane"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 75,
+        "FlatPhysicalDamageMod": 20
+      },
+      "effect": {
+        "Effect1Amount": "3"
+      }
+    }
+  }
+}

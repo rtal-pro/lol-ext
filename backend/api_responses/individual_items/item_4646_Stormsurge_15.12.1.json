@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "4646": {
+      "name": "Stormsurge",
+      "description": "<mainText><stats><attention>90</attention> Ability Power<br><attention>15</attention> Magic Penetration<br><attention>6%</attention> Move Speed</stats><br><br><passive>Stormraider</passive><br>Dealing 25% of a champion's maximum Health within 2.5s applies <passive>Squall</passive> to them.<br><br><passive>Squall</passive><br>After 2 seconds, deal <magicDamage>magic damage</magicDamage>. If the target dies before <passive>Squall</passive> triggers, it damages nearby enemies.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3145",
+        "3113"
+      ],
+      "image": {
+        "full": "4646.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 192,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 800,
+        "purchasable": true,
+        "total": 2800,
+        "sell": 1960
+      },
+      "tags": [
+        "SpellDamage",
+        "GoldPer",
+        "NonbootsMovement",
+        "MagicPenetration"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMagicDamageMod": 90,
+        "PercentMovementSpeedMod": 0.06
+      },
+      "depth": 3
+    }
+  }
+}

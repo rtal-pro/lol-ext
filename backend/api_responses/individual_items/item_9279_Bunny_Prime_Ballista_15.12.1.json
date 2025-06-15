@@ -1,0 +1,39 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "9279": {
+      "name": "Bunny Prime Ballista",
+      "description": "<mainText><stats></stats><br><br>Fires a cone of projectiles with bonus crit chance in a random direction. Projectiles pierce on crit.<br><br><status>Evolve:</status> Crit Chance<br><br><rules>Damage, Ability Haste, Crit Chance, Projectile Count</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "image": {
+        "full": "9279.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 432,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": true,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "228005": {
+      "name": "Obsidian Cleaver",
+      "description": "<mainText><stats><ornnBonus>70</ornnBonus> Attack Damage<br><ornnBonus>700</ornnBonus> Health<br><ornnBonus>40</ornnBonus> Ability Haste</stats><br><br><passive>Carve</passive><br>Dealing <physicalDamage>physical damage</physicalDamage> to champions reduces their <scaleArmor>Armor by 7%</scaleArmor> for 0.1 seconds. (stacks 5 times).<br><br><passive>Fervor</passive><br>Dealing <physicalDamage>physical damage</physicalDamage> grants <speed>20 Move Speed</speed> for 2 seconds.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "inStore": false,
+      "image": {
+        "full": "228005.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 192,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 3000,
+        "purchasable": false,
+        "total": 3000,
+        "sell": 2100
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "CooldownReduction",
+        "OnHit",
+        "NonbootsMovement",
+        "ArmorPenetration",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 700,
+        "FlatPhysicalDamageMod": 70
+      },
+      "effect": {
+        "Effect1Amount": "0",
+        "Effect2Amount": "0.07",
+        "Effect3Amount": "6",
+        "Effect4Amount": "5",
+        "Effect5Amount": "0.42",
+        "Effect6Amount": "0",
+        "Effect7Amount": "0",
+        "Effect8Amount": "0",
+        "Effect9Amount": "0",
+        "Effect10Amount": "0.01"
+      }
+    }
+  }
+}

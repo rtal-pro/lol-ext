@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "446667": {
+      "name": "Radiant Virtue",
+      "description": "<mainText><stats><attention>400</attention> Health<br><attention>35</attention> Armor<br><attention>35</attention> Magic Resist<br><attention>12%</attention> Heal and Shield Power</stats><br><br><passive>Guiding Light</passive><br>Upon casting your Ultimate you <status>Transcend</status>, increasing your <scaleHealth>Max Health</scaleHealth> by <scaleHealth></scaleHealth> for 9s. While <status>Transcended</status>, you and allies within 1200 range of you heal for <scaleHealth> ()</scaleHealth> over the duration (0s).</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumeOnFull": true,
+      "specialRecipe": 220007,
+      "image": {
+        "full": "446667.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 144,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "Health",
+        "SpellBlock",
+        "Armor",
+        "Aura",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 35,
+        "FlatHPPoolMod": 400,
+        "FlatArmorMod": 35
+      }
+    }
+  }
+}

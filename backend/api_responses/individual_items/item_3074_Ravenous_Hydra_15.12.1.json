@@ -1,0 +1,53 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3074": {
+      "name": "Ravenous Hydra",
+      "description": "<mainText><stats><attention>65</attention> Attack Damage<br><attention>15</attention> Ability Haste<br><attention>12%</attention> Life Steal</stats><br><br><passive>Cleave</passive><br>Attacks deal <physicalDamage>physical damage</physicalDamage> to nearby enemies.<active>Ravenous Crescent</active><br>Deal <physicalDamage>physical damage</physicalDamage> to enemies around you. <br>Your Life Steal applies to this damage.</mainText>",
+      "colloq": ";",
+      "plaintext": "Melee attacks hit nearby enemies, dealing damage and restoring Health",
+      "from": [
+        "3077",
+        "1053",
+        "3133"
+      ],
+      "image": {
+        "full": "3074.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 288,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 150,
+        "purchasable": true,
+        "total": 3300,
+        "sell": 2310
+      },
+      "tags": [
+        "Damage",
+        "LifeSteal",
+        "CooldownReduction",
+        "OnHit",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 65,
+        "PercentLifeStealMod": 0.12
+      },
+      "depth": 3
+    }
+  }
+}

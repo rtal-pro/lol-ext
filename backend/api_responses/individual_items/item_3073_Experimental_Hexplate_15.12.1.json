@@ -1,0 +1,55 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3073": {
+      "name": "Experimental Hexplate",
+      "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>20%</attention> Attack Speed<br><attention>450</attention> Health</stats><br><br><passive>Hexcharged</passive><br>Gain 30 Ultimate Ability Haste.<br><br><passive>Overdrive</passive><br>After casting your Ultimate, gain <attackSpeed>30% Attack Speed</attackSpeed> and <speed>15% Move Speed</speed> for 8 seconds. </mainText>",
+      "colloq": ";",
+      "plaintext": "Increases maximum Mana as Mana is spent",
+      "from": [
+        "2021",
+        "3044",
+        "1042"
+      ],
+      "image": {
+        "full": "3073.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 240,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 3000,
+        "sell": 2100
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "AttackSpeed",
+        "CooldownReduction",
+        "NonbootsMovement",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 450,
+        "FlatPhysicalDamageMod": 40,
+        "PercentAttackSpeedMod": 0.2
+      },
+      "depth": 3
+    }
+  }
+}

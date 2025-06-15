@@ -1,0 +1,39 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "9407": {
+      "name": "Hopped-Up Hex",
+      "description": "<mainText><stats></stats><br><br>Aurora now shoots more hexes and her purge now deals damage in an area around <keywordMajor> Hexed</keywordMajor>target. <br><br><rules>Damage, Ability Haste, Crit Chance, Projectiles, Duration, Exp</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "image": {
+        "full": "9407.png",
+        "sprite": "item6.png",
+        "group": "item",
+        "x": 336,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": true,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "228001": {
+      "name": "Anathema's Chains",
+      "description": "<mainText><stats><attention>650</attention> Health<br><attention>20</attention> Ability Haste</stats><br><br><passive>Vendetta:</passive><br>Take reduced damage against your Nemesis. They have reduced Tenacity while near you.<br><br><rules>Active can be cast at global range.</rules><br><br><flavorText>\"She swore to dedicate her life to his destruction...\"</flavorText><active>Active -</active> <active>Vow:</active> Choose a Nemesis (90s).</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "228001.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 0,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Health",
+        "Active",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 650
+      }
+    }
+  }
+}

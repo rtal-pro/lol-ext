@@ -1,0 +1,44 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1083": {
+      "name": "Cull",
+      "description": "<mainText><stats><attention>7</attention> Attack Damage</stats><br><br><passive>Reap</passive><br>Restore <healing>3 Health</healing> <OnHit>On-Hit</OnHit>.<br>Killing minions grants <gold>1 gold</gold>, up to <gold>100</gold>. Reaching the limit grants another <gold>350 gold</gold>.<br></mainText>",
+      "colloq": ";dblade",
+      "plaintext": "Provides damage and Life Steal on hit - Killing minions grant bonus Gold",
+      "image": {
+        "full": "1083.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 336,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 450,
+        "purchasable": true,
+        "total": 450,
+        "sell": 180
+      },
+      "tags": [
+        "Damage",
+        "OnHit",
+        "Lane"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 7
+      }
+    }
+  }
+}

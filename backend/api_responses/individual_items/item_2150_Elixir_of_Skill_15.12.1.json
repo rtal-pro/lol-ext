@@ -1,0 +1,42 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2150": {
+      "name": "Elixir of Skill",
+      "description": "<mainText><stats></stats><br><br><active>Consume</active><br>Grants 1 Skill Point.<br><br><rules>This item does not increase your level or allow allocating skill points past the normal maximum in a skill</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "inStore": false,
+      "image": {
+        "full": "2150.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 96,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": false,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [
+        "Consumable"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {}
+    }
+  }
+}

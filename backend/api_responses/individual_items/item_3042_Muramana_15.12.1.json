@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3042": {
+      "name": "Muramana",
+      "description": "<mainText><stats><attention>35</attention> Attack Damage<br><attention>860</attention> Mana<br><attention>15</attention> Ability Haste</stats><br><br><passive>Awe</passive><br>Gain <scaleAD>2% max Mana as bonus Attack Damage</scaleAD>.<br><br><passive>Shock</passive><br>Attacks against champions deal <physicalDamage>1.2% max Mana as bonus physical damage</physicalDamage> <OnHit>On-Hit</OnHit>. <br>Damaging Abilities against champions deal <physicalDamage>3% - 4% max Mana as bonus physical damage</physicalDamage>.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 3004,
+      "inStore": false,
+      "image": {
+        "full": "3042.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 0,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2900,
+        "purchasable": false,
+        "total": 2900,
+        "sell": 2030
+      },
+      "tags": [
+        "Damage",
+        "Mana",
+        "CooldownReduction",
+        "OnHit",
+        "ArmorPenetration"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMPPoolMod": 860,
+        "FlatPhysicalDamageMod": 35
+      }
+    }
+  }
+}

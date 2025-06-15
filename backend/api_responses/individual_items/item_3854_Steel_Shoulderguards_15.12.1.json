@@ -1,0 +1,57 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3854": {
+      "name": "Steel Shoulderguards",
+      "description": "<mainText><stats><attention>4</attention> Attack Damage<br><attention>50</attention> Health<br><attention>50%</attention> Base Health Regen<br><attention>2</attention> Gold Per 10 Seconds</stats><br><br><br>{{ Item_Support_Spoils_Of_War_01 }}<li><passive>Quest:</passive> Earn 500 gold from this item to transform it into <rarityGeneric>Runesteel Spaulders</rarityGeneric>, gaining {{ Item_Active_Named_NoBullet }} <active>Warding</active>.<br><br><rules>{{ Item_Support_Minion_Warning }}</rules></mainText>",
+      "colloq": "",
+      "plaintext": "Gain gold and upgrade by executing minions alongside allies",
+      "inStore": false,
+      "image": {
+        "full": "3854.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 288,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": false,
+        "total": 400,
+        "sell": 160
+      },
+      "tags": [
+        "Health",
+        "HealthRegen",
+        "Damage",
+        "Vision",
+        "GoldPer",
+        "Lane"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 50,
+        "FlatPhysicalDamageMod": 4
+      },
+      "effect": {
+        "Effect1Amount": "2",
+        "Effect2Amount": "0.5",
+        "Effect3Amount": "0.3",
+        "Effect4Amount": "500",
+        "Effect5Amount": "35",
+        "Effect6Amount": "3"
+      }
+    }
+  }
+}

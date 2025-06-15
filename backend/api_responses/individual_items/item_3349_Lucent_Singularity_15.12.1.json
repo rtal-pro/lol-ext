@@ -1,0 +1,45 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3349": {
+      "name": "Lucent Singularity",
+      "description": "<mainText><stats></stats><br><br>Lucent Singularity</mainText>",
+      "colloq": "",
+      "plaintext": "Lux creates a light zone that <status>Slows</status> by @Slow@ and reveals the area. After 5 seconds or on <recast>Recasting</recast> this Ability, it detonates, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> and <status>Slowing</status> for an additional @SlowLingerDuration@ second.",
+      "inStore": false,
+      "image": {
+        "full": "3349.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 240,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": false,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [
+        "Active",
+        "Jungle",
+        "Lane",
+        "Trinket",
+        "Vision"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

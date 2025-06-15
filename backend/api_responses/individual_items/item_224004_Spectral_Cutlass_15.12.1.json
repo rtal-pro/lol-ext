@@ -1,0 +1,43 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "224004": {
+      "name": "Spectral Cutlass",
+      "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>21</attention> Lethality</stats><br><br><active>Active -</active> <active>Soul Anchor</active> (0s)<br>Mark your current location. After 5 seconds, return to that location. You may recast at any point during <active>Soul Anchor's</active> duration to return to your marked location early.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "224004.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 192,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Damage",
+        "ArmorPenetration"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 55
+      }
+    }
+  }
+}

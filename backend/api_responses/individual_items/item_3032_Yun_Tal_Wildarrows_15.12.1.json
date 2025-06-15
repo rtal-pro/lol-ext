@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3032": {
+      "name": "Yun Tal Wildarrows",
+      "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>35%</attention> Attack Speed<br><attention>0%</attention> Critical Strike Chance</stats><br><br><passive>Practice Makes Lethal</passive><br>On-Attack, gain Critical Strike Chance permanently up to 25%.<br><br><passive>Flurry</passive><br>On-Attacking an enemy champion, gain 30% Attack Speed for 6 seconds (30 second cooldown). <br>Attacks reduce this cooldown by 1 second, increased to 2 seconds for Critical Strikes.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "1038",
+        "3144",
+        "1036"
+      ],
+      "image": {
+        "full": "3032.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 144,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 750,
+        "purchasable": true,
+        "total": 3000,
+        "sell": 2100
+      },
+      "tags": [
+        "Damage",
+        "CriticalStrike",
+        "AttackSpeed"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 55,
+        "PercentAttackSpeedMod": 0.35
+      },
+      "depth": 3
+    }
+  }
+}

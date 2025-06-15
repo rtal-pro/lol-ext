@@ -1,0 +1,52 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3222": {
+      "name": "Mikael's Blessing",
+      "description": "<mainText><stats><attention>250</attention> Health<br><attention>100%</attention> Base Mana Regen<br><attention>12%</attention> Heal and Shield Power<br><attention>15</attention> Ability Haste</stats><br><br><active>Purify</active><br>Remove all crowd control debuffs (excluding <keyword>Airborne</keyword> and <keyword>Suppression</keyword>) from an ally champion and restore <healing>100 - 250 Health</healing>.</mainText>",
+      "colloq": ";",
+      "plaintext": "Activate to remove all disabling effects from an allied champion",
+      "from": [
+        "3067",
+        "3114"
+      ],
+      "image": {
+        "full": "3222.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 336,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 900,
+        "purchasable": true,
+        "total": 2300,
+        "sell": 1610
+      },
+      "tags": [
+        "Health",
+        "ManaRegen",
+        "Active",
+        "CooldownReduction",
+        "Tenacity",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 250
+      },
+      "depth": 3
+    }
+  }
+}

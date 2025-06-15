@@ -1,0 +1,44 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223075": {
+      "name": "Thornmail",
+      "description": "<mainText><stats><attention>300</attention> Health<br><attention>60</attention> Armor</stats><br><br><passive>Thorns:</passive><br>When struck by an Attack, deal damage to the attacker and apply 40% <status>Grievous Wounds</status> if they are a champion.<br><br><rules><status>Grievous Wounds</status> reduces the effectiveness of Healing and Regeneration effects.</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223075.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 192,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Health",
+        "Armor"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 300,
+        "FlatArmorMod": 60
+      }
+    }
+  }
+}

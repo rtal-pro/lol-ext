@@ -1,0 +1,44 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3399": {
+      "name": "Party Favor",
+      "description": "<mainText><stats></stats><br><br><titleLeft>'Party Favor'</titleLeft><titleRight>Obtained from a Party Drake</titleRight>. <mainText><spellPassive>Click to Consume:</spellPassive> Gain <gold>a pile of</gold> gold, and 1 skill point!<br><br><rules>Skill Points will not take you over your maximum number of skill points, nor will they make you better at playing League of Legends. Additional terms and conditions may apply.</rules></mainText></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "inStore": false,
+      "hideFromAll": true,
+      "image": {
+        "full": "3399.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 432,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": false,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [
+        "Consumable",
+        "GoldPer"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

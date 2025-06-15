@@ -1,0 +1,52 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2022": {
+      "name": "Glowing Mote",
+      "description": "<mainText><stats><attention>5</attention> Ability Haste</stats><br><br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "into": [
+        "2020",
+        "3024",
+        "3133",
+        "3802",
+        "3057",
+        "3067",
+        "3108",
+        "3158",
+        "4642",
+        "6660"
+      ],
+      "image": {
+        "full": "2022.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 144,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 250,
+        "purchasable": true,
+        "total": 250,
+        "sell": 175
+      },
+      "tags": [
+        "CooldownReduction"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {}
+    }
+  }
+}

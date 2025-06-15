@@ -1,0 +1,67 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3044": {
+      "name": "Phage",
+      "description": "<mainText><stats><attention>15</attention> Attack Damage<br><attention>200</attention> Health</stats><br><br><passive>Rage</passive><br>Attacking grants <speed>Move Speed</speed> for 2 seconds.</mainText>",
+      "colloq": ";",
+      "plaintext": "Attacks and kills give a small burst of speed",
+      "from": [
+        "1028",
+        "1036"
+      ],
+      "into": [
+        "3071",
+        "3078",
+        "3073",
+        "6630",
+        "6631"
+      ],
+      "image": {
+        "full": "3044.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 48,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 350,
+        "purchasable": true,
+        "total": 1100,
+        "sell": 770
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 200,
+        "FlatPhysicalDamageMod": 15
+      },
+      "effect": {
+        "Effect1Amount": "20",
+        "Effect2Amount": "2",
+        "Effect3Amount": "60",
+        "Effect4Amount": "0",
+        "Effect5Amount": "0",
+        "Effect6Amount": "0",
+        "Effect7Amount": "0",
+        "Effect8Amount": "8"
+      },
+      "depth": 2
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "226616": {
+      "name": "Staff of Flowing Water",
+      "description": "<mainText><stats><attention>55</attention> Ability Power<br><attention>14%</attention> Heal and Shield Power<br><attention>150%</attention> Base Mana Regen<br><attention>10%</attention> Move Speed</stats><br><br><passive>Rapids</passive><br>Healing or Shielding an ally grants you both <magicDamage> Ability Power</magicDamage> for 4 seconds.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "226616.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 0,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "SpellDamage",
+        "ManaRegen",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMagicDamageMod": 55,
+        "PercentMovementSpeedMod": 0.1
+      }
+    }
+  }
+}

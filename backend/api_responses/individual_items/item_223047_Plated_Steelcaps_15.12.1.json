@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223047": {
+      "name": "Plated Steelcaps",
+      "description": "<mainText><stats><attention>25</attention> Armor<br><attention>30</attention> Move Speed</stats><br><br>Reduces incoming damage from Attacks by <buffedStat>14%</buffedStat>.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223047.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 144,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 500,
+        "sell": 350
+      },
+      "tags": [
+        "Armor",
+        "Boots"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMovementSpeedMod": 30,
+        "FlatArmorMod": 25
+      },
+      "effect": {
+        "Effect1Amount": "0.14"
+      }
+    }
+  }
+}

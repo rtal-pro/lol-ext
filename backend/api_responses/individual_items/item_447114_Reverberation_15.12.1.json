@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "447114": {
+      "name": "Reverberation",
+      "description": "<mainText><stats><attention>35</attention> Armor<br><attention>35</attention> Magic Resist<br><attention>40%</attention> Attack Speed</stats><br><br><passive>Reverberate</passive><br>At combat start gain <healing>50 max Health</healing> per <attackSpeed>10% bonus Attack Speed</attackSpeed>.<br><br><passive>Resonate</passive><br>Attacks deal <magicDamage> magic damage <OnHit>On-Hit</OnHit></magicDamage>.<br><br><passive>Rumble</passive><br><status>Immobilizing</status> or <status>Grounding</status> an enemy champion grants 25 stacks for 10 seconds. While at 100 stacks, <status>Immobilizing</status> an enemy champion applies <OnHit>On-Hit</OnHit> effects 3 times.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "447114.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 48,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "Health",
+        "Armor",
+        "AttackSpeed",
+        "OnHit",
+        "MagicResist"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 35,
+        "FlatArmorMod": 35,
+        "PercentAttackSpeedMod": 0.4
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3867": {
+      "name": "Bounty of Worlds",
+      "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>75%</attention> Base Health Regen<br><attention>75%</attention> Base Mana Regen<br><attention>200</attention> Health</stats><br><br><passive>Upgrade</passive> <br>This item can be upgraded into <rarityLegendary>Bloodsong</rarityLegendary>, <rarityLegendary>Celestial Opposition</rarityLegendary>, <rarityLegendary>Dream Maker</rarityLegendary>, <rarityLegendary>Zaz'Zak's Realmspike</rarityLegendary>, or <rarityLegendary>Solstice Sleigh</rarityLegendary> for free.<active>Active</active> (4 charges)<br>Places an <keyword>Invisible</keyword> Stealth Ward that grants vision.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 3866,
+      "inStore": false,
+      "into": [
+        "3869",
+        "3870",
+        "3871",
+        "3876",
+        "3877"
+      ],
+      "image": {
+        "full": "3867.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 336,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": false,
+        "total": 400,
+        "sell": 160
+      },
+      "tags": [
+        "SpellDamage",
+        "ManaRegen",
+        "Vision",
+        "GoldPer",
+        "Lane"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 200
+      },
+      "effect": {
+        "Effect1Amount": "5"
+      }
+    }
+  }
+}

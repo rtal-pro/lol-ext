@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223087": {
+      "name": "Statikk Shiv",
+      "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>40%</attention> Attack Speed<br><attention>4%</attention> Move Speed</stats><br><br><passive>Electrospark</passive><br>Attacks trigger chain lightning <OnHit>On-Hit</OnHit>, dealing <magicDamage>magic damage</magicDamage> with a cooldown.<br><br><passive>Electroshock</passive> <br>Takedowns within 3 seconds of damaging the target reset Electrospark's cooldown.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223087.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 384,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Damage",
+        "AttackSpeed",
+        "OnHit",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 45,
+        "PercentAttackSpeedMod": 0.4,
+        "PercentMovementSpeedMod": 0.04
+      }
+    }
+  }
+}

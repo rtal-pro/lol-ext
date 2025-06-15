@@ -1,0 +1,52 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3916": {
+      "name": "Oblivion Orb",
+      "description": "<mainText><stats><attention>25</attention> Ability Power</stats><br><br><passive>Grievous Wounds</passive><br>Dealing <magicDamage>magic damage</magicDamage> to champions applies <keyword>40% Wounds</keyword> for 3 seconds.</mainText>",
+      "colloq": "",
+      "plaintext": "Increases magic damage",
+      "stacks": 0,
+      "from": [
+        "1052"
+      ],
+      "into": [
+        "223011",
+        "3011",
+        "3165"
+      ],
+      "image": {
+        "full": "3916.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 288,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": true,
+        "total": 800,
+        "sell": 560
+      },
+      "tags": [
+        "SpellDamage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMagicDamageMod": 25
+      },
+      "depth": 2
+    }
+  }
+}

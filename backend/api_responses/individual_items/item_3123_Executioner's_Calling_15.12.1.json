@@ -1,0 +1,53 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3123": {
+      "name": "Executioner's Calling",
+      "description": "<mainText><stats><attention>15</attention> Attack Damage</stats><br><br><passive>Grievous Wounds</passive><br>Dealing physical damage to champions applies <keyword>40% Wounds</keyword> for 3 seconds.</mainText>",
+      "colloq": ";grievous",
+      "plaintext": "Overcomes enemies with high health gain",
+      "from": [
+        "1036"
+      ],
+      "into": [
+        "3033",
+        "6609"
+      ],
+      "image": {
+        "full": "3123.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 384,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 450,
+        "purchasable": true,
+        "total": 800,
+        "sell": 560
+      },
+      "tags": [
+        "Damage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 15
+      },
+      "effect": {
+        "Effect1Amount": "3"
+      },
+      "depth": 2
+    }
+  }
+}

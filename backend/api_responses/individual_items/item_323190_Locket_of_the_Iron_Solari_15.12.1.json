@@ -1,0 +1,56 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "323190": {
+      "name": "Locket of the Iron Solari",
+      "description": "<mainText><stats><attention>250</attention> Health<br><attention>30</attention> Armor<br><attention>30</attention> Magic Resist<br><attention>10</attention> Ability Haste</stats><br><br><active>Devotion</active><br>Grant nearby allies a <shield>200 - 360 Shield</shield> that decays over 2.5 seconds.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3067",
+        "1029",
+        "1033"
+      ],
+      "image": {
+        "full": "323190.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 48,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1100,
+        "purchasable": true,
+        "total": 2600,
+        "sell": 1820
+      },
+      "tags": [
+        "Health",
+        "SpellBlock",
+        "Armor",
+        "Aura",
+        "Active",
+        "MagicResist",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 30,
+        "FlatHPPoolMod": 250,
+        "FlatArmorMod": 30
+      },
+      "depth": 3
+    }
+  }
+}

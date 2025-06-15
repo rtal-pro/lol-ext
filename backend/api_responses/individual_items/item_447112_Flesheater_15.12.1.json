@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "447112": {
+      "name": "Flesheater",
+      "description": "<mainText><stats><attention>70</attention> Adaptive Force<br><attention>500</attention> Health</stats><br><br><passive>Hack the Meat</passive><br>Dealing damage shreds 3 <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> for 5 seconds, stacking up to 10 times. Applying stacks has a 1 second cooldown per Ability.<br><br><passive>Cannibalize</passive><br>On Champion Takedown, Heal yourself and your ally for <healing>18% of the Target's Max Health</healing>.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "447112.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 432,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "Damage",
+        "SpellDamage",
+        "MagicPenetration",
+        "ArmorPenetration"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 500
+      }
+    }
+  }
+}

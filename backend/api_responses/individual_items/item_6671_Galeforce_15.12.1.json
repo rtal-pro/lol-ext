@@ -1,0 +1,56 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "6671": {
+      "name": "Galeforce",
+      "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>15%</attention> Attack Speed<br><attention>20%</attention> Critical Strike Chance<br><attention>7%</attention> Move Speed</stats><br><br><br><br><rarityMythic>Mythic Passive:</rarityMythic> Grants all other <rarityLegendary>Legendary</rarityLegendary> items <attention>5</attention> Attack Damage.<br><br><rules>Maximum missile damage dealt when enemy Health is below 25%.<br>Cloudburst's dash cannot pass through terrain.</rules><br><br><active>Active -</active> <active>Cloudburst:</active> Dash in target direction, firing three missiles at the lowest Health enemy near your destination. Deals physical damage, increased against low Health targets.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "1038",
+        "3086",
+        "1036"
+      ],
+      "inStore": false,
+      "image": {
+        "full": "6671.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 336,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 650,
+        "purchasable": false,
+        "total": 3500,
+        "sell": 2450
+      },
+      "tags": [
+        "Damage",
+        "CriticalStrike",
+        "AttackSpeed",
+        "Active",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatCritChanceMod": 0.2,
+        "FlatPhysicalDamageMod": 50,
+        "PercentAttackSpeedMod": 0.15,
+        "PercentMovementSpeedMod": 0.07
+      },
+      "depth": 3
+    }
+  }
+}

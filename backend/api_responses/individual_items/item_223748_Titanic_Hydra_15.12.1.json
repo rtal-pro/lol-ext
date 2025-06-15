@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223748": {
+      "name": "Titanic Hydra",
+      "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>400</attention> Health</stats><br><br><br><li><passive>Colossus:</passive> Gain bonus <scaleAD>Attack Damage based off of bonus Health</scaleAD>.<li><passive>Cleave:</passive> Attacks apply additional damage <OnHit>On-Hit</OnHit>, creating a shockwave that deals damage to enemies behind the target.<active>Titanic Crescent</active><br>Empower your next <passive>Cleave</passive> to deal <physicalDamage>bonus physical damage</physicalDamage> <OnHit>On-Hit</OnHit> and deal <physicalDamage>bonus physical damage</physicalDamage> to enemies behind the target.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223748.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 96,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Health",
+        "HealthRegen",
+        "Damage",
+        "OnHit"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 400,
+        "FlatPhysicalDamageMod": 40
+      }
+    }
+  }
+}

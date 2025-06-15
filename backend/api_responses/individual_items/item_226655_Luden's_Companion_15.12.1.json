@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "226655": {
+      "name": "Luden's Companion",
+      "description": "<mainText><stats><attention>85</attention> Ability Power<br><attention>600</attention> Mana<br><attention>25</attention> Ability Haste</stats><br><br><passive>Fire</passive><br>Damaging Abilities consume all the charges to deal an additional magic damage to the target and one additional nearby target per charge. If there are insufficient targets in range, for each remaining shot, repeat the damage on the primary target.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "226655.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 384,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "SpellDamage",
+        "Mana",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMPPoolMod": 600,
+        "FlatMagicDamageMod": 85
+      }
+    }
+  }
+}

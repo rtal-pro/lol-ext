@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "6695": {
+      "name": "Serpent's Fang",
+      "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>15</attention> Lethality</stats><br><br><passive>Shield Reaver</passive><br>Damaging an enemy champion reduces Shields they gain by % for 3 seconds. <br>If they were not already affected by <passive>Shield Reaver</passive>, reduce Shields on them by %.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3134",
+        "1037"
+      ],
+      "image": {
+        "full": "6695.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 384,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 625,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1750
+      },
+      "tags": [
+        "Damage",
+        "ArmorPenetration"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 55
+      },
+      "depth": 3
+    }
+  }
+}

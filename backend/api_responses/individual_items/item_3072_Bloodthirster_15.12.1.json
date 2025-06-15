@@ -1,0 +1,50 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3072": {
+      "name": "Bloodthirster",
+      "description": "<mainText><stats><attention>80</attention> Attack Damage<br><attention>15%</attention> Life Steal</stats><br><br><passive>Ichorshield</passive><br>Convert excess healing from your Lifesteal to a <shield>Shield</shield>.</mainText>",
+      "colloq": ";bt",
+      "plaintext": "Grants Attack Damage, Life Steal and Life Steal now overheals",
+      "from": [
+        "1038",
+        "1037",
+        "1053"
+      ],
+      "image": {
+        "full": "3072.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 192,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 325,
+        "purchasable": true,
+        "total": 3400,
+        "sell": 2380
+      },
+      "tags": [
+        "Damage",
+        "LifeSteal"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 80,
+        "PercentLifeStealMod": 0.15
+      },
+      "depth": 3
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223050": {
+      "name": "Zeke's Convergence",
+      "description": "<mainText><stats><attention>300</attention> Health<br><attention>25</attention> Armor<br><attention>15</attention> Ability Haste<br><attention>30</attention> Magic Resist</stats><br><br><passive>Frostfire Tempest</passive><br>Casting your Ultimate summons a storm around you. The storm deals <magicDamage>magic damage</magicDamage> per second to enemy Champions and <keyword>Slows</keyword> them.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223050.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 192,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Health",
+        "SpellBlock",
+        "Armor",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 30,
+        "FlatHPPoolMod": 300,
+        "FlatArmorMod": 25
+      }
+    }
+  }
+}

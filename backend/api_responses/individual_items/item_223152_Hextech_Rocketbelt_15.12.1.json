@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223152": {
+      "name": "Hextech Rocketbelt",
+      "description": "<mainText><stats><attention>95</attention> Ability Power<br><attention>400</attention> Health<br><attention>20</attention> Ability Haste</stats><br><br><active>Active -</active> <active>Supersonic:</active> Dash in target direction, unleashing an arc of magic missiles that deal damage.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223152.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 144,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Health",
+        "SpellDamage",
+        "Active",
+        "CooldownReduction",
+        "NonbootsMovement",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 400,
+        "FlatMagicDamageMod": 95
+      }
+    }
+  }
+}

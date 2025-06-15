@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "224636": {
+      "name": "Night Harvester",
+      "description": "<mainText><stats><attention>90</attention> Ability Power<br><attention>300</attention> Health<br><attention>25</attention> Ability Haste</stats><br><br><passive>Soulrend</passive><br>Damaging a champion with Attacks or Abilities deals an additional <magicDamage> magic damage</magicDamage> and grants you <speed>25% Move Speed</speed> for 1.5 seconds <buffedstat>(30(0s) per champion)</buffedstat>.<br><br><rules>Damaging a new champion will extend the duration of the Move Speed bonus.</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "inStore": false,
+      "image": {
+        "full": "224636.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 48,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": false,
+        "total": 2500,
+        "sell": 1750
+      },
+      "tags": [
+        "Health",
+        "SpellDamage",
+        "CooldownReduction",
+        "NonbootsMovement",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 300,
+        "FlatMagicDamageMod": 90
+      }
+    }
+  }
+}

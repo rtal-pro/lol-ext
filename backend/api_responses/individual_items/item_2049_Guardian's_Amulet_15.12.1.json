@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2049": {
+      "name": "Guardian's Amulet",
+      "description": "<mainText><stats><attention>15%</attention> Heal and Shield Power<br><attention>20</attention> Ability Power<br><attention>20</attention> Ability Haste</stats><br><br><passive>Recovery</passive><br>Restores <scaleMana>10 Mana</scaleMana> every 5 seconds. If you can't gain mana, restores <healing>3 Health</healing> instead.</mainText>",
+      "colloq": ";",
+      "plaintext": "Increases Health and provides Stealth Wards over time",
+      "image": {
+        "full": "2049.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 288,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 500,
+        "sell": 250
+      },
+      "tags": [
+        "SpellDamage",
+        "ManaRegen",
+        "CooldownReduction",
+        "Lane",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMagicDamageMod": 20
+      }
+    }
+  }
+}

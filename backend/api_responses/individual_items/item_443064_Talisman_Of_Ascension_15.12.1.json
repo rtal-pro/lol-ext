@@ -1,0 +1,59 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "443064": {
+      "name": "Talisman Of Ascension",
+      "description": "<mainText><stats></stats><br><br><attention>?</attention> Attack Damage<br><attention>?</attention> Attack Speed<br><attention>?</attention> Critical Strike Chance<br><attention>?</attention> Critical Strike Damage<br><br><attention>? </attention> Ability Power<br><attention>?</attention> Ability Haste<br><br><attention>?</attention> Health<br><attention>?%</attention> Base Health Regen<br><attention>?</attention> Mana<br><attention>?%</attention> Base Mana Regen<br><attention>?</attention> Armor<br><attention>?</attention> Magic Resist<br><br><attention>? || ?%</attention> Lethality and Armor Penetration<br><attention>? || ?%</attention> Magic Penetration<br><attention>?%</attention> Lifesteal<br><attention>?%</attention> Omnivamp<br><attention>? || ?%</attention> Move Speed<br><attention>?%</attention> Heal and Shield Power<br><br><br><active>ACTIVE</active><br><active>Imbricate</active> Re-roll the stats on Talisman of Ascension. Each time you do so, the stats get stronger. Twice Per Round (Thrice with Apex Inventor).</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "443064.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 0,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "Health",
+        "SpellBlock",
+        "HealthRegen",
+        "Armor",
+        "Damage",
+        "CriticalStrike",
+        "AttackSpeed",
+        "LifeSteal",
+        "SpellDamage",
+        "Mana",
+        "ManaRegen",
+        "Active",
+        "CooldownReduction",
+        "SpellVamp",
+        "NonbootsMovement",
+        "MagicPenetration",
+        "ArmorPenetration",
+        "MagicResist",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

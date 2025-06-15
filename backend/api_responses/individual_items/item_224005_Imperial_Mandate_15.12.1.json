@@ -1,0 +1,45 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "224005": {
+      "name": "Imperial Mandate",
+      "description": "<mainText><stats><attention>60</attention> Ability Power<br><attention>35</attention> Ability Haste<br><attention>150%</attention> Base Mana Regen</stats><br><br><passive>Coordinated Fire</passive> (0s) per target<br><keyword>Slowing</keyword> or <keyword>Immobilizing</keyword> an enemy champion marks them for 5 seconds. Ally champion damage detonates the mark, dealing <magicDamage>magic damage equal to 10% of current health</magicDamage>. </mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "224005.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 240,
+        "y": 432,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "SpellDamage",
+        "ManaRegen",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMagicDamageMod": 60
+      }
+    }
+  }
+}

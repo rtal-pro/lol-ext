@@ -1,0 +1,52 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3065": {
+      "name": "Spirit Visage",
+      "description": "<mainText><stats><attention>400</attention> Health<br><attention>50</attention> Magic Resist<br><attention>10</attention> Ability Haste<br><attention>100%</attention> Base Health Regen</stats><br><br><passive>Boundless Vitality</passive><br>Heals and Shields on you are increased by 25%.</mainText>",
+      "colloq": ";sv",
+      "plaintext": "Increases Health and healing effects",
+      "from": [
+        "3211",
+        "3067"
+      ],
+      "image": {
+        "full": "3065.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 384,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 650,
+        "purchasable": true,
+        "total": 2700,
+        "sell": 1890
+      },
+      "tags": [
+        "Health",
+        "SpellBlock",
+        "HealthRegen",
+        "CooldownReduction",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatSpellBlockMod": 50,
+        "FlatHPPoolMod": 400
+      },
+      "depth": 3
+    }
+  }
+}

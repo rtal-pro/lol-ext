@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "4013": {
+      "name": "Lightning Braid",
+      "description": "<mainText><stats><attention>70</attention> Ability Power<br><attention>30</attention> Armor<br><attention>30</attention> Magic Resist<br><attention>30%</attention> Tenacity</stats><br><br><br><li><passive>Chain Lightning:</passive> You deal 20% reduced ability damage. On a 1 second cadence, enemies you've damaged with abilities chain 66.6% of the ability damage you've dealt them to another nearby enemy, prioritizing champions.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "4013.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 144,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 3000,
+        "purchasable": true,
+        "total": 3000,
+        "sell": 2100
+      },
+      "tags": [
+        "SpellBlock",
+        "Armor",
+        "SpellDamage",
+        "Tenacity"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatSpellBlockMod": 30,
+        "FlatMagicDamageMod": 70,
+        "FlatArmorMod": 30
+      }
+    }
+  }
+}

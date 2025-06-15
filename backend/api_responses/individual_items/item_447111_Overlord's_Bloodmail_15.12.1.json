@@ -1,0 +1,44 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "447111": {
+      "name": "Overlord's Bloodmail",
+      "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>400</attention> Health</stats><br><br><passive>Tyranny</passive><br>Gain <physicalDamage> AD</physicalDamage> equal to 3% <scaleHealth>Bonus HP</scaleHealth>.<br><br><passive>Retribution</passive><br>Gain up to <physicalDamage>15% increased AD</physicalDamage> based on your percent missing Health.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "447111.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 384,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Health",
+        "Damage"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 400,
+        "FlatPhysicalDamageMod": 40
+      }
+    }
+  }
+}

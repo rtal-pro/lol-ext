@@ -1,0 +1,57 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3102": {
+      "name": "Banshee's Veil",
+      "description": "<mainText><stats><attention>105</attention> Ability Power<br><attention>40</attention> Magic Resist</stats><br><br><passive>Annul</passive><br>Grants a Spell Shield that blocks the next enemy Ability.</mainText>",
+      "colloq": ";bv",
+      "plaintext": "Periodically blocks enemy abilities",
+      "from": [
+        "1058",
+        "4632"
+      ],
+      "image": {
+        "full": "3102.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 96,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 200,
+        "purchasable": true,
+        "total": 3000,
+        "sell": 2100
+      },
+      "tags": [
+        "SpellBlock",
+        "SpellDamage"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatSpellBlockMod": 40,
+        "FlatMagicDamageMod": 105
+      },
+      "effect": {
+        "Effect1Amount": "40",
+        "Effect2Amount": "45",
+        "Effect3Amount": "10",
+        "Effect4Amount": "-0.1",
+        "Effect5Amount": "8",
+        "Effect6Amount": "2"
+      },
+      "depth": 3
+    }
+  }
+}

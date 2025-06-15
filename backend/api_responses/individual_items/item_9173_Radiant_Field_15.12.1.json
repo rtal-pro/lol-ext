@@ -1,0 +1,38 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "9173": {
+      "name": "Radiant Field",
+      "description": "<mainText><stats></stats><br><br>Damages nearby enemies, scaling with your Max Health.<br><br><status>Evolve:</status> Max Health<br><br><rules>Damage, Area Size, Max Health</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "9173.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 144,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": true,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

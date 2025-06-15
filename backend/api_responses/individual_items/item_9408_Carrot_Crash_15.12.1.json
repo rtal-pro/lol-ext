@@ -1,0 +1,39 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "9408": {
+      "name": "Carrot Crash",
+      "description": "<mainText><stats></stats><br><br>Riven passively gains Move Speed and gains charge as she moves. At max charge she jumps forward, dealing damage in an area. Every second cast knocks up enemies and ruptures the area, causing a second detonation that damages and knocks up again.<br><br><rules>Damage, Area Size, Crit Chance, Movement Speed </rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "image": {
+        "full": "9408.png",
+        "sprite": "item6.png",
+        "group": "item",
+        "x": 384,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": true,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": true,
+        "35": false
+      },
+      "stats": {}
+    }
+  }
+}

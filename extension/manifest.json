@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "League of Legends Helper",
+  "version": "1.0.0",
+  "description": "A League of Legends extension providing champion, item, and rune information with Hextech styling",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost:8001/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; img-src 'self' http://localhost:8001"
+  }
+}

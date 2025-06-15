@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223172": {
+      "name": "Zephyr",
+      "description": "<mainText><stats><attention>50%</attention> Attack Speed<br><attention>10%</attention> Move Speed<br><attention>30</attention> Ability Haste<br><attention>20%</attention> Tenacity</stats><br><br><passive>Like the Wind</passive><br>Gain 5% Move Speed <OnHit>On-Hit</OnHit> for 6 seconds, stacking up to 25% Move Speed.<br><br><rules>Tenacity reduces the duration of <status>Stun</status>, <status>Slow</status>, <status>Taunt</status>, <status>Fear</status>, <status>Silence</status>, <status>Blind</status>, <status>Polymorph</status> and <status>Immobilizing</status> effects. It has no effect on <status>Airborne</status> or <status>Suppression</status>.</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223172.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 0,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "AttackSpeed",
+        "CooldownReduction",
+        "OnHit",
+        "NonbootsMovement",
+        "Tenacity"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "PercentAttackSpeedMod": 0.5,
+        "PercentMovementSpeedMod": 0.1
+      }
+    }
+  }
+}

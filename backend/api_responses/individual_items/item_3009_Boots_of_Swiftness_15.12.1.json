@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3009": {
+      "name": "Boots of Swiftness",
+      "description": "<mainText><stats><attention>55</attention> Move Speed</stats><br><br><passive>Fleetfooted</passive><br>Reduce the effectiveness of <keyword>Slows</keyword> by 25%.</mainText>",
+      "colloq": ";",
+      "plaintext": "Enhances Move Speed and reduces the effect of slows",
+      "from": [
+        "1001"
+      ],
+      "into": [
+        "3170"
+      ],
+      "image": {
+        "full": "3009.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 144,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 700,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 700
+      },
+      "tags": [
+        "Boots"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatMovementSpeedMod": 55
+      },
+      "depth": 2
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3866": {
+      "name": "Runic Compass",
+      "description": "<mainText><stats><attention>100</attention> Health<br><attention>50%</attention> Base Health Regen<br><attention>50%</attention> Base Mana Regen<br><attention>5</attention> Gold Per 10 Seconds</stats><br><br><passive>Support Quest</passive><br>Earn <keywordMajor>0</keywordMajor> gold from this item to transform it into <rarityGeneric>Bounty of Worlds</rarityGeneric>. <br><br><passive>Shared Riches</passive> (0s, max 0 charges)<br>While near an ally champion, damage enemy champions or kill minions to gain gold.<active>Active</active> (3 charges)<br>Places an <keyword>Invisible</keyword> Stealth Ward that grants vision.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 3865,
+      "inStore": false,
+      "image": {
+        "full": "3866.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 288,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": false,
+        "total": 400,
+        "sell": 160
+      },
+      "tags": [
+        "SpellDamage",
+        "ManaRegen",
+        "Vision",
+        "GoldPer",
+        "Lane"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 100
+      },
+      "effect": {
+        "Effect1Amount": "5"
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "447108": {
+      "name": "Runecarver",
+      "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>20</attention> Ability Haste<br><attention>8%</attention> Move Speed</stats><br><br><passive>Helix</passive><br>Moving, attacking, and dealing damage with an ability grants 30 <keyword>Energized</keyword> stacks and triggers <keyword>Energized Attacks</keyword> if it is ready.<br><br><passive>Spiral Out</passive><br>On <keyword>Energized Attack</keyword>, gain a <keyword>Rune</keyword> stack for the rest of the round. Then fire a missile at the target for each <keyword>Rune</keyword> stack, dealing <magicDamage> magic damage</magicDamage>.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "specialRecipe": 220007,
+      "image": {
+        "full": "447108.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 240,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 400
+      },
+      "tags": [
+        "SpellDamage",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMagicDamageMod": 80,
+        "PercentMovementSpeedMod": 0.08
+      }
+    }
+  }
+}

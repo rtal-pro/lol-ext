@@ -1,0 +1,48 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223153": {
+      "name": "Blade of The Ruined King",
+      "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>20%</attention> Attack Speed<br><attention>10%</attention> Life Steal</stats><br><br><passive>Mist's Edge</passive><br>Attacks apply an additional enemy current Health physical damage <OnHit>On-Hit</OnHit>.<br><br><passive>Clawing Shadows</passive> (0s)<br>Your first basic attack against a champion Slows them.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223153.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 192,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Damage",
+        "AttackSpeed",
+        "LifeSteal",
+        "Slow",
+        "OnHit"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 30,
+        "PercentAttackSpeedMod": 0.2,
+        "PercentLifeStealMod": 0.1
+      }
+    }
+  }
+}

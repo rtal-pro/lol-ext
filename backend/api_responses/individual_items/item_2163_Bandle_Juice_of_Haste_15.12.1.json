@@ -1,0 +1,43 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2163": {
+      "name": "Bandle Juice of Haste",
+      "description": "<mainText><stats></stats><br><br>Drink to permanently gain <speed>10+ 5% Ability Haste</speed>. And a hat!<br><br><flavorText>For people who gotta go FAST. Made with lightning. REAL lightning!</flavorText></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "consumed": true,
+      "consumeOnFull": true,
+      "image": {
+        "full": "2163.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 336,
+        "y": 384,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 1000,
+        "purchasable": true,
+        "total": 1000,
+        "sell": 1000
+      },
+      "tags": [
+        "Consumable",
+        "CooldownReduction"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {}
+    }
+  }
+}

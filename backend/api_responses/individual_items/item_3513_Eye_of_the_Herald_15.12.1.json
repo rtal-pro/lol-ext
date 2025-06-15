@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3513": {
+      "name": "Eye of the Herald",
+      "description": "<mainText><stats></stats><br><br><br><br><active>Active - Consume:</active> Crush the Eye of the Herald, begining the ritual to summon Rift Herald. You may click the Rift Herald after it has summoned to control how it charges. This control effect can be done once when it is summoned, and once each time a nearby enemy structure dies.</mainText>",
+      "colloq": ";Herald's Eye",
+      "plaintext": "Eye of the Herald - a Gift of the Void.",
+      "consumed": true,
+      "inStore": false,
+      "image": {
+        "full": "3513.png",
+        "sprite": "item4.png",
+        "group": "item",
+        "x": 192,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 0,
+        "purchasable": false,
+        "total": 0,
+        "sell": 0
+      },
+      "tags": [
+        "Trinket",
+        "Active"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {},
+      "effect": {
+        "Effect1Amount": "240",
+        "Effect2Amount": "1",
+        "Effect3Amount": "20",
+        "Effect4Amount": "180"
+      }
+    }
+  }
+}

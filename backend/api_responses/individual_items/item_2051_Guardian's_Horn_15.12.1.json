@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "2051": {
+      "name": "Guardian's Horn",
+      "description": "<mainText><stats><attention>150</attention> Health</stats><br><br><br><li><passive>Recovery:</passive> Restores <healing>20 Health</healing> every 5 seconds.<li><passive>Undaunted:</passive> Blocks 15 damage from attacks and spells from champions (25% effectiveness vs. damage over time abilities).<br></mainText>",
+      "colloq": "Golden Arm of Kobe;Golden Bicep of Kobe;Horn; Horn of the ManWolf; ManWolf",
+      "plaintext": "Good starting item for tanks",
+      "image": {
+        "full": "2051.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 384,
+        "y": 288,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 950,
+        "purchasable": true,
+        "total": 950,
+        "sell": 665
+      },
+      "tags": [
+        "Health",
+        "HealthRegen",
+        "Lane"
+      ],
+      "maps": {
+        "11": false,
+        "12": true,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 150,
+        "FlatHPRegenMod": 4
+      },
+      "effect": {
+        "Effect1Amount": "15",
+        "Effect2Amount": "0.25"
+      }
+    }
+  }
+}

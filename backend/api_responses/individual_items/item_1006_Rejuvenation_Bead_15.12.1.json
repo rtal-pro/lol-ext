@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1006": {
+      "name": "Rejuvenation Bead",
+      "description": "<mainText><stats><attention>100%</attention> Base Health Regen</stats><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "Slightly increases Health Regen",
+      "into": [
+        "3109",
+        "3211",
+        "323109",
+        "3801"
+      ],
+      "image": {
+        "full": "1006.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 96,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 300,
+        "purchasable": true,
+        "total": 300,
+        "sell": 120
+      },
+      "tags": [
+        "HealthRegen"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {}
+    }
+  }
+}

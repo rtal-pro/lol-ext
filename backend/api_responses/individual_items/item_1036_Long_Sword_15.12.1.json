@@ -1,0 +1,68 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1036": {
+      "name": "Long Sword",
+      "description": "<mainText><stats><attention>10</attention> Attack Damage</stats><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "Slightly increases Attack Damage",
+      "into": [
+        "2015",
+        "1053",
+        "6701",
+        "2019",
+        "2021",
+        "3077",
+        "6670",
+        "3133",
+        "323004",
+        "3142",
+        "3004",
+        "3032",
+        "3035",
+        "3044",
+        "3051",
+        "3155",
+        "4003",
+        "6690",
+        "3123",
+        "3134",
+        "6699",
+        "6671",
+        "6692"
+      ],
+      "image": {
+        "full": "1036.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 96,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 350,
+        "purchasable": true,
+        "total": 350,
+        "sell": 245
+      },
+      "tags": [
+        "Damage",
+        "Lane"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 10
+      }
+    }
+  }
+}

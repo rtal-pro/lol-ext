@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3177": {
+      "name": "Guardian's Blade",
+      "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>150</attention> Health<br><attention>15</attention> Ability Haste</stats><br><br></mainText>",
+      "colloq": ";dblade",
+      "plaintext": "Good starting item for attackers",
+      "image": {
+        "full": "3177.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 432,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 950,
+        "purchasable": true,
+        "total": 950,
+        "sell": 665
+      },
+      "tags": [
+        "Health",
+        "Damage",
+        "Lane",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": false,
+        "12": true,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 150,
+        "FlatPhysicalDamageMod": 30
+      },
+      "effect": {
+        "Effect1Amount": "10"
+      }
+    }
+  }
+}

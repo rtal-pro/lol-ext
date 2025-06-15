@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "6693": {
+      "name": "Prowler's Claw",
+      "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>22</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><br><br><li><passive>Ambush Predator:</passive> After entering a bush your next damaging Attack or Ability on enemy champions deals <physicalDamage>10% of their current health</physicalDamage> over 4 seconds, revealing them and reducing their vision radius for the duration. (5(0s)).</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3134",
+        "3133"
+      ],
+      "inStore": false,
+      "image": {
+        "full": "6693.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 288,
+        "y": 192,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 800,
+        "purchasable": false,
+        "total": 2850,
+        "sell": 1995
+      },
+      "tags": [
+        "Damage",
+        "CooldownReduction",
+        "ArmorPenetration",
+        "AbilityHaste"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 55
+      },
+      "depth": 3
+    }
+  }
+}

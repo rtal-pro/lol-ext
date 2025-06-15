@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "226672": {
+      "name": "Kraken Slayer",
+      "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>35%</attention> Attack Speed<br><attention>7%</attention> Move Speed</stats><br><br><passive>Bring It Down</passive><br>Every third Attack deals <physicalDamage>bonus physical damage</physicalDamage> <OnHit>On-Hit</OnHit>, increased based on their missing Health.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "226672.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 288,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Damage",
+        "AttackSpeed",
+        "OnHit",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 30,
+        "PercentAttackSpeedMod": 0.35,
+        "PercentMovementSpeedMod": 0.07
+      }
+    }
+  }
+}

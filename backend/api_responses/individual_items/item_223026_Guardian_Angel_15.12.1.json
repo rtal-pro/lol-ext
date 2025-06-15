@@ -1,0 +1,50 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223026": {
+      "name": "Guardian Angel",
+      "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>45</attention> Armor</stats><br><br><passive>Saving Grace:</passive><br>Upon taking lethal damage, restores <healing>50% base Health</healing> and <scaleMana>100% max Mana</scaleMana> after 4 seconds of stasis. This effect has a one round cooldown.<br></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223026.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 192,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "Armor",
+        "Damage"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatArmorMod": 45,
+        "FlatPhysicalDamageMod": 55
+      },
+      "effect": {
+        "Effect1Amount": "0.5",
+        "Effect2Amount": "4",
+        "Effect3Amount": "300",
+        "Effect4Amount": "1"
+      }
+    }
+  }
+}

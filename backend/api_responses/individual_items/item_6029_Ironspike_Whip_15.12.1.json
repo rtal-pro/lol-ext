@@ -1,0 +1,51 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "6029": {
+      "name": "Ironspike Whip",
+      "description": "<mainText><stats><attention>30</attention> Attack Damage</stats><br><br><br><br><active>Active -</active> <active>Crescent:</active> Deal damage to nearby enemies.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "1037"
+      ],
+      "inStore": false,
+      "into": [
+        "6630"
+      ],
+      "image": {
+        "full": "6029.png",
+        "sprite": "item5.png",
+        "group": "item",
+        "x": 240,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 225,
+        "purchasable": false,
+        "total": 1100,
+        "sell": 770
+      },
+      "tags": [
+        "Damage",
+        "Active"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatPhysicalDamageMod": 30
+      },
+      "depth": 2
+    }
+  }
+}

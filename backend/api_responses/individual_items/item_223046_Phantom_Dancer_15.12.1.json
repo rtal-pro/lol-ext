@@ -1,0 +1,46 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "223046": {
+      "name": "Phantom Dancer",
+      "description": "<mainText><stats><attention>60%</attention> Attack Speed<br><attention>8%</attention> Move Speed<br><attention>25%</attention> Critical Strike Chance</stats><br><br><passive>Spectral Waltz</passive><br>Become <keyword>Ghosted</keyword>.</mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "image": {
+        "full": "223046.png",
+        "sprite": "item1.png",
+        "group": "item",
+        "x": 96,
+        "y": 144,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": true,
+        "total": 2500,
+        "sell": 1250
+      },
+      "tags": [
+        "CriticalStrike",
+        "AttackSpeed",
+        "NonbootsMovement"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": true,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatCritChanceMod": 0.25,
+        "PercentAttackSpeedMod": 0.6,
+        "PercentMovementSpeedMod": 0.08
+      }
+    }
+  }
+}

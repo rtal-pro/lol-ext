@@ -1,0 +1,49 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3084": {
+      "name": "Heartsteel",
+      "description": "<mainText><stats><attention>900</attention> Health<br><attention>100%</attention> Base Health Regen</stats><br><br><passive>Colossal Consumption</passive> (0s) per target<br>If an enemy champion is nearby for a few seconds, your next Attack against them deals <physicalDamage>70 plus 6%</physicalDamage> of your max Health as <physicalDamage>bonus physical damage</physicalDamage> and grants <scaleHealth>8%</scaleHealth> of the damage as <scaleHealth>max Health.</scaleHealth><br><br><passive>Goliath</passive><br>For each <scaleHealth>1000 max Health</scaleHealth>, gain 3% increased size, up to 30%. </mainText>",
+      "colloq": ";",
+      "plaintext": "Restores Health on kill or assist",
+      "from": [
+        "1011",
+        "3801",
+        "1011"
+      ],
+      "image": {
+        "full": "3084.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 144,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 400,
+        "purchasable": true,
+        "total": 3000,
+        "sell": 2100
+      },
+      "tags": [
+        "Health",
+        "HealthRegen"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatHPPoolMod": 900
+      },
+      "depth": 3
+    }
+  }
+}

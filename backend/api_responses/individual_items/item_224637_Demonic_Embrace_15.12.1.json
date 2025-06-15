@@ -1,0 +1,45 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "224637": {
+      "name": "Demonic Embrace",
+      "description": "<mainText><stats><attention>75</attention> Ability Power<br><attention>350</attention> Health</stats><br><br><passive>Azakana's Gaze</passive><br>Dealing Ability damage burns enemies for {{ Item_Melee_Ranged_Split }} <magicDamage>max Health magic damage</magicDamage> every second for 4 seconds. <br><br><passive>Dark Pact</passive><br>Gain 2% of your <scaleHealth>bonus Health</scaleHealth> as <scaleAP>Ability Power</scaleAP>. <br><br><rules><passive>Azakana's Gaze</passive> deals a maximum of 40 damage to monsters.</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "inStore": false,
+      "image": {
+        "full": "224637.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 96,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 2500,
+        "purchasable": false,
+        "total": 2500,
+        "sell": 1750
+      },
+      "tags": [
+        "Health",
+        "SpellDamage"
+      ],
+      "maps": {
+        "11": false,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatHPPoolMod": 350,
+        "FlatMagicDamageMod": 75
+      }
+    }
+  }
+}

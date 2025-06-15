@@ -1,0 +1,47 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "3171": {
+      "name": "Crimson Lucidity",
+      "description": "<mainText><stats><attention>25</attention> Ability Haste<br><attention>50</attention> Move Speed</stats><br><br><passive>Ionian Insight</passive><br>Gain 10 Summoner Spell Haste.<br><br><passive>Noxian Haste</passive><br>Empowering or protecting allies with abilities, dealing damage to enemy Champions with abilities, or casting a Summoner Spell grants <speed> Move Speed</speed> for 4 seconds.<br><br><rules>Noxian Haste can only be triggered once per Ability cast.</rules></mainText>",
+      "colloq": "",
+      "plaintext": "",
+      "from": [
+        "3158"
+      ],
+      "image": {
+        "full": "3171.png",
+        "sprite": "item3.png",
+        "group": "item",
+        "x": 144,
+        "y": 240,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 1400,
+        "sell": 980
+      },
+      "tags": [
+        "CooldownReduction",
+        "Boots"
+      ],
+      "maps": {
+        "11": true,
+        "12": false,
+        "21": false,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": false
+      },
+      "stats": {
+        "FlatMovementSpeedMod": 50
+      },
+      "depth": 3
+    }
+  }
+}

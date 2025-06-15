@@ -1,0 +1,58 @@
+{
+  "type": "item",
+  "version": "15.12.1",
+  "data": {
+    "1031": {
+      "name": "Chain Vest",
+      "description": "<mainText><stats><attention>40</attention> Armor</stats><br><br></mainText>",
+      "colloq": ";",
+      "plaintext": "Greatly increases Armor",
+      "from": [
+        "1029"
+      ],
+      "into": [
+        "3742",
+        "3068",
+        "323002",
+        "3109",
+        "323075",
+        "3002",
+        "3075",
+        "323109",
+        "6665",
+        "6662"
+      ],
+      "image": {
+        "full": "1031.png",
+        "sprite": "item0.png",
+        "group": "item",
+        "x": 432,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "gold": {
+        "base": 500,
+        "purchasable": true,
+        "total": 800,
+        "sell": 560
+      },
+      "tags": [
+        "Armor"
+      ],
+      "maps": {
+        "11": true,
+        "12": true,
+        "21": true,
+        "22": false,
+        "30": false,
+        "33": false,
+        "35": true
+      },
+      "stats": {
+        "FlatArmorMod": 40
+      },
+      "depth": 2
+    }
+  }
+}
