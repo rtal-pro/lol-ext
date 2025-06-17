@@ -52,7 +52,9 @@
       "Bash(source:*)",
       "Bash(source:*)",
       "Bash(touch:*)",
-      "Bash(touch:*)"
+      "Bash(touch:*)",
+      "Bash(cp:*)",
+      "Bash(cp:*)"
     ],
     "deny": []
   }

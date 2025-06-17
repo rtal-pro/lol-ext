@@ -17,6 +17,7 @@ class SearchHandler {
     // References to manager instances
     this.championsManager = null;
     this.itemsManager = null;
+    this.runesManager = null;
     
     // Set up event listeners
     this._setupEventHandlers();
@@ -31,9 +32,10 @@ class SearchHandler {
   }
   
   // Register managers
-  registerManagers(championsManager, itemsManager) {
+  registerManagers(championsManager, itemsManager, runesManager) {
     this.championsManager = championsManager;
     this.itemsManager = itemsManager;
+    this.runesManager = runesManager;
   }
   
   _setupEventHandlers() {
@@ -109,6 +111,28 @@ class SearchHandler {
       });
     }
     
+    // Set up rune search handlers
+    const runeSearchInput = document.getElementById('rune-search-input');
+    const runeSearchClear = document.getElementById('rune-search-clear');
+    
+    if (runeSearchInput) {
+      runeSearchInput.addEventListener('input', function() {
+        var searchValue = runeSearchInput.value.trim();
+        
+        // Show/hide clear button
+        if (runeSearchClear) {
+          runeSearchClear.style.display = searchValue ? 'block' : 'none';
+        }
+        
+        // Update rune filter
+        if (self.runesManager) {
+          self.runesManager.filter.searchText = searchValue;
+          self.runesManager.updateActiveFilters();
+          self.runesManager.filterAndDisplayRunes();
+        }
+      });
+    }
+    
     // Set up item search clear button
     if (this.itemSearchClear) {
       this.itemSearchClear.addEventListener('click', function() {
@@ -125,6 +149,26 @@ class SearchHandler {
           
           // Focus back on search input
           self.itemSearchInput.focus();
+        }
+      });
+    }
+    
+    // Set up rune search clear button
+    if (runeSearchClear) {
+      runeSearchClear.addEventListener('click', function() {
+        if (runeSearchInput) {
+          runeSearchInput.value = '';
+          runeSearchClear.style.display = 'none';
+          
+          // Update rune filter
+          if (self.runesManager) {
+            self.runesManager.filter.searchText = '';
+            self.runesManager.updateActiveFilters();
+            self.runesManager.filterAndDisplayRunes();
+          }
+          
+          // Focus back on search input
+          runeSearchInput.focus();
         }
       });
     }

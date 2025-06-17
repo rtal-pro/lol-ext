@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initialize managers
   let championsManager = null;
   let itemsManager = null;
+  let runesManager = null;
   let tabNavigationManager = null;
   let searchHandler = null;
   
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     championsManager.fetchChampions();
     
     // Register managers with search handler
-    searchHandler.registerManagers(championsManager, itemsManager);
+    searchHandler.registerManagers(championsManager, itemsManager, runesManager);
     
     // Listen for view changes to initialize managers as needed
     document.addEventListener('viewChanged', function(e) {
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
             itemsManager.fetchItems();
           }
           
-          searchHandler.registerManagers(championsManager, itemsManager);
+          searchHandler.registerManagers(championsManager, itemsManager, runesManager);
         } 
         // Initialize items manager if needed and not already available globally
         else if (!itemsManager) {
@@ -70,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
             itemsManager = new window.ItemsManager();
             window.itemsManager = itemsManager; // Share it globally
             itemsManager.fetchItems();
-            searchHandler.registerManagers(championsManager, itemsManager);
+            searchHandler.registerManagers(championsManager, itemsManager, runesManager);
           } catch (error) {
             console.error('Error creating ItemsManager:', error);
           }
@@ -86,6 +87,38 @@ document.addEventListener('DOMContentLoaded', function() {
               itemsManager.setupStatFilters();
             }
           }, 300);
+        }
+      } else if (viewName === 'runes') {
+        // Check if we already have a global instance
+        if (window.runesManager) {
+          console.log('Using existing global RunesManager instance');
+          runesManager = window.runesManager;
+          
+          // Make sure runes are loaded
+          if (runesManager.allStyles && runesManager.allStyles.length > 0) {
+            // Runes already loaded, just re-display
+            runesManager.displayRuneStyles();
+          } else {
+            // Runes not loaded yet, fetch them
+            runesManager.fetchRunes();
+          }
+          
+          searchHandler.registerManagers(championsManager, itemsManager, runesManager);
+        } 
+        // Initialize runes manager if needed and not already available globally
+        else if (!runesManager) {
+          try {
+            console.log('Creating new RunesManager instance');
+            runesManager = new window.RunesManager();
+            window.runesManager = runesManager; // Share it globally
+            runesManager.fetchRunes();
+            searchHandler.registerManagers(championsManager, itemsManager, runesManager);
+          } catch (error) {
+            console.error('Error creating RunesManager:', error);
+          }
+        } else {
+          // Re-display runes whenever we switch to the runes view
+          runesManager.displayRuneStyles();
         }
       }
     });

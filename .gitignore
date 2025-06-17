@@ -173,3 +173,4 @@ config.local.js
 *secret*
 *api_key*
 *token*
+**/.claude/settings.local.json

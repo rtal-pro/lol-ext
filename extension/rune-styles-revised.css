@@ -1,0 +1,449 @@
+/* 
+ * Revised Rune Styles CSS for League of Legends Helper extension
+ * Inspired by champions list view
+ */
+
+/* Style variables for rune paths */
+:root {
+  --domination-color: #ca3e3f;
+  --domination-light: #e16364;
+  --domination-dark: #9e2c2d;
+  
+  --inspiration-color: #49aab9;
+  --inspiration-light: #7ccad5;
+  --inspiration-dark: #32818e;
+  
+  --precision-color: #c8aa6e;
+  --precision-light: #e0c893;
+  --precision-dark: #9e8654;
+  
+  --resolve-color: #4d8b7c;
+  --resolve-light: #75b3a2;
+  --resolve-dark: #37665b;
+  
+  --sorcery-color: #9e7cc9;
+  --sorcery-light: #bca1dd;
+  --sorcery-dark: #7859a0;
+  
+  --rune-background: #010a13;
+  --rune-border: #463714;
+  --rune-text: #f0e6d2;
+  --rune-text-dark: #a09b8c;
+  --rune-glow-shadow: 0 0 10px rgba(240, 230, 210, 0.2);
+}
+
+/* Runes view container */
+#runes-view {
+  width: 100%;
+  position: relative;
+}
+
+/* Runes search container */
+#runes-search-container {
+  padding: 15px;
+  background-color: rgba(0, 9, 19, 0.8);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Rune styles filter */
+.rune-styles-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.style-filter {
+  background: none;
+  border: 1px solid rgba(200, 170, 110, 0.3);
+  color: var(--text-secondary);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.style-filter:hover {
+  border-color: var(--demacian-gold);
+  color: var(--text-accent);
+}
+
+/* Style-specific filter colors */
+.style-domination {
+  border-color: var(--domination-color);
+}
+.style-domination.active {
+  background-color: var(--domination-dark);
+  color: white;
+  box-shadow: 0 0 8px var(--domination-color);
+}
+
+.style-inspiration {
+  border-color: var(--inspiration-color);
+}
+.style-inspiration.active {
+  background-color: var(--inspiration-dark);
+  color: white;
+  box-shadow: 0 0 8px var(--inspiration-color);
+}
+
+.style-precision {
+  border-color: var(--precision-color);
+}
+.style-precision.active {
+  background-color: var(--precision-dark);
+  color: white;
+  box-shadow: 0 0 8px var(--precision-color);
+}
+
+.style-resolve {
+  border-color: var(--resolve-color);
+}
+.style-resolve.active {
+  background-color: var(--resolve-dark);
+  color: white;
+  box-shadow: 0 0 8px var(--resolve-color);
+}
+
+.style-sorcery {
+  border-color: var(--sorcery-color);
+}
+.style-sorcery.active {
+  background-color: var(--sorcery-dark);
+  color: white;
+  box-shadow: 0 0 8px var(--sorcery-color);
+}
+
+/* Rune tags filter */
+.rune-tags-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.tag-filter {
+  padding: 5px 10px;
+  border-radius: 16px;
+  background-color: rgba(240, 230, 210, 0.1);
+  color: var(--rune-text);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag-filter:hover {
+  background-color: rgba(240, 230, 210, 0.2);
+}
+
+.tag-filter.active {
+  background-color: var(--rune-text);
+  color: var(--rune-background);
+  font-weight: bold;
+}
+
+/* Runes list and grid - REVISED TO MATCH CHAMPIONS */
+.runes-list {
+  width: 100%;
+}
+
+.runes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+}
+
+/* Rune style cards - REVISED TO MATCH CHAMPION CARDS */
+.rune-style-card {
+  background-color: rgba(1, 10, 19, 0.8);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-left: 4px solid;
+  height: 80px;
+}
+
+.rune-style-domination {
+  border-left-color: var(--domination-color);
+}
+
+.rune-style-inspiration {
+  border-left-color: var(--inspiration-color);
+}
+
+.rune-style-precision {
+  border-left-color: var(--precision-color);
+}
+
+.rune-style-resolve {
+  border-left-color: var(--resolve-color);
+}
+
+.rune-style-sorcery {
+  border-left-color: var(--sorcery-color);
+}
+
+.rune-style-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.rune-style-icon-container {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.rune-style-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.3));
+}
+
+.rune-style-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.rune-style-name {
+  color: var(--rune-text);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+.rune-style-desc {
+  color: var(--rune-text-dark);
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/* Style-specific colors for icon placeholders */
+.style-icon-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.rune-style-domination .style-icon-placeholder {
+  background-color: var(--domination-dark);
+  color: var(--domination-light);
+}
+
+.rune-style-inspiration .style-icon-placeholder {
+  background-color: var(--inspiration-dark);
+  color: var(--inspiration-light);
+}
+
+.rune-style-precision .style-icon-placeholder {
+  background-color: var(--precision-dark);
+  color: var(--precision-light);
+}
+
+.rune-style-resolve .style-icon-placeholder {
+  background-color: var(--resolve-dark);
+  color: var(--resolve-light);
+}
+
+.rune-style-sorcery .style-icon-placeholder {
+  background-color: var(--sorcery-dark);
+  color: var(--sorcery-light);
+}
+
+/* Path badges for rune cards */
+.rune-style-path-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin-top: 4px;
+  font-weight: bold;
+  color: white;
+}
+
+.path-badge-domination {
+  background-color: var(--domination-color);
+}
+
+.path-badge-inspiration {
+  background-color: var(--inspiration-color);
+}
+
+.path-badge-precision {
+  background-color: var(--precision-color);
+}
+
+.path-badge-resolve {
+  background-color: var(--resolve-color);
+}
+
+.path-badge-sorcery {
+  background-color: var(--sorcery-color);
+}
+
+/* Slot badge */
+.rune-slot-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin-top: 4px;
+  font-weight: bold;
+  color: white;
+  background-color: #555;
+}
+
+/* Pagination info */
+.pagination-info {
+  font-size: 0.85rem;
+  color: var(--rune-text-dark);
+  text-align: center;
+  margin: 15px 0;
+  padding-top: 10px;
+  border-top: 1px solid rgba(240, 230, 210, 0.1);
+}
+
+/* Individual rune cards (for filtered view) */
+.rune-card {
+  background-color: rgba(1, 10, 19, 0.8);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-left: 4px solid;
+  height: 70px;
+}
+
+.rune-domination {
+  border-left-color: var(--domination-color);
+}
+
+.rune-inspiration {
+  border-left-color: var(--inspiration-color);
+}
+
+.rune-precision {
+  border-left-color: var(--precision-color);
+}
+
+.rune-resolve {
+  border-left-color: var(--resolve-color);
+}
+
+.rune-sorcery {
+  border-left-color: var(--sorcery-color);
+}
+
+.rune-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.rune-icon-container {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.rune-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.rune-icon-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.rune-info {
+  flex: 1;
+}
+
+.rune-name {
+  color: var(--rune-text);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.rune-tooltip {
+  color: var(--rune-text-dark);
+  font-size: 0.85rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Rest of the styles can remain the same, as they handle the detail views */
+/* ... */
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .runes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .rune-style-card {
+    height: auto;
+    padding: 12px;
+  }
+  
+  .rune-style-icon-container {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .rune-style-name {
+    font-size: 1rem;
+  }
+  
+  .rune-style-desc {
+    font-size: 0.8rem;
+  }
+}

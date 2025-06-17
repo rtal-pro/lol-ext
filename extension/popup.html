@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="item-styles.css">
   <link rel="stylesheet" href="item-detail-enhanced.css">
+  <link rel="stylesheet" href="rune-styles-champion.css">
+  <link rel="stylesheet" href="enhanced-rune-styles.css">
 </head>
 <body>
   <div class="hextech-container">
@@ -15,6 +17,7 @@
       <nav class="hextech-nav">
         <button id="champions-nav" class="nav-button active" data-view="champions">Champions</button>
         <button id="items-nav" class="nav-button" data-view="items">Items</button>
+        <button id="runes-nav" class="nav-button" data-view="runes">Runes</button>
       </nav>
     </header>
     
@@ -345,6 +348,212 @@
           </div>
         </div>
       </div>
+      
+      <!-- Runes View -->
+      <div id="runes-view" class="view-section" style="display: none;">
+        <div id="loading-runes" class="loading">
+          <div class="loading-spinner"></div>
+          <p>Loading runes...</p>
+        </div>
+        
+        <div id="error-runes" class="error" style="display: none;">
+          Error loading runes. Please try again.
+        </div>
+        
+        <div id="no-results-runes" class="no-results" style="display: none;">
+          <p>No runes found matching your search.</p>
+          <button id="reset-search-runes" class="reset-button">Reset Search</button>
+        </div>
+        
+        <!-- Runes search and filter container -->
+        <div id="runes-search-container" class="search-container">
+          <div class="search-input-wrapper">
+            <input type="text" id="rune-search-input" class="search-input" placeholder="Search runes...">
+            <button id="rune-search-clear" class="search-clear" aria-label="Clear search">×</button>
+          </div>
+          
+          <div class="filter-heading">
+            <span>Filter by style:</span>
+            <button id="clear-rune-filters" class="clear-filters-button">Clear filters</button>
+          </div>
+          
+          <div class="rune-styles-filter">
+            <button class="style-filter style-domination" data-style="Domination">Domination</button>
+            <button class="style-filter style-inspiration" data-style="Inspiration">Inspiration</button>
+            <button class="style-filter style-precision" data-style="Precision">Precision</button>
+            <button class="style-filter style-resolve" data-style="Resolve">Resolve</button>
+            <button class="style-filter style-sorcery" data-style="Sorcery">Sorcery</button>
+          </div>
+          
+          <div class="filter-heading">
+            <span>Filter by tag:</span>
+          </div>
+          
+          <div class="rune-tags-filter">
+            <!-- Dynamically populated based on extracted tags -->
+          </div>
+        </div>
+        
+        <!-- Runes Main View -->
+        <div id="runes-list" class="runes-list">
+          <div class="runes-container">
+            <!-- Rune styles will be displayed here -->
+          </div>
+        </div>
+        
+        <!-- Rune Style Detail View -->
+        <div id="rune-style-detail" class="rune-style-detail" style="display: none;">
+          <div class="detail-header">
+            <button id="back-to-styles-button" class="back-button">
+              <span>&larr;</span> Back to Rune Styles
+            </button>
+          </div>
+          
+          <div class="rune-style-content">
+            <!-- Style header with name and theme -->
+            <div class="rune-style-header">
+              <div class="style-icon-container">
+                <img class="style-icon" src="" alt="">
+              </div>
+              <div class="style-info">
+                <h2 class="style-name"></h2>
+                <p class="style-description"></p>
+              </div>
+            </div>
+            
+            <!-- Rune slots container -->
+            <div class="rune-slots-container">
+              <!-- Keystone slot with special styling -->
+              <div class="rune-slot keystone-slot">
+                <h3 class="slot-title">Keystones</h3>
+                <div class="runes-row keystones-row">
+                  <!-- Keystone runes displayed here -->
+                </div>
+              </div>
+              
+              <!-- Minor rune slots -->
+              <div class="rune-slot minor-slot minor-slot-1">
+                <h3 class="slot-title">Minor Runes - Tier 1</h3>
+                <div class="runes-row minor-row-1">
+                  <!-- Minor runes displayed here -->
+                </div>
+              </div>
+              
+              <div class="rune-slot minor-slot minor-slot-2">
+                <h3 class="slot-title">Minor Runes - Tier 2</h3>
+                <div class="runes-row minor-row-2">
+                  <!-- Minor runes displayed here -->
+                </div>
+              </div>
+              
+              <div class="rune-slot minor-slot minor-slot-3">
+                <h3 class="slot-title">Minor Runes - Tier 3</h3>
+                <div class="runes-row minor-row-3">
+                  <!-- Minor runes displayed here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Rune Detail View -->
+        <div id="rune-detail" class="rune-detail" style="display: none;">
+          <div class="detail-header">
+            <button id="back-to-style-button" class="back-button">
+              <span>&larr;</span> Back to <span class="style-name"></span>
+            </button>
+          </div>
+          
+          <div class="rune-detail-content">
+            <!-- Rune header with name and icon -->
+            <div class="rune-header">
+              <div class="rune-detail-image-container">
+                <div class="rune-detail-image">
+                  <img class="rune-img" src="" alt="">
+                </div>
+                <div class="rune-style-indicator"></div>
+              </div>
+              <div class="rune-detail-info">
+                <h2 class="rune-detail-name"></h2>
+                <div class="rune-style-badge"></div>
+                <div class="rune-slot-badge"></div>
+              </div>
+            </div>
+            
+            <!-- Detailed rune information -->
+            <div class="rune-info-container">
+              <div class="rune-short-desc"></div>
+              <div class="rune-long-desc"></div>
+              
+              <!-- Champions that commonly use this rune -->
+              <div class="rune-champions">
+                <h3>Popular With</h3>
+                <div class="rune-champions-grid">
+                  <!-- Champions displayed here -->
+                </div>
+              </div>
+              
+              <!-- Similar runes suggestions -->
+              <div class="similar-runes">
+                <h3>Similar Runes</h3>
+                <div class="similar-runes-grid">
+                  <!-- Similar runes displayed here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Rune Page Builder -->
+        <div id="rune-builder" class="rune-builder" style="display: none;">
+          <div class="builder-header">
+            <button id="back-from-builder-button" class="back-button">
+              <span>&larr;</span> Back to Runes
+            </button>
+            <h2>Rune Page Builder</h2>
+          </div>
+          
+          <div class="builder-content">
+            <div class="builder-instructions">
+              <p>Select a primary and secondary rune path, then choose runes from each path.</p>
+            </div>
+            
+            <div class="rune-page-container">
+              <!-- Primary path selection -->
+              <div class="primary-path-selection">
+                <h3>Primary Path</h3>
+                <div class="path-selector primary-selector">
+                  <!-- Style options displayed here -->
+                </div>
+                
+                <div class="primary-runes-container">
+                  <!-- Selected primary path runes displayed here -->
+                </div>
+              </div>
+              
+              <!-- Secondary path selection -->
+              <div class="secondary-path-selection">
+                <h3>Secondary Path</h3>
+                <div class="path-selector secondary-selector">
+                  <!-- Style options displayed here, excluding primary -->
+                </div>
+                
+                <div class="secondary-runes-container">
+                  <!-- Selected secondary path runes displayed here -->
+                </div>
+              </div>
+              
+              <!-- Rune page summary -->
+              <div class="rune-page-summary">
+                <h3>Selected Runes</h3>
+                <div class="summary-container">
+                  <!-- Summary of selected runes displayed here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="hextech-footer">
       <p>Made with Hextech</p>
@@ -358,6 +567,7 @@
   <script src="items.js"></script>
   <script src="item-detail.js"></script>
   <script src="compact-item-filters.js"></script>
+  <script src="runes.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>

@@ -3,10 +3,13 @@
 // Constants
 const CACHE_KEY_CHAMPIONS = 'lol_champions_cache';
 const CACHE_KEY_ITEMS = 'lol_items_cache';
+const CACHE_KEY_RUNES = 'lol_runes_cache';
 const CACHE_EXPIRY_KEY_CHAMPIONS = 'lol_champions_cache_expiry';
 const CACHE_EXPIRY_KEY_ITEMS = 'lol_items_cache_expiry';
+const CACHE_EXPIRY_KEY_RUNES = 'lol_runes_cache_expiry';
 const CHAMPION_DETAIL_CACHE_PREFIX = 'lol_champion_detail_';
 const ITEM_DETAIL_CACHE_PREFIX = 'lol_item_detail_';
+const RUNE_DETAIL_CACHE_PREFIX = 'lol_rune_detail_';
 const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
 
 // API endpoints
@@ -138,11 +141,56 @@ async function cacheItems(items) {
   });
 }
 
+async function getCachedRunes() {
+  return new Promise((resolve) => {
+    chrome.storage.local.get([CACHE_KEY_RUNES, CACHE_EXPIRY_KEY_RUNES], (result) => {
+      const cachedData = result[CACHE_KEY_RUNES];
+      const expiryTime = result[CACHE_EXPIRY_KEY_RUNES];
+      
+      // Check if cache exists and is not expired
+      if (cachedData && expiryTime && Date.now() < expiryTime) {
+        // If cachedData has a paths property, it's the full response object
+        if (cachedData && cachedData.paths && Array.isArray(cachedData.paths)) {
+          console.log('Found cached runes data with paths property');
+          resolve(cachedData);
+        } else if (Array.isArray(cachedData)) {
+          // If it's just an array, wrap it in an object to match the API format
+          console.log('Found cached runes data as array, converting to object format');
+          resolve({
+            paths: cachedData,
+            version: 'cached'
+          });
+        } else {
+          console.log('Invalid cached runes data format');
+          resolve(null);
+        }
+      } else {
+        resolve(null);
+      }
+    });
+  });
+}
+
+async function cacheRunes(runes) {
+  return new Promise((resolve) => {
+    const expiryTime = Date.now() + CACHE_DURATION;
+    
+    chrome.storage.local.set({
+      [CACHE_KEY_RUNES]: runes,
+      [CACHE_EXPIRY_KEY_RUNES]: expiryTime
+    }, () => {
+      console.log('Runes cached successfully');
+      resolve();
+    });
+  });
+}
+
 async function clearCache() {
   return new Promise((resolve) => {
     chrome.storage.local.remove([
       CACHE_KEY_CHAMPIONS, CACHE_EXPIRY_KEY_CHAMPIONS,
-      CACHE_KEY_ITEMS, CACHE_EXPIRY_KEY_ITEMS
+      CACHE_KEY_ITEMS, CACHE_EXPIRY_KEY_ITEMS,
+      CACHE_KEY_RUNES, CACHE_EXPIRY_KEY_RUNES
     ], () => {
       console.log('All cache cleared');
       resolve();
@@ -336,11 +384,16 @@ window.LOLUtils = {
   cacheChampions,
   getCachedItems,
   cacheItems,
+  getCachedRunes,
+  cacheRunes,
   clearCache,
   fetchGameVersion,
   updateSummonerSpells,
   setupTabNavigation,
   forceDefaultStats,
   fixItemDetailTabs,
-  API_BASE_URL
+  API_BASE_URL,
+  CHAMPION_DETAIL_CACHE_PREFIX,
+  ITEM_DETAIL_CACHE_PREFIX,
+  RUNE_DETAIL_CACHE_PREFIX
 };

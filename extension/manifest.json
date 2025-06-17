@@ -26,6 +26,6 @@
     "service_worker": "background.js"
   },
   "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'; img-src 'self' http://localhost:8001"
+    "extension_pages": "script-src 'self'; object-src 'self'; img-src 'self' http://localhost:8001 https://ddragon.leagueoflegends.com data:"
   }
 }

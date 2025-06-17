@@ -16,10 +16,13 @@ class TabNavigationManager {
     // Get references to DOM elements - Navigation
     this.championNavButton = document.getElementById('champions-nav');
     this.itemsNavButton = document.getElementById('items-nav');
+    this.runesNavButton = document.getElementById('runes-nav');
     this.championsView = document.getElementById('champions-view');
     this.itemsView = document.getElementById('items-view');
+    this.runesView = document.getElementById('runes-view');
     this.championsSearchContainer = document.getElementById('champions-search-container');
     this.itemsSearchContainer = document.getElementById('item-filters-container');
+    this.runesSearchContainer = document.getElementById('runes-search-container');
     
     // Track current view
     this.currentView = 'champions';
@@ -31,6 +34,9 @@ class TabNavigationManager {
     });
     this.itemsNavButton.addEventListener('click', function() {
       self.switchView('items');
+    });
+    this.runesNavButton.addEventListener('click', function() {
+      self.switchView('runes');
     });
   }
 
@@ -44,25 +50,35 @@ class TabNavigationManager {
     // Update active nav button
     this.championNavButton.classList.toggle('active', viewName === 'champions');
     this.itemsNavButton.classList.toggle('active', viewName === 'items');
+    this.runesNavButton.classList.toggle('active', viewName === 'runes');
     
     // Toggle the appropriate search containers
     if (viewName === 'champions') {
-      // Show champions search container, hide items search container
+      // Show champions search container, hide others
       if (this.championsSearchContainer) this.championsSearchContainer.style.display = 'block';
       if (this.itemsSearchContainer) this.itemsSearchContainer.style.display = 'none';
-    } else {
-      // Show items search container, hide champions search container
+      if (this.runesSearchContainer) this.runesSearchContainer.style.display = 'none';
+    } else if (viewName === 'items') {
+      // Show items search container, hide others
       if (this.championsSearchContainer) this.championsSearchContainer.style.display = 'none';
       if (this.itemsSearchContainer) this.itemsSearchContainer.style.display = 'block';
+      if (this.runesSearchContainer) this.runesSearchContainer.style.display = 'none';
+    } else if (viewName === 'runes') {
+      // Show runes search container, hide others
+      if (this.championsSearchContainer) this.championsSearchContainer.style.display = 'none';
+      if (this.itemsSearchContainer) this.itemsSearchContainer.style.display = 'none';
+      if (this.runesSearchContainer) this.runesSearchContainer.style.display = 'block';
     }
     
     // Update visible section
     this.championsView.style.display = viewName === 'champions' ? 'block' : 'none';
     this.itemsView.style.display = viewName === 'items' ? 'block' : 'none';
+    this.runesView.style.display = viewName === 'runes' ? 'block' : 'none';
     
     // Make sure the class toggles are also applied
     this.championsView.classList.toggle('active', viewName === 'champions');
     this.itemsView.classList.toggle('active', viewName === 'items');
+    this.runesView.classList.toggle('active', viewName === 'runes');
     
     // Update search placeholder
     const searchInput = document.getElementById('search-input');
@@ -108,6 +124,11 @@ class TabNavigationManager {
     // Set up items tab navigation
     document.addEventListener('itemDetailShown', function() {
       self.setupItemTabNavigation();
+    });
+    
+    // Set up runes tab navigation
+    document.addEventListener('runeDetailShown', function() {
+      window.LOLUtils.setupTabNavigation();
     });
     
     // Handle mutations to detect when item detail is shown
